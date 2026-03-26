@@ -22,3 +22,8 @@ Login Data
 Web Data
 *.db
 *.db-*
+
+# Agent territories 🛡️
+/sandbox/
+/temp/
+*.generated
