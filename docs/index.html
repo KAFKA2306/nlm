@@ -1,10 +1,31 @@
 <!doctype html>
 <html lang="ja">
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>KAFKA Intelligence Podcast</title>
-  <body>
-    <p><img src="artwork.png" alt="KAFKA Intelligence Podcast cover art" width="320"></p>
-    <p><a href="feed.xml">Feed</a></p>
-  </body>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; line-height: 1.6; text-align: center; background: #121212; color: #e0e0e0; }
+    a { color: #bb86fc; text-decoration: none; font-weight: bold; }
+    a:hover { text-decoration: underline; }
+    .card { background: #1e1e1e; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); margin-top: 20px; }
+    .btn-list { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+    .btn { display: block; padding: 12px; background: #2e2e2e; border-radius: 6px; border: 1px solid #3e3e3e; }
+    .btn:hover { background: #3e3e3e; }
+  </style>
+</head>
+<body>
+  <h1>KAFKA Intelligence Podcast</h1>
+  <p><img src="artwork.png" alt="KAFKA Intelligence Podcast cover art" width="240" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.5);"></p>
+  <p>Automated research summaries and intelligence logs from the KAFKA Knowledge Runtime.</p>
+  
+  <div class="card">
+    <h3>ポッドキャストを購読する</h3>
+    <div class="btn-list">
+      <a class="btn" href="feed.xml">RSS Feed URL (コピーして利用)</a>
+      <a class="btn" href="itpc://kafka2306.github.io/nlm/feed.xml">Apple Podcasts / iTunes で登録</a>
+      <a class="btn" href="pcast://kafka2306.github.io/nlm/feed.xml">一般的なアプリで登録</a>
+    </div>
+  </div>
+</body>
 </html>
