@@ -1,8 +1,9 @@
 <?xml version="1.0" ?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
     <title>KAFKA Intelligence Podcast</title>
-    <link>https://KAFKA2306.github.io/obsidian</link>
+    <link>https://github.com/KAFKA2306/nlm</link>
+    <atom:link href="https://raw.githubusercontent.com/KAFKA2306/nlm/main/podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Automated research summaries and intelligence logs from the KAFKA Knowledge Runtime.</description>
     <language>ja</language>
     <itunes:author>KAFKA</itunes:author>
@@ -12,7 +13,7 @@
       <description>Automatic summary for 20260617_episode.mp3</description>
       <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260617_93826225</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault/20260617_episode.mp3" type="audio/mpeg" length="0"/>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault/20260617_episode.mp3" type="audio/mpeg" length="943581"/>
       <itunes:duration>00:02:37</itunes:duration>
     </item>
   </channel>
