@@ -1,310 +1,144 @@
 <?xml version="1.0" ?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>KAFKA Intelligence Podcast</title>
+    <title>ARK Invest Q1 2026: The Frontier of Innovation and AI</title>
     <link>https://kafka2306.github.io/nlm/</link>
     <atom:link href="https://kafka2306.github.io/nlm/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>Automated research summaries and intelligence logs from the KAFKA Knowledge Runtime.</description>
+    <description>These documents provide a comprehensive look at the financial health and strategic direction of major investment and technology firms as of early 2026. Official SEC filings from Baron Select Funds detail the 2023 year-end performance and sector concentrations of their diverse mutual fund offerings, highlighting a significant reliance on Tesla. Newer reports from FinTech Weekly reveal that SpaceX has filed for a historic initial public offering, positioning itself as an integrated orbital data and artificial intelligence powerhouse. Complementing these developments, a webinar from ARK Funds discusses their recent inclusion of OpenAI within their ETFs and the transformative potential of space-based data centers. Together, the sources illustrate a shifting economic landscape where active management and frontier technologies like generative AI and autonomous systems are driving massive valuation targets. Despite geopolitical tensions and inflation concerns, these leaders remain focused on long-term growth through innovative supply chains and digital intelligence.</description>
+    <itunes:summary>These documents provide a comprehensive look at the financial health and strategic direction of major investment and technology firms as of early 2026. Official SEC filings from Baron Select Funds detail the 2023 year-end performance and sector concentrations of their diverse mutual fund offerings, highlighting a significant reliance on Tesla. Newer reports from FinTech Weekly reveal that SpaceX has filed for a historic initial public offering, positioning itself as an integrated orbital data and artificial intelligence powerhouse. Complementing these developments, a webinar from ARK Funds discusses their recent inclusion of OpenAI within their ETFs and the transformative potential of space-based data centers. Together, the sources illustrate a shifting economic landscape where active management and frontier technologies like generative AI and autonomous systems are driving massive valuation targets. Despite geopolitical tensions and inflation concerns, these leaders remain focused on long-term growth through innovative supply chains and digital intelligence.</itunes:summary>
     <language>ja</language>
     <itunes:author>KAFKA</itunes:author>
     <itunes:type>serial</itunes:type>
     <itunes:image href="https://kafka2306.github.io/nlm/artwork.png"/>
     <itunes:explicit>false</itunes:explicit>
     <copyright>© 2026 KAFKA</copyright>
+    <itunes:owner>
+      <itunes:name>KAFKA</itunes:name>
+      <itunes:email>ag1i5rer@gmail.com</itunes:email>
+    </itunes:owner>
     <itunes:category text="Technology"/>
-    <item>
-      <title>03191b17-11fd-4835-b204-b3e8cf12ef65</title>
-      <description>Automatic summary for 03191b17-11fd-4835-b204-b3e8cf12ef65.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_3ea0b7a0</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault/03191b17-11fd-4835-b204-b3e8cf12ef65.m4a" type="audio/mp4" length="38053030"/>
-      <itunes:duration>00:19:42</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>041d16cc-07c0-4768-82c7-7b33523632b7</title>
-      <description>Automatic summary for 041d16cc-07c0-4768-82c7-7b33523632b7.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_89571f9f</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault/041d16cc-07c0-4768-82c7-7b33523632b7.m4a" type="audio/mp4" length="35496483"/>
-      <itunes:duration>00:18:22</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
     <item>
       <title>0c6f064d-8b60-41e8-bff0-2cd142e75e95</title>
       <description>Automatic summary for 0c6f064d-8b60-41e8-bff0-2cd142e75e95.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_f7d22ae9</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault/0c6f064d-8b60-41e8-bff0-2cd142e75e95.m4a" type="audio/mp4" length="23443838"/>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">20260620_f7d22ae9</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/0c6f064d-8b60-41e8-bff0-2cd142e75e95.m4a" type="audio/mp4" length="23443838"/>
       <itunes:duration>00:12:08</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>1ce9c9c9-ce82-4bdc-8d24-133cc26c32ee</title>
-      <description>Automatic summary for 1ce9c9c9-ce82-4bdc-8d24-133cc26c32ee.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_eb75c91e</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault/1ce9c9c9-ce82-4bdc-8d24-133cc26c32ee.m4a" type="audio/mp4" length="36957516"/>
-      <itunes:duration>00:19:08</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>2afebc46-79dd-484c-a8fb-3e52ef3e3a3f</title>
-      <description>Automatic summary for 2afebc46-79dd-484c-a8fb-3e52ef3e3a3f.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_2f579832</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault/2afebc46-79dd-484c-a8fb-3e52ef3e3a3f.m4a" type="audio/mp4" length="25475848"/>
-      <itunes:duration>00:13:11</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>2bf89b58-ed26-4bb9-af47-e83be9683927</title>
-      <description>Automatic summary for 2bf89b58-ed26-4bb9-af47-e83be9683927.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_d8c6f340</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault/2bf89b58-ed26-4bb9-af47-e83be9683927.m4a" type="audio/mp4" length="45380411"/>
-      <itunes:duration>00:23:30</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>30e645ae-266b-45c7-a6ce-5c483f985b93</title>
-      <description>Automatic summary for 30e645ae-266b-45c7-a6ce-5c483f985b93.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_3d1c77e5</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/30e645ae-266b-45c7-a6ce-5c483f985b93.m4a" type="audio/mp4" length="14949699"/>
-      <itunes:duration>00:20:27</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
       <title>4b8c54dd-7895-453b-99a1-22c4175e694f</title>
       <description>Automatic summary for 4b8c54dd-7895-453b-99a1-22c4175e694f.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_f3168bd2</guid>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">20260620_f3168bd2</guid>
       <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/4b8c54dd-7895-453b-99a1-22c4175e694f.m4a" type="audio/mp4" length="34880692"/>
       <itunes:duration>00:18:03</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>5b22caa1-160b-40ab-868c-ab2cbccf7773</title>
-      <description>Automatic summary for 5b22caa1-160b-40ab-868c-ab2cbccf7773.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_725ac412</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/5b22caa1-160b-40ab-868c-ab2cbccf7773.m4a" type="audio/mp4" length="39837538"/>
-      <itunes:duration>00:20:37</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>5b5c0569-7288-4f5f-b17b-a1d1b559a7d4</title>
-      <description>Automatic summary for 5b5c0569-7288-4f5f-b17b-a1d1b559a7d4.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_076ce35d</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/5b5c0569-7288-4f5f-b17b-a1d1b559a7d4.m4a" type="audio/mp4" length="36460511"/>
-      <itunes:duration>00:18:52</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>69b52f7c-b6d0-477a-9e33-e2305ec7f6d3</title>
-      <description>Automatic summary for 69b52f7c-b6d0-477a-9e33-e2305ec7f6d3.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_200f3bf6</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/69b52f7c-b6d0-477a-9e33-e2305ec7f6d3.m4a" type="audio/mp4" length="44272089"/>
-      <itunes:duration>00:22:55</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>6c878dee-b4d5-4e81-82f6-92c96f9816e3</title>
-      <description>Automatic summary for 6c878dee-b4d5-4e81-82f6-92c96f9816e3.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_1ae9c9e9</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/6c878dee-b4d5-4e81-82f6-92c96f9816e3.m4a" type="audio/mp4" length="40445113"/>
-      <itunes:duration>00:20:56</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>74eb0677-a138-43c3-a1e6-a0c9417368d9</title>
-      <description>Automatic summary for 74eb0677-a138-43c3-a1e6-a0c9417368d9.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_40c21ffb</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/74eb0677-a138-43c3-a1e6-a0c9417368d9.m4a" type="audio/mp4" length="36997864"/>
-      <itunes:duration>00:19:09</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>7e886ee6-5019-423b-b582-93b0e2307dba</title>
-      <description>Automatic summary for 7e886ee6-5019-423b-b582-93b0e2307dba.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_5948164a</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/7e886ee6-5019-423b-b582-93b0e2307dba.m4a" type="audio/mp4" length="50058497"/>
-      <itunes:duration>00:25:55</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>82cb92e2-0275-49d9-8b3b-49efec9ea874</title>
-      <description>Automatic summary for 82cb92e2-0275-49d9-8b3b-49efec9ea874.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_dc2423ac</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/82cb92e2-0275-49d9-8b3b-49efec9ea874.m4a" type="audio/mp4" length="33060957"/>
-      <itunes:duration>00:17:07</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>82e41b1f-c7aa-4c38-81f5-91c7aee76b8d</title>
-      <description>Automatic summary for 82e41b1f-c7aa-4c38-81f5-91c7aee76b8d.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_4967b0dc</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/82e41b1f-c7aa-4c38-81f5-91c7aee76b8d.m4a" type="audio/mp4" length="34850063"/>
-      <itunes:duration>00:18:02</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>977786d1-cfef-48c0-a073-c8b5602b27b8</title>
-      <description>Automatic summary for 977786d1-cfef-48c0-a073-c8b5602b27b8.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_bbc0ef2e</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/977786d1-cfef-48c0-a073-c8b5602b27b8.m4a" type="audio/mp4" length="39011829"/>
-      <itunes:duration>00:20:12</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>a66c5156-4d62-417d-9e74-d904e836c5fa</title>
-      <description>Automatic summary for a66c5156-4d62-417d-9e74-d904e836c5fa.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_6fd437cd</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/a66c5156-4d62-417d-9e74-d904e836c5fa.m4a" type="audio/mp4" length="37999991"/>
-      <itunes:duration>00:19:40</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>ca17a4b5-2beb-4298-aa85-8d53581c6540</title>
-      <description>Automatic summary for ca17a4b5-2beb-4298-aa85-8d53581c6540.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_e8ab6a59</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/ca17a4b5-2beb-4298-aa85-8d53581c6540.m4a" type="audio/mp4" length="43121302"/>
-      <itunes:duration>00:22:19</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>d03e3b34-2018-421f-b217-a1db261923a0</title>
-      <description>Automatic summary for d03e3b34-2018-421f-b217-a1db261923a0.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_e8bb137e</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/d03e3b34-2018-421f-b217-a1db261923a0.m4a" type="audio/mp4" length="37346100"/>
-      <itunes:duration>00:19:20</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>d5a4b9b1-f7ba-4d6b-bf6c-9bca3303ce52</title>
-      <description>Automatic summary for d5a4b9b1-f7ba-4d6b-bf6c-9bca3303ce52.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_46ebbcda</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/d5a4b9b1-f7ba-4d6b-bf6c-9bca3303ce52.m4a" type="audio/mp4" length="42397820"/>
-      <itunes:duration>00:21:57</itunes:duration>
+      <title>1ce9c9c9-ce82-4bdc-8d24-133cc26c32ee</title>
+      <description>Automatic summary for 1ce9c9c9-ce82-4bdc-8d24-133cc26c32ee.m4a</description>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">20260620_eb75c91e</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/1ce9c9c9-ce82-4bdc-8d24-133cc26c32ee.m4a" type="audio/mp4" length="36957516"/>
+      <itunes:duration>00:19:08</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
       <title>dc0199bf-8eb4-4e8d-916e-d575aff7d0ad</title>
       <description>Automatic summary for dc0199bf-8eb4-4e8d-916e-d575aff7d0ad.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_ea826621</guid>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">20260620_ea826621</guid>
       <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/dc0199bf-8eb4-4e8d-916e-d575aff7d0ad.m4a" type="audio/mp4" length="44340817"/>
       <itunes:duration>00:22:57</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>e496738e-b9a1-44f7-886f-9f76cfae022c</title>
-      <description>Automatic summary for e496738e-b9a1-44f7-886f-9f76cfae022c.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_1d92a468</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/e496738e-b9a1-44f7-886f-9f76cfae022c.m4a" type="audio/mp4" length="40873398"/>
-      <itunes:duration>00:21:09</itunes:duration>
+      <title>d03e3b34-2018-421f-b217-a1db261923a0</title>
+      <description>Automatic summary for d03e3b34-2018-421f-b217-a1db261923a0.m4a</description>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">20260620_e8bb137e</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/d03e3b34-2018-421f-b217-a1db261923a0.m4a" type="audio/mp4" length="37346100"/>
+      <itunes:duration>00:19:20</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>fff7526c-fba3-4af1-8787-ee21f9fb5452</title>
-      <description>Automatic summary for fff7526c-fba3-4af1-8787-ee21f9fb5452.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_07eee747</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/fff7526c-fba3-4af1-8787-ee21f9fb5452.m4a" type="audio/mp4" length="30182320"/>
-      <itunes:duration>00:15:37</itunes:duration>
+      <title>ca17a4b5-2beb-4298-aa85-8d53581c6540</title>
+      <description>Automatic summary for ca17a4b5-2beb-4298-aa85-8d53581c6540.m4a</description>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">20260620_e8ab6a59</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/ca17a4b5-2beb-4298-aa85-8d53581c6540.m4a" type="audio/mp4" length="43121302"/>
+      <itunes:duration>00:22:19</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>b0a4e145-3033-4f57-9796-0b3282ced31b</title>
+      <description>Automatic summary for b0a4e145-3033-4f57-9796-0b3282ced31b.m4a</description>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">20260620_e0138abc</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/b0a4e145-3033-4f57-9796-0b3282ced31b.m4a" type="audio/mp4" length="38915461"/>
+      <itunes:duration>00:20:09</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>82cb92e2-0275-49d9-8b3b-49efec9ea874</title>
+      <description>Automatic summary for 82cb92e2-0275-49d9-8b3b-49efec9ea874.m4a</description>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">20260620_dc2423ac</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/82cb92e2-0275-49d9-8b3b-49efec9ea874.m4a" type="audio/mp4" length="33060957"/>
+      <itunes:duration>00:17:07</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>2bf89b58-ed26-4bb9-af47-e83be9683927</title>
+      <description>Automatic summary for 2bf89b58-ed26-4bb9-af47-e83be9683927.m4a</description>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">20260620_d8c6f340</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/2bf89b58-ed26-4bb9-af47-e83be9683927.m4a" type="audio/mp4" length="45380411"/>
+      <itunes:duration>00:23:30</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>81dbefb7-2bcf-4044-b130-b94bb7a60f44</title>
+      <description>Automatic summary for 81dbefb7-2bcf-4044-b130-b94bb7a60f44.m4a</description>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">20260620_d34fd57f</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/81dbefb7-2bcf-4044-b130-b94bb7a60f44.m4a" type="audio/mp4" length="27092272"/>
+      <itunes:duration>00:14:01</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
       <title>21e4ba34-f04d-4aea-81aa-37abcb7919d5</title>
       <description>Automatic summary for 21e4ba34-f04d-4aea-81aa-37abcb7919d5.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_c1be8ff3</guid>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">20260620_c1be8ff3</guid>
       <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/21e4ba34-f04d-4aea-81aa-37abcb7919d5.m4a" type="audio/mp4" length="43935806"/>
       <itunes:duration>00:22:45</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>c78d3f7d-96ac-4248-9f64-2c4c391a57c7</title>
-      <description>Automatic summary for c78d3f7d-96ac-4248-9f64-2c4c391a57c7.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_28753162</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/c78d3f7d-96ac-4248-9f64-2c4c391a57c7.m4a" type="audio/mp4" length="33460854"/>
-      <itunes:duration>00:17:19</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>44048fe3-f2ed-4985-83d5-f52ed6193311</title>
-      <description>Automatic summary for 44048fe3-f2ed-4985-83d5-f52ed6193311.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_500e3023</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/44048fe3-f2ed-4985-83d5-f52ed6193311.m4a" type="audio/mp4" length="35715482"/>
-      <itunes:duration>00:18:29</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>4080dfae-471f-463b-8cba-aa154b215726</title>
-      <description>Automatic summary for 4080dfae-471f-463b-8cba-aa154b215726.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_4a69b65d</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/4080dfae-471f-463b-8cba-aa154b215726.m4a" type="audio/mp4" length="24968376"/>
-      <itunes:duration>00:12:55</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>9123049a-cf24-453a-af6a-8fa036e2658a</title>
-      <description>Automatic summary for 9123049a-cf24-453a-af6a-8fa036e2658a.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_7e748375</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/9123049a-cf24-453a-af6a-8fa036e2658a.m4a" type="audio/mp4" length="34766395"/>
-      <itunes:duration>00:18:00</itunes:duration>
+      <title>977786d1-cfef-48c0-a073-c8b5602b27b8</title>
+      <description>Automatic summary for 977786d1-cfef-48c0-a073-c8b5602b27b8.m4a</description>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">20260620_bbc0ef2e</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/977786d1-cfef-48c0-a073-c8b5602b27b8.m4a" type="audio/mp4" length="39011829"/>
+      <itunes:duration>00:20:12</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
       <title>70fd9f85-1f5c-4a83-8315-e0f8ae0f1b42</title>
       <description>Automatic summary for 70fd9f85-1f5c-4a83-8315-e0f8ae0f1b42.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_ba8c971d</guid>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">20260620_ba8c971d</guid>
       <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/70fd9f85-1f5c-4a83-8315-e0f8ae0f1b42.m4a" type="audio/mp4" length="43440403"/>
       <itunes:duration>00:22:29</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>10d6712a-1df1-4123-aef1-80b3dd624b39</title>
-      <description>Automatic summary for 10d6712a-1df1-4123-aef1-80b3dd624b39.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_4601799c</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/10d6712a-1df1-4123-aef1-80b3dd624b39.m4a" type="audio/mp4" length="29591297"/>
-      <itunes:duration>00:15:19</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>84cdfab9-7307-416a-be8a-b3be77ff236e</title>
-      <description>Automatic summary for 84cdfab9-7307-416a-be8a-b3be77ff236e.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_43650636</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/84cdfab9-7307-416a-be8a-b3be77ff236e.m4a" type="audio/mp4" length="42969537"/>
-      <itunes:duration>00:22:15</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
       <title>2fcbd6a4-45e5-48ee-85c8-16bd3e42221d</title>
       <description>Automatic summary for 2fcbd6a4-45e5-48ee-85c8-16bd3e42221d.m4a</description>
-      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260619_aa726067</guid>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">20260620_aa726067</guid>
       <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/2fcbd6a4-45e5-48ee-85c8-16bd3e42221d.m4a" type="audio/mp4" length="33874083"/>
       <itunes:duration>00:17:32</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
@@ -312,10 +146,361 @@
     <item>
       <title>20260617_episode</title>
       <description>Automatic summary for 20260617_episode.mp3</description>
-      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">20260617_93826225</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault/20260617_episode.mp3" type="audio/mpeg" length="943581"/>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">20260620_93826225</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/20260617_episode.mp3" type="audio/mpeg" length="943581"/>
       <itunes:duration>00:02:37</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>9123049a-cf24-453a-af6a-8fa036e2658a</title>
+      <description>Automatic summary for 9123049a-cf24-453a-af6a-8fa036e2658a.m4a</description>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">20260620_7e748375</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/9123049a-cf24-453a-af6a-8fa036e2658a.m4a" type="audio/mp4" length="34766395"/>
+      <itunes:duration>00:18:00</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>AI Safety and Technical Risks in Machine Learning Systems</title>
+      <description>AI Safety and Technical Risks in Machine Learning Systems</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">fae9da10-2a10-4567-97d2-2458d98655c6</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/fae9da10-2a10-4567-97d2-2458d98655c6.m4a" type="audio/mp4" length="42342540"/>
+      <itunes:duration>00:21:55</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Designing Trust: Architectural Principles for AI Systems</title>
+      <description>Designing Trust: Architectural Principles for AI Systems</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">f97dd4fc-e60c-4297-9251-32d3e4b33c88</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/f97dd4fc-e60c-4297-9251-32d3e4b33c88.m4a" type="audio/mp4" length="41448734"/>
+      <itunes:duration>00:21:27</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Synthesizing Advanced Machine Learning and CATA for Leadership Analysis</title>
+      <description>Synthesizing Advanced Machine Learning and CATA for Leadership Analysis</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">f46c2dfa-4d8a-4c04-9ab1-b9c96007d0f4</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/f46c2dfa-4d8a-4c04-9ab1-b9c96007d0f4.m4a" type="audio/mp4" length="43215429"/>
+      <itunes:duration>00:22:22</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>The Science and Psychology of High-CTR Thumbnails</title>
+      <description>The Science and Psychology of High-CTR Thumbnails</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">ea034967-f4f1-4a74-9b8b-638aa3439cf4</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/ea034967-f4f1-4a74-9b8b-638aa3439cf4.m4a" type="audio/mp4" length="41198476"/>
+      <itunes:duration>00:21:20</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>日本の食卓を支える密漁ビジネスと食品表示の現実</title>
+      <description>日本の食卓を支える密漁ビジネスと食品表示の現実</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">e3d5fe1e-64ad-4c3f-a8ba-4d9c88c81d9b</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/e3d5fe1e-64ad-4c3f-a8ba-4d9c88c81d9b.m4a" type="audio/mp4" length="39533494"/>
+      <itunes:duration>00:20:28</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Problem Properties: Real Estate Mysteries and Urban Poetics</title>
+      <description>Problem Properties: Real Estate Mysteries and Urban Poetics</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">de825fb9-e7cf-4af4-a2b7-7dd91af2d5af</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/de825fb9-e7cf-4af4-a2b7-7dd91af2d5af.m4a" type="audio/mp4" length="33965222"/>
+      <itunes:duration>00:17:35</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Slay the Spire 2: Defect Strategy and Tempest Guide</title>
+      <description>Slay the Spire 2: Defect Strategy and Tempest Guide</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">dd43d084-12c8-4480-9bab-8afc7321de40</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/dd43d084-12c8-4480-9bab-8afc7321de40.m4a" type="audio/mp4" length="40115553"/>
+      <itunes:duration>00:20:46</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Securing the Autonomous Frontier: Agentic Zero Trust Architecture</title>
+      <description>Securing the Autonomous Frontier: Agentic Zero Trust Architecture</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">d175baeb-7552-467f-8c02-93c14e4487d4</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/d175baeb-7552-467f-8c02-93c14e4487d4.m4a" type="audio/mp4" length="37903507"/>
+      <itunes:duration>00:19:37</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>2026 Index of U.S. Military Strength</title>
+      <description>2026 Index of U.S. Military Strength</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">b526e0ea-84bd-47b9-90e5-5f1b47ced496</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/b526e0ea-84bd-47b9-90e5-5f1b47ced496.m4a" type="audio/mp4" length="27060149"/>
+      <itunes:duration>00:14:00</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>The Evolution of AI Coding and Cognitive Mastery</title>
+      <description>The Evolution of AI Coding and Cognitive Mastery</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">ac70bdd5-f9cf-4c28-8f89-3b5141616bb2</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/ac70bdd5-f9cf-4c28-8f89-3b5141616bb2.m4a" type="audio/mp4" length="35603310"/>
+      <itunes:duration>00:18:26</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Modern GTO Poker: Theory and Practical Execution Strategies</title>
+      <description>Modern GTO Poker: Theory and Practical Execution Strategies</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">98feae12-eb0d-446a-aef1-f5124e7e59dd</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/98feae12-eb0d-446a-aef1-f5124e7e59dd.m4a" type="audio/mp4" length="34582507"/>
+      <itunes:duration>00:17:54</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>大阪万博のレガシー継承と公園活性化ビジョン2040</title>
+      <description>大阪万博のレガシー継承と公園活性化ビジョン2040</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">90a5c883-4938-4392-a58c-9289766f6a10</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/90a5c883-4938-4392-a58c-9289766f6a10.m4a" type="audio/mp4" length="36394772"/>
+      <itunes:duration>00:18:50</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>ニデック（旧日本電産）：組織文化の変遷とガバナンスの構造的課題の分析 (2026)</title>
+      <description>ニデック（旧日本電産）：組織文化の変遷とガバナンスの構造的課題の分析 (2026)</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">9099d325-2afe-403c-bdd5-9c7719c0af2b</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/9099d325-2afe-403c-bdd5-9c7719c0af2b.m4a" type="audio/mp4" length="37681636"/>
+      <itunes:duration>00:19:30</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Evolutionary Database Audit Checklist for Generative AI Processes</title>
+      <description>Evolutionary Database Audit Checklist for Generative AI Processes</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">8ec0f1f4-b11e-433e-9f0a-726786af0f29</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/8ec0f1f4-b11e-433e-9f0a-726786af0f29.m4a" type="audio/mp4" length="34859028"/>
+      <itunes:duration>00:18:03</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>頂き女子りりちゃんのマニュアルと搾取の心理学</title>
+      <description>頂き女子りりちゃんのマニュアルと搾取の心理学</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">8e956a85-5334-46ed-acd1-0bf90f75c174</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/8e956a85-5334-46ed-acd1-0bf90f75c174.m4a" type="audio/mp4" length="21341722"/>
+      <itunes:duration>00:11:03</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>ASIC and FPGA Design: Technology, Costs, and Lifecycle Management</title>
+      <description>ASIC and FPGA Design: Technology, Costs, and Lifecycle Management</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">74eb6d60-167d-4dbd-913d-3fd67361182d</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/74eb6d60-167d-4dbd-913d-3fd67361182d.m4a" type="audio/mp4" length="39935516"/>
+      <itunes:duration>00:20:40</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Strategies for Type 2 Diabetes Prevention</title>
+      <description>Strategies for Type 2 Diabetes Prevention</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">73ce7032-c67f-4029-a8fc-4046992bb84e</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/73ce7032-c67f-4029-a8fc-4046992bb84e.m4a" type="audio/mp4" length="40371903"/>
+      <itunes:duration>00:20:54</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Slay the Spire 2 Beta Balance and Silent Strategy Analysis</title>
+      <description>Slay the Spire 2 Beta Balance and Silent Strategy Analysis</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">6f11593b-4822-49cf-8b3c-98ef8b510fe2</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/6f11593b-4822-49cf-8b3c-98ef8b510fe2.m4a" type="audio/mp4" length="39830815"/>
+      <itunes:duration>00:20:37</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Japanese Corporate Performance and Market Metrics Ranking</title>
+      <description>Japanese Corporate Performance and Market Metrics Ranking</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">5ef85a88-da43-4bb8-a3b1-c16142e9b649</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/5ef85a88-da43-4bb8-a3b1-c16142e9b649.m4a" type="audio/mp4" length="38937872"/>
+      <itunes:duration>00:20:09</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>The Modular Agent: Evolution of Skill-Based AI Systems</title>
+      <description>The Modular Agent: Evolution of Skill-Based AI Systems</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">5d810994-87f7-40a0-a464-837c9126462c</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/5d810994-87f7-40a0-a464-837c9126462c.m4a" type="audio/mp4" length="31719559"/>
+      <itunes:duration>00:16:25</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Slay the Spire 2 Strategy and Character Guides</title>
+      <description>Slay the Spire 2 Strategy and Character Guides</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">5c99e292-d60b-41ca-9e64-fb7853235242</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/5c99e292-d60b-41ca-9e64-fb7853235242.m4a" type="audio/mp4" length="29967173"/>
+      <itunes:duration>00:15:31</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Diffusion Models for Zeolite Synthesis and Inverse Design</title>
+      <description>Diffusion Models for Zeolite Synthesis and Inverse Design</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">5664fc24-f78e-46a8-9c30-d5fbd406f0f3</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/5664fc24-f78e-46a8-9c30-d5fbd406f0f3.m4a" type="audio/mp4" length="40117794"/>
+      <itunes:duration>00:20:46</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>ソフトバンクグループ</title>
+      <description>ソフトバンクグループ</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">53dcc5a5-31d7-46a7-8cb8-8bd69236c6be</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/53dcc5a5-31d7-46a7-8cb8-8bd69236c6be.m4a" type="audio/mp4" length="32936948"/>
+      <itunes:duration>00:17:03</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>SkillOpt: Systematic Optimization and Engineering of Agent Skills</title>
+      <description>SkillOpt: Systematic Optimization and Engineering of Agent Skills</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">5366cade-ea56-40f9-a19c-af0d25a330b3</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/5366cade-ea56-40f9-a19c-af0d25a330b3.m4a" type="audio/mp4" length="42891098"/>
+      <itunes:duration>00:22:12</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Gemma 4: The Evolution of Local Multimodal Intelligence</title>
+      <description>Gemma 4: The Evolution of Local Multimodal Intelligence</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">52a3d95a-0ba6-4884-9d5a-8b67e8553465</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/52a3d95a-0ba6-4884-9d5a-8b67e8553465.m4a" type="audio/mp4" length="27378504"/>
+      <itunes:duration>00:14:10</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Slay the Spire 2: Necrobinder Tips and Boss Strategies</title>
+      <description>Slay the Spire 2: Necrobinder Tips and Boss Strategies</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">456b3c13-48a2-4839-a877-7be271fbf658</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/456b3c13-48a2-4839-a877-7be271fbf658.m4a" type="audio/mp4" length="38999129"/>
+      <itunes:duration>00:20:11</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>ゆるストイック：ノイズを断ち、淡々と成果を積み上げる思考術</title>
+      <description>ゆるストイック：ノイズを断ち、淡々と成果を積み上げる思考術</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">3e7a7397-b22c-4f3c-9d95-d88e5a130d3b</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/3e7a7397-b22c-4f3c-9d95-d88e5a130d3b.m4a" type="audio/mp4" length="41759618"/>
+      <itunes:duration>00:21:37</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Bitcoin Savior: Success in Recovering Lost Crypto Assets</title>
+      <description>Bitcoin Savior: Success in Recovering Lost Crypto Assets</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">30eb6ebe-0300-4626-b539-da25db9ac910</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/30eb6ebe-0300-4626-b539-da25db9ac910.m4a" type="audio/mp4" length="24565607"/>
+      <itunes:duration>00:12:43</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>SBF’s Lost Fortune: The Trillion-Dollar Venture Capital Paradox</title>
+      <description>SBF’s Lost Fortune: The Trillion-Dollar Venture Capital Paradox</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">221f2ecb-1930-4be0-8a2e-75cf9d416587</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/221f2ecb-1930-4be0-8a2e-75cf9d416587.m4a" type="audio/mp4" length="40098371"/>
+      <itunes:duration>00:20:45</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>SPARC and the Digital Future of Commercial Fusion Energy</title>
+      <description>SPARC and the Digital Future of Commercial Fusion Energy</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">1f73c54a-0a2f-460a-950a-8249638377f0</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/1f73c54a-0a2f-460a-950a-8249638377f0.m4a" type="audio/mp4" length="42167733"/>
+      <itunes:duration>00:21:50</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>The Modern AITuber Development and Implementation Guide</title>
+      <description>The Modern AITuber Development and Implementation Guide</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">1e360c76-4b99-418e-86e8-53b2a71f9f73</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/1e360c76-4b99-418e-86e8-53b2a71f9f73.m4a" type="audio/mp4" length="39748641"/>
+      <itunes:duration>00:20:35</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>AIエージェント導入・ガバナンスと実務スキル完全ガイド</title>
+      <description>AIエージェント導入・ガバナンスと実務スキル完全ガイド</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">16fed6ba-53a1-440d-9c3f-ed6fd3bc48bc</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/16fed6ba-53a1-440d-9c3f-ed6fd3bc48bc.m4a" type="audio/mp4" length="33189563"/>
+      <itunes:duration>00:17:11</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Blender Development Challenges and the Future of 3D Technology</title>
+      <description>Blender Development Challenges and the Future of 3D Technology</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">149fa70b-5eb2-4f8f-ba19-56817e8ac634</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/149fa70b-5eb2-4f8f-ba19-56817e8ac634.m4a" type="audio/mp4" length="39137331"/>
+      <itunes:duration>00:20:16</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>ARK Invest Q1 2026: The Frontier of Innovation and AI</title>
+      <description>ARK Invest Q1 2026: The Frontier of Innovation and AI</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">143a4c0c-b1e5-4ff1-a576-91cc017d18c4</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/143a4c0c-b1e5-4ff1-a576-91cc017d18c4.m4a" type="audio/mp4" length="44423107"/>
+      <itunes:duration>00:23:00</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Landscope: Nature and Conservation in Western Australia Winter 1993</title>
+      <description>Landscope: Nature and Conservation in Western Australia Winter 1993</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">10ad8cfd-54ff-46c5-9b82-697694e93005</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/10ad8cfd-54ff-46c5-9b82-697694e93005.m4a" type="audio/mp4" length="39889947"/>
+      <itunes:duration>00:20:39</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>VRChat and Linux Technical Configuration Guides</title>
+      <description>VRChat and Linux Technical Configuration Guides</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">0cb848aa-8883-43cc-b96e-0e7e430ff7b7</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/0cb848aa-8883-43cc-b96e-0e7e430ff7b7.m4a" type="audio/mp4" length="38426666"/>
+      <itunes:duration>00:19:53</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>The Agent Psychosis: Andrej Karpathy on the Loopy Era</title>
+      <description>The Agent Psychosis: Andrej Karpathy on the Loopy Era</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">03c0b453-092b-4ab2-8439-4527e9adaaeb</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/03c0b453-092b-4ab2-8439-4527e9adaaeb.m4a" type="audio/mp4" length="47973563"/>
+      <itunes:duration>00:24:50</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Slay the Spire 2: Strategy Guide and Database Index</title>
+      <description>Slay the Spire 2: Strategy Guide and Database Index</description>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">0338eb66-d16d-4d2b-9992-39627bcf8de1</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/0338eb66-d16d-4d2b-9992-39627bcf8de1.m4a" type="audio/mp4" length="41920347"/>
+      <itunes:duration>00:21:42</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
   </channel>
