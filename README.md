@@ -14,3 +14,11 @@ nlm auth
 - `nlm chat <ID>`: チャット
 
 詳細は `nlm --help` 🐾✨
+
+## 🎧 Podcast Feed
+
+KAFKA Intelligence Podcast の配信フィードおよびカバーアートが本リポジトリで公開されています。
+
+- **フィード URL**: [https://kafka2306.github.io/nlm/feed.xml](https://kafka2306.github.io/nlm/feed.xml)
+- **Podcast用データ**: `podcast/feed.xml` および `docs/` にて管理されています。
+
