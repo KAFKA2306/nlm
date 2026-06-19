@@ -1,20 +1,25 @@
 <?xml version="1.0" ?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>KAFKA Intelligence Podcast</title>
-    <link>https://github.com/KAFKA2306/nlm</link>
+    <link>https://kafka2306.github.io/nlm/</link>
     <atom:link href="https://kafka2306.github.io/nlm/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Automated research summaries and intelligence logs from the KAFKA Knowledge Runtime.</description>
     <language>ja</language>
     <itunes:author>KAFKA</itunes:author>
+    <itunes:type>serial</itunes:type>
+    <itunes:image href="https://kafka2306.github.io/nlm/artwork.png"/>
+    <itunes:explicit>false</itunes:explicit>
+    <copyright>© 2026 KAFKA</copyright>
     <itunes:category text="Technology"/>
     <item>
       <title>20260617_episode</title>
       <description>Automatic summary for 20260617_episode.mp3</description>
       <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260617_93826225</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault/20260617_episode.mp3" type="audio/mpeg" length="943581"/>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault/20260617_episode.mp3" type="audio/mpeg" length="0"/>
       <itunes:duration>00:02:37</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
     </item>
   </channel>
 </rss>
