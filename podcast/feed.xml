@@ -3,7 +3,7 @@
   <channel>
     <title>KAFKA Intelligence Podcast</title>
     <link>https://github.com/KAFKA2306/nlm</link>
-    <atom:link href="https://raw.githubusercontent.com/KAFKA2306/nlm/main/podcast/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://kafka2306.github.io/nlm/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Automated research summaries and intelligence logs from the KAFKA Knowledge Runtime.</description>
     <language>ja</language>
     <itunes:author>KAFKA</itunes:author>
