@@ -4,8 +4,8 @@
     <title>KAFKA探究室</title>
     <link>https://kafka2306.github.io/nlm/</link>
     <atom:link href="https://kafka2306.github.io/nlm/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>These documents provide a comprehensive look at the financial landscape of Baron Funds and SpaceX through official filings and market updates from 2024 to 2026. Baron Select Funds reports strong 2023 performance driven by its significant stake in Tesla, Inc., while maintaining a portfolio focused on long-term growth across sectors like real estate and healthcare. Future-dated reports indicate that SpaceX has confidentially filed for what could be the largest IPO in history, aiming for a valuation exceeding $2 trillion. This offering is expected to integrate Starlink and xAI, emphasizing a strategic pivot toward orbital data centers and advanced semiconductors. Simultaneously, ARK Invest discusses its entry into OpenAI and analyzes how emerging technologies will redefine market values for cybersecurity and autonomous transport. Together, these sources highlight the increasing convergence of traditional investment management with frontier developments in space and artificial intelligence.</description>
-    <itunes:summary>These documents provide a comprehensive look at the financial landscape of Baron Funds and SpaceX through official filings and market updates from 2024 to 2026. Baron Select Funds reports strong 2023 performance driven by its significant stake in Tesla, Inc., while maintaining a portfolio focused on long-term growth across sectors like real estate and healthcare. Future-dated reports indicate that SpaceX has confidentially filed for what could be the largest IPO in history, aiming for a valuation exceeding $2 trillion. This offering is expected to integrate Starlink and xAI, emphasizing a strategic pivot toward orbital data centers and advanced semiconductors. Simultaneously, ARK Invest discusses its entry into OpenAI and analyzes how emerging technologies will redefine market values for cybersecurity and autonomous transport. Together, these sources highlight the increasing convergence of traditional investment management with frontier developments in space and artificial intelligence.</itunes:summary>
+    <description>These documents provide a comprehensive look at the financial health and strategic initiatives of Baron Funds, SpaceX, and ARK Invest as they navigate the evolving economic landscape of 2024 through 2026. Official SEC filings from Baron Select Funds detail the performance and sector weightings of various portfolios, highlighting a significant investment focus on Tesla. Complementing these reports, a FinTech Weekly article and an ARK webinar discuss SpaceX's transition toward a historic Initial Public Offering valued at over $2 trillion. The company is reportedly integrating xAI and Starlink to pitch a valuation centered on orbital data centers and advanced semiconductor manufacturing through the Terafab project. Furthermore, the sources explore the broader implications of generative AI and cybersecurity on global markets and productivity. Together, these materials offer expert analysis on how high-growth technologies and active management strategies are responding to macroeconomic shifts and geopolitical uncertainties.</description>
+    <itunes:summary>These documents provide a comprehensive look at the financial health and strategic initiatives of Baron Funds, SpaceX, and ARK Invest as they navigate the evolving economic landscape of 2024 through 2026. Official SEC filings from Baron Select Funds detail the performance and sector weightings of various portfolios, highlighting a significant investment focus on Tesla. Complementing these reports, a FinTech Weekly article and an ARK webinar discuss SpaceX's transition toward a historic Initial Public Offering valued at over $2 trillion. The company is reportedly integrating xAI and Starlink to pitch a valuation centered on orbital data centers and advanced semiconductor manufacturing through the Terafab project. Furthermore, the sources explore the broader implications of generative AI and cybersecurity on global markets and productivity. Together, these materials offer expert analysis on how high-growth technologies and active management strategies are responding to macroeconomic shifts and geopolitical uncertainties.</itunes:summary>
     <language>ja</language>
     <itunes:author>KAFKA</itunes:author>
     <itunes:type>serial</itunes:type>
@@ -45,7 +45,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIで軌道フロンティア: AI、太陽光発電、宇宙物流の見方は変わる？</title>
+      <title>軌道フロンティアにAIを使うと何が楽になる？</title>
       <description>Automatic summary for 1ce9c9c9-ce82-4bdc-8d24-133cc26c32ee.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_eb75c91e</guid>
@@ -81,7 +81,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>Novelty Searchで何が変わる？</title>
+      <title>新しい解をどう見つける？</title>
       <description>Automatic summary for b0a4e145-3033-4f57-9796-0b3282ced31b.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_e0138abc</guid>
@@ -99,7 +99,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>TSMC と世界的な AI チップ競争: 202でAIは何が変わる？</title>
+      <title>TSMC と世界的な AI チップ競争: 202でAIが先に効くのはどこか？</title>
       <description>Automatic summary for 2bf89b58-ed26-4bb9-af47-e83be9683927.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_d8c6f340</guid>
@@ -252,7 +252,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>Frameworks Architectures 2026にAIを使うと何が楽になる？</title>
+      <title>Frameworks Architectures 2026にAIを入れると何が起きる？</title>
       <description>Automatic summary for d74796d1-e4f6-44b0-b700-4f72d865b491.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_6fd36ccd</guid>
@@ -270,7 +270,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>哲学と心理学のデジタル統合はどう使いこなす</title>
+      <title>哲学と心理学のデジタル統合はどう使いこなす？</title>
       <description>Automatic summary for f891fbc0-6fe3-4066-b633-5b1b86f0d2b0.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_63a47f53</guid>
@@ -297,7 +297,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>最小限の介入歯科治療の原則と目的の何が次の一手になる</title>
+      <title>最小限の介入歯科治療の原則と目的の何が次の一手になる？</title>
       <description>Automatic summary for e380f7f8-dee0-46a6-b7c1-6ba1e43da758.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_57add073</guid>
@@ -378,7 +378,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIでPrioritizing Mastery Overの見方は変わる？</title>
+      <title>パフォーマンスよりも習熟を優先するにAIを使うと何が楽になる？</title>
       <description>Automatic summary for 03191b17-11fd-4835-b204-b3e8cf12ef65.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_3ea0b7a0</guid>
@@ -387,7 +387,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>聞き続けたくなる声はどう作る？</title>
+      <title>次世代の音声 AI およびメディア処理ツールにAIを使うと何が楽になる？</title>
       <description>Automatic summary for 30e645ae-266b-45c7-a6ce-5c483f985b93.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_3d1c77e5</guid>
@@ -396,7 +396,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>スーパーインテリジェンスへのロードマップの見落としは何？</title>
+      <title>スーパーインテリジェンスへのロードマップの見落としは何の見方は変わる？</title>
       <description>Automatic summary for 2afebc46-79dd-484c-a8fb-3e52ef3e3a3f.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_2f579832</guid>
@@ -423,7 +423,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>次の勝ち筋は設計か製造か？（AI 半導体市場 2026: TSM）</title>
+      <title>AIチップの首都はどこに移る？</title>
       <description>Automatic summary for 69b52f7c-b6d0-477a-9e33-e2305ec7f6d3.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_200f3bf6</guid>
@@ -441,7 +441,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AGI から ASI への道は誰に効くは誰に効く？</title>
+      <title>AGI から ASI への道は誰に効く？</title>
       <description>Automatic summary for e496738e-b9a1-44f7-886f-9f76cfae022c.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_1d92a468</guid>
@@ -477,7 +477,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>究極のアバター衣装変換ガイド何が難しい</title>
+      <title>究極のアバター衣装変換ガイド何が難しい？</title>
       <description>Automatic summary for 5543ea67-f0ee-40b7-b3e9-c85e0ea86b0a.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_11548695</guid>
@@ -486,7 +486,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>不動産の謎と都市の詩学の何が次の一手になる</title>
+      <title>不動産の謎と都市の詩学の何が次の一手になる？</title>
       <description>Automatic summary for fff7526c-fba3-4af1-8787-ee21f9fb5452.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_07eee747</guid>
@@ -675,7 +675,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIチップの首都はどこに移る？</title>
+      <title>AIチップの首都はどこに移る？（半導体の展望: 台湾の人材と世界のメ）</title>
       <description>Automatic summary for eba2c7a1-4b2e-4e47-b278-e157daf15120.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">eba2c7a1-4b2e-4e47-b278-e157daf15120</guid>
@@ -855,7 +855,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>不動産の謎と都市の詩学の何が次の一手になる？</title>
+      <title>不動産の謎と都市の詩学の何が次の一手になる？（問題の性質: 不動産の謎と都市の詩学）</title>
       <description>Problem Properties: Real Estate Mysteries and Urban Poetics</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">de825fb9-e7cf-4af4-a2b7-7dd91af2d5af</guid>
@@ -909,7 +909,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>新しい解をどう見つける？</title>
+      <title>新しい解をどう見つける？（進化的精神医学と神経多様性パラダイム）</title>
       <description>Evolutionary Psychiatry and the Neurodiversity Paradigm</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">d6a849ad-bc9f-402c-887f-bdf5de181ea8</guid>
@@ -1170,7 +1170,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>聞き続けたくなる声はどう作る？（シーンマ オーディオ: 表現力豊かな）</title>
+      <title>聞き続けたくなる声はどう作る？</title>
       <description>Scenema Audio: Expressive Zero-Shot Voice Cloning and Speech Generation</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">b5a76293-3c5c-4b0f-8f44-13ea48b6537c</guid>
@@ -1260,7 +1260,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>Novelty Searchで何が変わる？（AI コーディングと認知的マスタリー）</title>
+      <title>Novelty Searchで何が変わる？</title>
       <description>The Evolution of AI Coding and Cognitive Mastery</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">ac70bdd5-f9cf-4c28-8f89-3b5141616bb2</guid>
@@ -1278,7 +1278,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>不動産の謎と都市の詩学の何が次の一手になる？（問題の性質: 不動産の謎と都市の詩学）</title>
+      <title>不動産の謎と都市の詩学の何が次の一手になる？（5bf5）</title>
       <description>Automatic summary for ab888473-ae12-4913-bd3d-7feb18d72d92.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">ab888473-ae12-4913-bd3d-7feb18d72d92</guid>
@@ -1890,7 +1890,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIチップの首都はどこに移る？（半導体の展望: 台湾の人材と世界のメ）</title>
+      <title>AIチップの首都はどこに移る？（6830）</title>
       <description>Semiconductor Landscapes: Talent in Taiwan and Global Memory Trends</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">73fd0b2a-849f-4ab1-92c1-379de27f53ba</guid>
@@ -3376,7 +3376,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>次の勝ち筋は設計か製造か？（132d）</title>
+      <title>次の勝ち筋は設計か製造か？（AI 半導体市場 2026: TSM）</title>
       <description>AI Semiconductor Market 2026: TSMC and NVIDIA Strategic Analysis</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">f7e1106f-c2f7-4835-97b1-5f9e4451b384</guid>
@@ -3403,7 +3403,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>スーパーインテリジェンスへのロードマップの見落としは何？（スーパーインテリジェンスへのロードマ）</title>
+      <title>スーパーインテリジェンスへのロードマップの見落としは何？</title>
       <description>Roadmaps to Superintelligence: Safety, Scaling, and Self-Improvement</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">efad6b29-9770-4c48-8088-da1a0f218afd</guid>
@@ -3439,7 +3439,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>スーパーインテリジェンスへのロードマップの見落としは何？（a319）</title>
+      <title>スーパーインテリジェンスへのロードマップの見落としは何？（スーパーインテリジェンスへのロードマ）</title>
       <description>Roadmaps to Superintelligence: Safety, Scaling, and Self-Improvement</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">d5e7c458-166b-461c-a359-bb877b3c59e2</guid>
@@ -3520,7 +3520,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AGI から ASI への道は誰に効く？</title>
+      <title>AGI から ASI への道は誰に効く？（スーパーインテリジェンスへの道: A）</title>
       <description>The Road to Superintelligence: Pathways from AGI to ASI</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">73e7c636-a2cc-424a-8730-91f4b7ee857a</guid>
@@ -3574,7 +3574,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AGI から ASI への道は誰に効く？（スーパーインテリジェンスへの道: A）</title>
+      <title>AGI から ASI への道は誰に効く？（8bb0）</title>
       <description>The Road to Superintelligence: Pathways from AGI to ASI</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">4c33bb05-84ae-40c8-ad3e-16d20595b5d6</guid>
@@ -3601,7 +3601,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>軌道フロンティアにAIを使うと何が楽になる？</title>
+      <title>軌道フロンティアにAIを使うと何が楽になる？（軌道フロンティア: AI、太陽光発電）</title>
       <description>The Orbital Frontier: AI, Solar Power, and Space Logistics</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">40cfb19e-8bbf-42ce-8d65-9cfc67bb11be</guid>
