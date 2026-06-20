@@ -4,8 +4,8 @@
     <title>KAFKA探究室</title>
     <link>https://kafka2306.github.io/nlm/</link>
     <atom:link href="https://kafka2306.github.io/nlm/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>This collection of documents details the financial performance and future strategic directions of major investment firms, primarily focusing on Baron Funds and ARK Invest. The 2023 Baron Select Funds annual report highlights significant growth in portfolios like the Baron Partners Fund, which outperformed benchmarks largely due to its substantial stake in Tesla. Transitioning into 2026, FinTech Weekly and ARK Funds report on a landmark confidential IPO filing by SpaceX, targeting a valuation exceeding $2 trillion through a merger of space technology, social media, and artificial intelligence. ARK CEO Cathie Wood further discusses new ETF positions in OpenAI and the emergence of orbital data centers as a massive new market. Collectively, the sources provide a comprehensive look at active management strategies and the massive scale of disruptive innovation across the automotive, aerospace, and AI sectors.</description>
-    <itunes:summary>This collection of documents details the financial performance and future strategic directions of major investment firms, primarily focusing on Baron Funds and ARK Invest. The 2023 Baron Select Funds annual report highlights significant growth in portfolios like the Baron Partners Fund, which outperformed benchmarks largely due to its substantial stake in Tesla. Transitioning into 2026, FinTech Weekly and ARK Funds report on a landmark confidential IPO filing by SpaceX, targeting a valuation exceeding $2 trillion through a merger of space technology, social media, and artificial intelligence. ARK CEO Cathie Wood further discusses new ETF positions in OpenAI and the emergence of orbital data centers as a massive new market. Collectively, the sources provide a comprehensive look at active management strategies and the massive scale of disruptive innovation across the automotive, aerospace, and AI sectors.</itunes:summary>
+    <description>These documents provide a comprehensive look at the financial landscape of Baron Funds and SpaceX through official filings and market updates from 2024 to 2026. Baron Select Funds reports strong 2023 performance driven by its significant stake in Tesla, Inc., while maintaining a portfolio focused on long-term growth across sectors like real estate and healthcare. Future-dated reports indicate that SpaceX has confidentially filed for what could be the largest IPO in history, aiming for a valuation exceeding $2 trillion. This offering is expected to integrate Starlink and xAI, emphasizing a strategic pivot toward orbital data centers and advanced semiconductors. Simultaneously, ARK Invest discusses its entry into OpenAI and analyzes how emerging technologies will redefine market values for cybersecurity and autonomous transport. Together, these sources highlight the increasing convergence of traditional investment management with frontier developments in space and artificial intelligence.</description>
+    <itunes:summary>These documents provide a comprehensive look at the financial landscape of Baron Funds and SpaceX through official filings and market updates from 2024 to 2026. Baron Select Funds reports strong 2023 performance driven by its significant stake in Tesla, Inc., while maintaining a portfolio focused on long-term growth across sectors like real estate and healthcare. Future-dated reports indicate that SpaceX has confidentially filed for what could be the largest IPO in history, aiming for a valuation exceeding $2 trillion. This offering is expected to integrate Starlink and xAI, emphasizing a strategic pivot toward orbital data centers and advanced semiconductors. Simultaneously, ARK Invest discusses its entry into OpenAI and analyzes how emerging technologies will redefine market values for cybersecurity and autonomous transport. Together, these sources highlight the increasing convergence of traditional investment management with frontier developments in space and artificial intelligence.</itunes:summary>
     <language>ja</language>
     <itunes:author>KAFKA</itunes:author>
     <itunes:type>serial</itunes:type>
@@ -45,7 +45,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIが一番得意なのは何か？</title>
+      <title>AIで軌道フロンティア: AI、太陽光発電、宇宙物流の見方は変わる？</title>
       <description>Automatic summary for 1ce9c9c9-ce82-4bdc-8d24-133cc26c32ee.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_eb75c91e</guid>
@@ -81,7 +81,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>新しい解をどう見つける？</title>
+      <title>Novelty Searchで何が変わる？</title>
       <description>Automatic summary for b0a4e145-3033-4f57-9796-0b3282ced31b.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_e0138abc</guid>
@@ -99,7 +99,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AI導入で最初に変わるのはどこか？</title>
+      <title>TSMC と世界的な AI チップ競争: 202でAIは何が変わる？</title>
       <description>Automatic summary for 2bf89b58-ed26-4bb9-af47-e83be9683927.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_d8c6f340</guid>
@@ -117,7 +117,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIエージェントに任せていい作業はどこまでか？</title>
+      <title>Agentic Intelligence の台頭でAIは何が変わる？</title>
       <description>Automatic summary for ae9f9044-99ae-452e-ab25-3a2ae4eae8aa.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_cb91652f</guid>
@@ -189,7 +189,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AI導入で最初に変わるのはどこか？</title>
+      <title>Investigating Digital CulturalでAIは何が変わる？</title>
       <description>Automatic summary for 041d16cc-07c0-4768-82c7-7b33523632b7.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_89571f9f</guid>
@@ -207,7 +207,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIは何を覚えて何を忘れるのか？</title>
+      <title>経済学、アーキテクチャ、および機能状態の研究でAIが先に効くのはどこか？</title>
       <description>Automatic summary for c53f81c6-f828-4d11-ae66-5971f67b93db.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_7eb12293</guid>
@@ -252,7 +252,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIに任せていい作業はどこまでか？</title>
+      <title>Frameworks Architectures 2026にAIを使うと何が楽になる？</title>
       <description>Automatic summary for d74796d1-e4f6-44b0-b700-4f72d865b491.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_6fd36ccd</guid>
@@ -270,7 +270,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>哲学と心理学のデジタル統合はどう使いこなす？</title>
+      <title>哲学と心理学のデジタル統合はどう使いこなす</title>
       <description>Automatic summary for f891fbc0-6fe3-4066-b633-5b1b86f0d2b0.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_63a47f53</guid>
@@ -279,7 +279,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIはどこで人間を超えるのか？</title>
+      <title>Frontiers Scientific MathematicalでAIが先に効くのはどこか？</title>
       <description>Automatic summary for 72402fb8-879d-40b3-aa9f-8d308b41e4e2.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_5b48291d</guid>
@@ -297,7 +297,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>最小限の介入歯科治療の原則と目的の何が次の一手になる？</title>
+      <title>最小限の介入歯科治療の原則と目的の何が次の一手になる</title>
       <description>Automatic summary for e380f7f8-dee0-46a6-b7c1-6ba1e43da758.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_57add073</guid>
@@ -333,7 +333,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>公爵戦略が強いのはなぜ勝ち筋は勝ち筋は勝ち筋は勝ち筋は？</title>
+      <title>公爵戦略が強いのはなぜ勝ち筋は勝ち筋は勝ち筋は勝ち筋は勝勝ち筋は？</title>
       <description>Automatic summary for 82e41b1f-c7aa-4c38-81f5-91c7aee76b8d.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_4967b0dc</guid>
@@ -378,7 +378,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIはどの仕事を先に奪うのか？</title>
+      <title>AIでPrioritizing Mastery Overの見方は変わる？</title>
       <description>Automatic summary for 03191b17-11fd-4835-b204-b3e8cf12ef65.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_3ea0b7a0</guid>
@@ -396,7 +396,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>スーパーインテリジェンスへのロードマップの見落としは何の見方は変わる？</title>
+      <title>スーパーインテリジェンスへのロードマップの見落としは何？</title>
       <description>Automatic summary for 2afebc46-79dd-484c-a8fb-3e52ef3e3a3f.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_2f579832</guid>
@@ -423,7 +423,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>次の勝ち筋は設計か製造か？</title>
+      <title>次の勝ち筋は設計か製造か？（AI 半導体市場 2026: TSM）</title>
       <description>Automatic summary for 69b52f7c-b6d0-477a-9e33-e2305ec7f6d3.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_200f3bf6</guid>
@@ -432,7 +432,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIは本当に使える？</title>
+      <title>ARK Invest Q1でAIは何が変わる？</title>
       <description>Automatic summary for cba47e40-b6c8-48f0-beb5-c920d673ada2.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_1fca9779</guid>
@@ -441,7 +441,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AGI から ASI への道は誰に効く？</title>
+      <title>AGI から ASI への道は誰に効くは誰に効く？</title>
       <description>Automatic summary for e496738e-b9a1-44f7-886f-9f76cfae022c.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_1d92a468</guid>
@@ -477,7 +477,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>究極のアバター衣装変換ガイド何が難しい？</title>
+      <title>究極のアバター衣装変換ガイド何が難しい</title>
       <description>Automatic summary for 5543ea67-f0ee-40b7-b3e9-c85e0ea86b0a.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_11548695</guid>
@@ -486,7 +486,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>不動産の謎と都市の詩学の何が次の一手になる？</title>
+      <title>不動産の謎と都市の詩学の何が次の一手になる</title>
       <description>Automatic summary for fff7526c-fba3-4af1-8787-ee21f9fb5452.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_07eee747</guid>
@@ -495,7 +495,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>人間が残すべき役割は何か？</title>
+      <title>Afterlife Debris FrontierにAIを入れると何が起きる？</title>
       <description>Automatic summary for 5b5c0569-7288-4f5f-b17b-a1d1b559a7d4.m4a</description>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">20260620_076ce35d</guid>
@@ -513,7 +513,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>進化的設計の勝負所はどこか？</title>
+      <title>進化的設計の勝負所はどこか？（Stepping Stones: ノ）</title>
       <description>Automatic summary for fbbe7ba1-303e-4f16-81af-2e7d034cc067.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">fbbe7ba1-303e-4f16-81af-2e7d034cc067</guid>
@@ -531,7 +531,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIが一番得意なのは何か？</title>
+      <title>2026 年の LiteLLM サプライ チェーにAIを入れると何が起きる？</title>
       <description>The 2026 LiteLLM Supply Chain Compromise Analysis</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">f9c87dab-2647-47a5-b17b-da20f8119431</guid>
@@ -558,7 +558,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIはどの仕事を先に奪うのか？</title>
+      <title>グローバルな ガバナンスと財務安定のフレームワークでAIは何が変わる？</title>
       <description>Global AI Governance and Financial Stability Frameworks</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">f768241a-cd51-4cd2-b708-19ae9b7cdbfb</guid>
@@ -594,7 +594,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>忘れないAIは本当に作れる？</title>
+      <title>、長期ストレージ、ベクトル DBにAIを使うと何が楽になる？</title>
       <description>Modern AI Memory Architectures: RAG, Long-Term Storage, and Vector DBs</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">f38bcb54-e62a-4045-a3cb-f741ee879878</guid>
@@ -612,7 +612,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>人間が残すべき役割は何か？</title>
+      <title>経済学、アーキテクチャ、および機能状態の研究にAIを入れると何が起きる？</title>
       <description>AI Frontiers 2026: Economics, Architecture, and Functional State Research</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">f2a4c23a-b102-4f41-bd62-4617bda62a81</guid>
@@ -657,7 +657,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>VR制作で最初に詰まるのはどこ？</title>
+      <title>VR制作で最初に詰まるのはどこ？（VRChat Raycast: 非破）</title>
       <description>VRChat Raycast: Techniques for Non-Destructive Avatar Interaction and Gimmicks</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">ee36ff0c-c6e1-4711-84e5-fc6e51067ab6</guid>
@@ -666,7 +666,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>人間が残すべき役割は何か？</title>
+      <title>AIで推論における認知的降伏の台頭の見方は変わる？</title>
       <description>The Rise of Cognitive Surrender in AI Reasoning</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">eca141a7-4b35-4b18-8302-53d8022d07d9</guid>
@@ -702,7 +702,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>ハート オブ クラウンどう勝つ？</title>
+      <title>ハート オブ クラウンどう勝つ？（ハート オブ クラウン 攻略ガイド:）</title>
       <description>Automatic summary for ea4a0775-6d62-48b9-b8a0-5a40883cba4d.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">ea4a0775-6d62-48b9-b8a0-5a40883cba4d</guid>
@@ -711,7 +711,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>進化的設計の勝負所はどこか？</title>
+      <title>進化的設計の勝負所はどこか？（2b3e）</title>
       <description>Stepping Stones: Unifying Novelty Search and Interactive Evolution</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">ea23fc11-90e3-48b2-8d7c-95b0218ad3d2</guid>
@@ -738,7 +738,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AI導入で最初に変わるのはどこか？</title>
+      <title>ガバナンスと著作権の危機にAIを入れると何が起きる？</title>
       <description>The Algorithmic Muse: AI Governance and the Crisis of Authorship</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">e873a662-f3e3-4a73-8b18-194e01f717e3</guid>
@@ -747,7 +747,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIはどの仕事を先に奪うのか？</title>
+      <title>時代のメタスキルでAIは何が変わる？</title>
       <description>Architecting the Future: Metaskills for the AI Age</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">e7d2f76a-c00f-4208-81f2-15b7dbd85e97</guid>
@@ -828,7 +828,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>日本のレジリエンスへの挑戦 2026はどこで勝負が決まる？</title>
+      <title>日本のレジリエンスへの挑戦 2026はどこで勝負が決まる？（ナフサ代替調達：日本のレジリエンスへ）</title>
       <description>ナフサ代替調達：日本のレジリエンスへの挑戦 (2026/03/29)</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">e3913d71-ba77-40b0-8578-e764698bd8f7</guid>
@@ -846,7 +846,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>自動化の境界はどこか？</title>
+      <title>永続的なワークフローのための自己改善型にAIを使うと何が楽になる？</title>
       <description>Hermes Agent: The Self-Improving AI for Perpetual Workflows</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">df8c7854-907b-42ff-a2c5-f541ea6dd9b3</guid>
@@ -873,7 +873,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>Defect Strategy と Tempest ガイはどこまで進める？</title>
+      <title>Defect Strategy と Tempest ガイはどこまで進める？（Slay the Spire 2:）</title>
       <description>Slay the Spire 2: Defect Strategy and Tempest Guide</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">dd43d084-12c8-4480-9bab-8afc7321de40</guid>
@@ -891,7 +891,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>人間が残すべき役割は何か？</title>
+      <title>AIで戦略的 の洞察の見方は変わる？</title>
       <description>Strategic AI Insights: Optimizing NotebookLM and YouTube Growth</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">d9a0f697-d151-4c04-adbf-43ad78dd2f4f</guid>
@@ -972,7 +972,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>進化的設計の勝負所はどこか？</title>
+      <title>進化的設計の勝負所はどこか？（Google のフルスタック AI）</title>
       <description>Google's Full-Stack AI Evolution: The Agentic Cloud Era</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">d0bac78f-50ae-4cba-805e-0a4ca77f0015</guid>
@@ -1008,7 +1008,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>第82次空挺展開とカールグ島戦略勝ち筋は？</title>
+      <title>第82次空挺展開とカールグ島戦略勝ち筋は？（第82次空挺展開とカールグ島戦略）</title>
       <description>82nd Airborne Deployment and the Kharg Island Strategy</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">cd532937-224f-4159-a3d4-9981739b6ff4</guid>
@@ -1062,7 +1062,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>本当に買い時なのはどこか？</title>
+      <title>本当に買い時なのはどこか？（多極秩序における世界的な投資戦略）</title>
       <description>Automatic summary for c56a43da-ca2c-42aa-8f5d-05c319c4ddcd.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">c56a43da-ca2c-42aa-8f5d-05c319c4ddcd</guid>
@@ -1080,7 +1080,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>アンドレイ・カルパシーがループ時代について語るはどこまで進める？</title>
+      <title>アンドレイ・カルパシーがループ時代について語るはどこまで進める？（エージェント精神病: アンドレイ・カ）</title>
       <description>Automatic summary for c3350492-abd1-45f4-8620-7e50bb1f8351.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">c3350492-abd1-45f4-8620-7e50bb1f8351</guid>
@@ -1089,7 +1089,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>ミニマリズムと隠者の考え方はどこまで進める？</title>
+      <title>ミニマリズムと隠者の考え方はどこまで進める？（無常の建築: ミニマリズムと隠者の考）</title>
       <description>Automatic summary for c1464a5c-f317-40b9-b1be-59d8cba91863.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">c1464a5c-f317-40b9-b1be-59d8cba91863</guid>
@@ -1107,7 +1107,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>ハート オブ クラウンどう勝つ？</title>
+      <title>ハート オブ クラウンどう勝つ？（01ea）</title>
       <description>Automatic summary for bcff8573-e108-411d-8e16-005e046d06f2.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">bcff8573-e108-411d-8e16-005e046d06f2</guid>
@@ -1116,7 +1116,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>声の設計で何が変わる？</title>
+      <title>声の設計で何が変わる？（音声のニュアンス: ASMR 生成と）</title>
       <description>Nuance in Speech: ASMR Generation and Filler Detection Breakthroughs</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">bcfc3af5-bc1d-4019-8434-3d25e62215b3</guid>
@@ -1170,7 +1170,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>聞き続けたくなる声はどう作る？</title>
+      <title>聞き続けたくなる声はどう作る？（シーンマ オーディオ: 表現力豊かな）</title>
       <description>Scenema Audio: Expressive Zero-Shot Voice Cloning and Speech Generation</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">b5a76293-3c5c-4b0f-8f44-13ea48b6537c</guid>
@@ -1188,7 +1188,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIはどの仕事を先に奪うのか？</title>
+      <title>エージェント アルゴリズム取引のための Python フでAIが先に効くのはどこか？</title>
       <description>Lumibot: Python Framework for AI Agentic Algorithmic Trading</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">b4fb3e58-7dc5-4692-bab3-941e1810a192</guid>
@@ -1197,7 +1197,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>応用情報技術者試験の過去問と解答はどう使いこなす？</title>
+      <title>応用情報技術者試験の過去問と解答はどう使いこなす？（応用情報技術者試験の過去問と解答）</title>
       <description>Automatic summary for b441d12a-7957-416d-b174-2aada9ad01fe.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">b441d12a-7957-416d-b174-2aada9ad01fe</guid>
@@ -1251,7 +1251,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>VR制作で最初に詰まるのはどこ？</title>
+      <title>VR制作で最初に詰まるのはどこ？（VRChat 2026: プラットフ）</title>
       <description>VRChat 2026: Balancing Platform Safety and User Freedom</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">ad274b78-6c51-4dd2-9dae-c6bad0d1a8a9</guid>
@@ -1260,7 +1260,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>Novelty Searchで何が変わる？</title>
+      <title>Novelty Searchで何が変わる？（AI コーディングと認知的マスタリー）</title>
       <description>The Evolution of AI Coding and Cognitive Mastery</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">ac70bdd5-f9cf-4c28-8f89-3b5141616bb2</guid>
@@ -1269,7 +1269,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>大規模言語モデルを使用したオントロジーで強化されたナレッの落とし穴はどこ？</title>
+      <title>大規模言語モデルを使用したオントロジーで強化されたナレッの落とし穴はどこ？（大規模言語モデルを使用したオントロジ）</title>
       <description>Automatic summary for abe42634-f300-4ad6-a8bb-35bcbe56c150.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">abe42634-f300-4ad6-a8bb-35bcbe56c150</guid>
@@ -1278,7 +1278,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>不動産の謎と都市の詩学の何が次の一手になる？</title>
+      <title>不動産の謎と都市の詩学の何が次の一手になる？（問題の性質: 不動産の謎と都市の詩学）</title>
       <description>Automatic summary for ab888473-ae12-4913-bd3d-7feb18d72d92.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">ab888473-ae12-4913-bd3d-7feb18d72d92</guid>
@@ -1287,7 +1287,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIが一番得意なのは何か？</title>
+      <title>AIでヤンデレ エージェント、 カウンセリング、リップ ノイズの見方は変わる？</title>
       <description>Digital Emotions: Yandere Agents, AI Counseling, and Lip Noise</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">aa5c6399-e4d8-4ca8-bdaa-f3e5670b2bd3</guid>
@@ -1296,7 +1296,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>ドットスキル蒸留フレームワークの見方は変わる？</title>
+      <title>ドットスキル蒸留フレームワークの見方は変わる？（Digital Life 1.0:）</title>
       <description>Automatic summary for a95e6835-0ee9-45f3-9db8-e26a134c2120.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">a95e6835-0ee9-45f3-9db8-e26a134c2120</guid>
@@ -1314,7 +1314,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>Novelty Searchで何が変わる？</title>
+      <title>Novelty Searchで何が変わる？（サイバー不死性: ヒューマンスキル蒸）</title>
       <description>Cyber Immortality: The Evolution of Human Skill Distillation AI</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">a639d7cf-c2c8-41b9-b062-d7eb8d97eeab</guid>
@@ -1395,7 +1395,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIは何を覚えて何を忘れるのか？</title>
+      <title>Google の高効率 圧縮および量子化戦略にAIを入れると何が起きる？</title>
       <description>Automatic summary for 9ea9ccdc-8ba6-4569-9a67-cdb66c555756.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">9ea9ccdc-8ba6-4569-9a67-cdb66c555756</guid>
@@ -1404,7 +1404,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>どのAIが現場で生き残る？</title>
+      <title>AIでASI と物理 の競争の見方は変わる？</title>
       <description>SoftBank and OpenAI: The Race for ASI and Physical AI</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">9ea328b6-6488-4d2e-9d6d-2c3e13b162a2</guid>
@@ -1413,7 +1413,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIはどこで人間を超えるのか？</title>
+      <title>モデル メモリとエージェントのフロンティアでAIが先に効くのはどこか？</title>
       <description>AI High Signal: The Frontier of Model Memory and Agents</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">9e074cec-da8b-4ca5-8653-9f1c8fdb69e1</guid>
@@ -1422,7 +1422,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>西洋の宗教芸術と図像の歴史の何が次の一手になる？</title>
+      <title>西洋の宗教芸術と図像の歴史の何が次の一手になる？（西洋の宗教芸術と図像の歴史）</title>
       <description>Western Religious Art and Iconography History</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">9ddbc9db-9967-4efe-b1cb-76c906148920</guid>
@@ -1431,7 +1431,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>ハート オブ クラウンどう勝つ？</title>
+      <title>ハート オブ クラウンどう勝つ？（03c7）</title>
       <description>Heart of Crown Strategy Guide: The Path to Victory</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">9dae01c6-8e6d-4797-9417-85736c4c8ea1</guid>
@@ -1467,7 +1467,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>Novelty Searchで何が変わる？</title>
+      <title>Novelty Searchで何が変わる？（Subnautica 2: 深海の進）</title>
       <description>Subnautica 2: Deep Sea Evolution and Psychological Horror Design</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">98918902-412b-457c-aa07-d9d1fa3d8911</guid>
@@ -1503,7 +1503,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>VR制作で最初に詰まるのはどこ？</title>
+      <title>VR制作で最初に詰まるのはどこ？（VRChat のトラブルシューティン）</title>
       <description>VRChat Troubleshooting and UnityPlayer.dll Repair Guide</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">94bd7063-6eb9-4ae1-9ef6-5f28fb478bde</guid>
@@ -1512,7 +1512,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>デジタルプレイとプレイヤーの行動の科学はどこまで進める？</title>
+      <title>デジタルプレイとプレイヤーの行動の科学はどこまで進める？（デジタルプレイとプレイヤーの行動の科）</title>
       <description>The Science of Digital Play and Player Behavior</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">918f7815-2c69-43c1-8bff-7a049a26d737</guid>
@@ -1521,7 +1521,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>GTO戦略とファストフォールドダイナミクスをマスターする勝ち筋は？</title>
+      <title>GTO戦略とファストフォールドダイナミクスをマスターする勝ち筋は？（GTO戦略とファストフォールドダイナ）</title>
       <description>Mastering GTO Strategy and Fast Fold Dynamics</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">91854bb2-0e38-4bc1-94a1-fe87d6a31150</guid>
@@ -1584,7 +1584,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>Novelty Searchで何が変わる？</title>
+      <title>Novelty Searchで何が変わる？（生成 AI プロセスの進化的データベ）</title>
       <description>Evolutionary Database Audit Checklist for Generative AI Processes</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">8ec0f1f4-b11e-433e-9f0a-726786af0f29</guid>
@@ -1602,7 +1602,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AI導入で最初に変わるのはどこか？</title>
+      <title>AIで文化的存在としての モデルの見方は変わる？</title>
       <description>AI Models as Cultural Beings: Investigating Digital Cultural Biases</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">8c1dd55c-d51a-4a0d-9be7-fadc90c508db</guid>
@@ -1611,7 +1611,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIは何を覚えて何を忘れるのか？</title>
+      <title>グラフを活用した メモリおよびナレッジ エンジン ガイドでAIが先に効くのはどこか？</title>
       <description>Cognee: Graph-Powered AI Memory and Knowledge Engine Guide</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">8b8b7497-b253-421a-8b5e-02e96729f145</guid>
@@ -1620,7 +1620,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>デジタルプレイとプレイヤーの行動の科学はどこまで進める？</title>
+      <title>デジタルプレイとプレイヤーの行動の科学はどこまで進める？（e998）</title>
       <description>Automatic summary for 8b7b3941-5801-4d53-b2b7-f97632e42cf0.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">8b7b3941-5801-4d53-b2b7-f97632e42cf0</guid>
@@ -1638,7 +1638,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>エージェント ハーネス エンジニアリングの原則を実現する条件は？</title>
+      <title>エージェント ハーネス エンジニアリングの原則を実現する条件は？（エージェント ハーネス エンジニアリ）</title>
       <description>The Principles of Agent Harness Engineering</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">8ac7e679-9fa2-42f7-bbb2-21bb372a7213</guid>
@@ -1647,7 +1647,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIはどの仕事を先に奪うのか？</title>
+      <title>AIでビザンチン神学、 グラフメモリ、エジプトの変容の見方は変わる？</title>
       <description>Byzantine Theology, AI Graph Memory, and Egyptian Transformation</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">87135104-1ceb-45a5-b211-b8a13da7a529</guid>
@@ -1728,7 +1728,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>Kaggle 戦略勝ち筋は？</title>
+      <title>Kaggle 戦略勝ち筋は？（Kaggle 戦略: クロード コー）</title>
       <description>Kaggle Strategy: Claude Code Custom Skills and Agents Analysis</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">7e706d2f-9eef-4f00-baeb-2dd48a35246f</guid>
@@ -1755,7 +1755,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>勝ち残るモデルの条件は何か？</title>
+      <title>アーキテクト ガイドと実装戦略にAIを使うと何が楽になる？</title>
       <description>Claude Solutions: Architect Guide and Implementation Strategy</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">7d55217a-c2b6-4d51-bdf9-58426f99e08e</guid>
@@ -1791,7 +1791,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AI導入で最初に変わるのはどこか？</title>
+      <title>Google の高効率 圧縮および量子化戦略にAIを入れると何が起きる？（TurboQuant: Google）</title>
       <description>Automatic summary for 7affc20c-2a0d-4cba-a30e-ae742bd8c98d.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">7affc20c-2a0d-4cba-a30e-ae742bd8c98d</guid>
@@ -1827,7 +1827,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>人間観察システム 愛すべき不器用仕様は誰に効く？</title>
+      <title>人間観察システム 愛すべき不器用仕様は誰に効く？（人間観察システム 愛すべき不器用仕様）</title>
       <description>Automatic summary for 78176703-0e4e-43cd-bcf6-7529299d85c0.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">78176703-0e4e-43cd-bcf6-7529299d85c0</guid>
@@ -1845,7 +1845,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>マーダー ミステリー ゲーム ガイドの勝ち筋はどこ？</title>
+      <title>マーダー ミステリー ゲーム ガイドの勝ち筋はどこ？（Victorian Servant:）</title>
       <description>Victorian Servant: Murder Mystery Game Guide</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">7779ccc1-3759-47f3-b352-1f0cc17ba2e9</guid>
@@ -1881,7 +1881,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>ドットスキル蒸留フレームワークの見方は変わる？</title>
+      <title>ドットスキル蒸留フレームワークの見方は変わる？（24da）</title>
       <description>Digital Life 1.0: The Dot-Skill Distillation Framework</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">74cf01ef-010b-4a68-b7d4-ba3574bf6462</guid>
@@ -1890,7 +1890,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIチップの首都はどこに移る？</title>
+      <title>AIチップの首都はどこに移る？（半導体の展望: 台湾の人材と世界のメ）</title>
       <description>Semiconductor Landscapes: Talent in Taiwan and Global Memory Trends</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">73fd0b2a-849f-4ab1-92c1-379de27f53ba</guid>
@@ -1908,7 +1908,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>アンドレイ・カルパシーがループ時代について語るはどこまで進める？</title>
+      <title>アンドレイ・カルパシーがループ時代について語るはどこまで進める？（36a3）</title>
       <description>Automatic summary for 73828217-0a4d-4c19-833b-a3f25b59d2f7.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">73828217-0a4d-4c19-833b-a3f25b59d2f7</guid>
@@ -1926,7 +1926,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIはどこで人間を超えるのか？</title>
+      <title>2026 年の LiteLLM サプライ チェーにAIを入れると何が起きる？（2026 年の LiteLLM サプ）</title>
       <description>Automatic summary for 705ad6c2-2996-47a9-b143-cd75c0eececf.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">705ad6c2-2996-47a9-b143-cd75c0eececf</guid>
@@ -1944,7 +1944,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIが一番得意なのは何か？</title>
+      <title>研究ライフサイクルにAIを入れると何が起きる？</title>
       <description>The AI Research Lifecycle: From Automated Creation to Scientific Discovery</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">6eb09c0a-fe85-48e0-b152-79ce29f2ba99</guid>
@@ -1971,7 +1971,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>本当に買い時なのはどこか？</title>
+      <title>本当に買い時なのはどこか？（金融投資ツールと開示リソースの概要）</title>
       <description>Financial Investment Tools and Disclosure Resources Overview</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">6ad1d1b7-8654-4906-9d0b-aac71697211e</guid>
@@ -2007,7 +2007,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>応用情報技術者試験の過去問と解答はどう使いこなす？</title>
+      <title>応用情報技術者試験の過去問と解答はどう使いこなす？（7d4a）</title>
       <description>Applied Information Technology Engineer Exam Past Questions and Answers</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">68ae21e8-8af7-457b-8751-62997e1b44e3</guid>
@@ -2016,7 +2016,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIモデル競争の勝負所はどこか？</title>
+      <title>と Meta の 10 億ドル規模の賭けにAIを入れると何が起きる？</title>
       <description>The AI Capital War: OpenAI and Meta's Billion-Dollar Bets</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">68ae13be-3b79-4891-9f58-5210eaff3c19</guid>
@@ -2070,7 +2070,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>音声作品で一番効く工夫は何か？</title>
+      <title>音声作品で一番効く工夫は何か？（彩りTTS：感情豊かな日本語の音声合）</title>
       <description>Irodori-TTS: Emotional Japanese Speech Synthesis and Voice Design</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">6319599e-a2d2-4929-bd14-b107e3bea8d2</guid>
@@ -2097,7 +2097,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>ASMRで離脱を防ぐのは何か？</title>
+      <title>ASMRで離脱を防ぐのは何か？（会話型 AI と音声合成モデルの進歩）</title>
       <description>Advances in Conversational AI and Voice Synthesis Models</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">61ff3bf1-5c96-4205-bfcf-a572b2e4a637</guid>
@@ -2124,7 +2124,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>完全な戦略とルールブック ガイド勝ち筋は？</title>
+      <title>完全な戦略とルールブック ガイド勝ち筋は？（ハート オブ クラウン: 完全な戦略）</title>
       <description>Heart of Crown: Complete Strategy and Rulebook Guide</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">618c7688-cb25-4965-9206-9a10c455791a</guid>
@@ -2151,7 +2151,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>日本の金融NLPベンチマークにおけるリスクの測定どこが危ない？</title>
+      <title>日本の金融NLPベンチマークにおけるリスクの測定どこが危ない？（日本の金融NLPベンチマークにおける）</title>
       <description>Measuring Risk in Japanese Financial NLP Benchmarks</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">5f0b6d96-cd3a-4815-bb3d-ce4aae7b0ffe</guid>
@@ -2178,7 +2178,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AI投資の勝負所はどこか？</title>
+      <title>AI投資の勝負所はどこか？（AI のフロンティア: Anthro）</title>
       <description>The Frontier of AI: Anthropic, OpenAI, and the IPO Race</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">5eaa691f-42bb-489c-8771-aaa0244f1a95</guid>
@@ -2196,7 +2196,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>理論と実際の実行戦略勝ち筋は？</title>
+      <title>理論と実際の実行戦略勝ち筋は？（現代の GTO ポーカー: 理論と実）</title>
       <description>Automatic summary for 5e5dae03-a986-4b53-9cd0-28743b0b5f6b.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">5e5dae03-a986-4b53-9cd0-28743b0b5f6b</guid>
@@ -2214,7 +2214,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>進化的設計の勝負所はどこか？</title>
+      <title>進化的設計の勝負所はどこか？（ヘルメス エージェント: 自己進化す）</title>
       <description>Hermes Agent: The Self-Evolving Open Source Intelligence Architecture</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">5da6eee2-dbc3-4271-9a68-ee36c336cee7</guid>
@@ -2250,7 +2250,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIエージェントはどこまで自律できる？</title>
+      <title>OAuth を超えて認証情報ブローカリングまででAIは何が変わる？</title>
       <description>Securing Autonomous AI: Beyond OAuth to Credential Brokering</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">5c0834fc-0779-4a89-aa58-e97a35048c4e</guid>
@@ -2278,7 +2278,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIの信頼性をどう作る？</title>
+      <title>AIの信頼性をどう作る？（自閉症の正体を明らかにする: 神経の）</title>
       <description>Unmasking Autism: Navigating Neurodiversity and Authenticity</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">58197974-cc62-45be-80ba-539e0a1b6ce3</guid>
@@ -2305,7 +2305,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>人間が残すべき役割は何か？</title>
+      <title>文化的存在としての モデルにAIを入れると何が起きる？</title>
       <description>AI Models as Cultural Beings: Investigating Digital Cultural Biases</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">562b150d-b11b-49ed-850a-5e67657f63d6</guid>
@@ -2314,7 +2314,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>アバター制作で失敗しやすい点は？</title>
+      <title>アバター制作で失敗しやすい点は？（VRCPilot 技術仕様および自動）</title>
       <description>VRCPilot Technical Specifications and Automation Manual</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">547d844d-e3c2-40e1-bae4-c2bec22a50d6</guid>
@@ -2323,7 +2323,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>試験概要・出題範囲・合格ロードマップはなぜ注目される？</title>
+      <title>試験概要・出題範囲・合格ロードマップはなぜ注目される？（統計検定完全ガイド：試験概要・出題範）</title>
       <description>統計検定完全ガイド：試験概要・出題範囲・合格ロードマップ</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">53fa0007-72dd-4d3a-b8bd-5e6dd4c35b85</guid>
@@ -2359,7 +2359,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIはどこで人間を超えるのか？</title>
+      <title>パフォーマンスよりも習熟を優先するでAIは何が変わる？</title>
       <description>The AI Learning Companion: Prioritizing Mastery Over Performance</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">5348ed02-440a-4a23-b09d-11a0dd9762f1</guid>
@@ -2368,7 +2368,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>Novelty Searchで何が変わる？</title>
+      <title>Novelty Searchで何が変わる？（Gemma 4: ローカル マルチモ）</title>
       <description>Gemma 4: The Evolution of Local Multimodal Intelligence</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">52a3d95a-0ba6-4884-9d5a-8b67e8553465</guid>
@@ -2386,7 +2386,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>Slay the Spire 2 と動物園を作ろう ガイはどこまで進める？</title>
+      <title>Slay the Spire 2 と動物園を作ろう ガイはどこまで進める？（Slay the Spire 2 と）</title>
       <description>Slay the Spire 2 and Let's Build a Zoo Guides</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">5019a9ca-a2b8-40fa-a1c3-ad3a210c0fa3</guid>
@@ -2395,7 +2395,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>GX 2040ビジョン勝ち筋は？</title>
+      <title>GX 2040ビジョン勝ち筋は？（GX 2040ビジョン：脱炭素経済構）</title>
       <description>GX 2040 Vision: Strategy for Decarbonized Economic Structural Transformation</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">4f928fee-de39-43bb-abb2-559b501177c6</guid>
@@ -2413,7 +2413,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>自動化の境界はどこか？</title>
+      <title>Agentic AI リスク管理標準プロファイルにAIを使うと何が楽になる？</title>
       <description>Agentic AI Risk-Management Standards Profile</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">4dc60a71-5245-43d7-8ef8-483fcccdf9e6</guid>
@@ -2431,7 +2431,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>デジタルプレイとプレイヤーの行動の科学はどこまで進める？</title>
+      <title>デジタルプレイとプレイヤーの行動の科学はどこまで進める？（6248）</title>
       <description>Automatic summary for 4d2dff01-0d9c-4fc4-b8d9-32a9d339745c.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">4d2dff01-0d9c-4fc4-b8d9-32a9d339745c</guid>
@@ -2440,7 +2440,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>大阪万博のレガシー継承と公園活性化ビジョン2040の見方は変わる？</title>
+      <title>大阪万博のレガシー継承と公園活性化ビジョン2040の見方は変わる？（大阪万博のレガシー継承と公園活性化ビ）</title>
       <description>Automatic summary for 4cf7b5f0-3a1a-4bff-9a93-c6c5f1f05174.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">4cf7b5f0-3a1a-4bff-9a93-c6c5f1f05174</guid>
@@ -2449,7 +2449,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>拡散モデルによる制御可能な表形式データ合成はどこで勝負が決まる？</title>
+      <title>拡散モデルによる制御可能な表形式データ合成はどこで勝負が決まる？（TabDDPM: 拡散モデルによる制）</title>
       <description>Automatic summary for 4cba04ec-fd1d-439d-9723-beac32b35d41.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">4cba04ec-fd1d-439d-9723-beac32b35d41</guid>
@@ -2458,7 +2458,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIはどの仕事を先に奪うのか？</title>
+      <title>、雇用、社会情勢の現実でAIが先に効くのはどこか？</title>
       <description>The Realities of AI, Employment, and the Social Floor</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">4c847703-a7b2-413f-abf4-7c5ee5736105</guid>
@@ -2494,7 +2494,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>人類経済および工学研究 2024 ～ 2026 年の落とし穴はどこ？</title>
+      <title>人類経済および工学研究 2024 ～ 2026 年の落とし穴はどこ？（人類経済および工学研究 2024 ～）</title>
       <description>Anthropic Economic and Engineering Research 2024–2026</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">4865cb4c-e5f6-4e2f-aa7a-804bdb83dc89</guid>
@@ -2521,7 +2521,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>GTO戦略とファストフォールドダイナミクスをマスターする勝ち筋は？</title>
+      <title>GTO戦略とファストフォールドダイナミクスをマスターする勝ち筋は？（aeef）</title>
       <description>Automatic summary for 46a5b7f4-5619-4fa5-9c76-1d3048c55099.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">46a5b7f4-5619-4fa5-9c76-1d3048c55099</guid>
@@ -2530,7 +2530,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIに任せていい作業はどこまでか？</title>
+      <title>AXT のボラティリティと NVIDIAでAIが先に効くのはどこか？</title>
       <description>AI Optics: AXT Volatility and the NVIDIA-Lumentum Alliance</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">4688e9b9-8816-4866-bb8c-7f9b2e651924</guid>
@@ -2566,7 +2566,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>人間が残すべき確認は何か？</title>
+      <title>Agentic Intelligence の台頭でAIが先に効くのはどこか？</title>
       <description>The Rise of Agentic Intelligence and Global AI Markets 2026</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">3ffe08a9-5a54-4b50-9bd9-8c79271bbca0</guid>
@@ -2593,7 +2593,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>VR制作で最初に詰まるのはどこ？</title>
+      <title>VR制作で最初に詰まるのはどこ？（VRChat アバター最適化のための）</title>
       <description>Meshia Mesh Simplification Guide for VRChat Avatar Optimization</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">3deed479-2a26-41b5-babe-f121bc346488</guid>
@@ -2602,7 +2602,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>この投資テーマはどこで勝敗が決まる？</title>
+      <title>この投資テーマはどこで勝敗が決まる？（多極秩序における世界的な投資戦略）</title>
       <description>Global Investment Strategy in a Multi-Polar Order</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">3d11f48d-47f3-4cc7-a80f-2983dd8df806</guid>
@@ -2611,7 +2611,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>OpenClaw リソース ガイドとコミュニティの使用例はどう使いこなす？</title>
+      <title>OpenClaw リソース ガイドとコミュニティの使用例はどう使いこなす？（OpenClaw リソース ガイドと）</title>
       <description>OpenClaw Resource Guide and Community Use Cases</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">3c7ced5c-24a5-4d73-9bd8-69943d883931</guid>
@@ -2629,7 +2629,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>生成検索時代に何を直すべきか？</title>
+      <title>生成検索時代に何を直すべきか？（最新の SEO と生成エンジンの最適）</title>
       <description>Automatic summary for 39f92fd8-ef78-4e85-b5c3-d4b03a369733.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">39f92fd8-ef78-4e85-b5c3-d4b03a369733</guid>
@@ -2638,7 +2638,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>2026 年の経済および金融の見通しの落とし穴はどこ？</title>
+      <title>2026 年の経済および金融の見通しの落とし穴はどこ？（2026 年の経済および金融の見通し）</title>
       <description>Economic and Monetary Outlook for 2026</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">399eba48-2dac-4003-a0da-2655cf9dc43c</guid>
@@ -2665,7 +2665,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>GTO戦略とファストフォールドダイナミクスをマスターする勝ち筋は？</title>
+      <title>GTO戦略とファストフォールドダイナミクスをマスターする勝ち筋は？（5959）</title>
       <description>Automatic summary for 38957bab-dbe7-465a-8ac4-ab2fc0101a26.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">38957bab-dbe7-465a-8ac4-ab2fc0101a26</guid>
@@ -2683,7 +2683,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>Palworld 作業適性および基本最適化ガイドはどこで勝負が決まる？</title>
+      <title>Palworld 作業適性および基本最適化ガイドはどこで勝負が決まる？（Palworld 作業適性および基本）</title>
       <description>Automatic summary for 3694676d-53c0-4a86-91d0-9fef02874ecf.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">3694676d-53c0-4a86-91d0-9fef02874ecf</guid>
@@ -2701,7 +2701,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>理論と実際の実行戦略勝ち筋は？</title>
+      <title>理論と実際の実行戦略勝ち筋は？（9e86）</title>
       <description>Automatic summary for 359e1b7e-c4ca-4dd1-a5eb-88d832c8674c.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">359e1b7e-c4ca-4dd1-a5eb-88d832c8674c</guid>
@@ -2710,7 +2710,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIは何を覚えて何を忘れるのか？</title>
+      <title>変革に向けた政策ロードマップでAIは何が変わる？</title>
       <description>Governing the AI Exponential: A Policy Roadmap for Transformation</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">356a1cc7-3acc-406c-9cc5-94ab69e77736</guid>
@@ -2719,7 +2719,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIは本当に使える？</title>
+      <title>科学 と数学的推論のフロンティアにAIを使うと何が楽になる？</title>
       <description>Google DeepMind: Frontiers of Scientific AI and Mathematical Reasoning</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">34e14ad2-5b00-4b11-b593-b32197330bbf</guid>
@@ -2728,7 +2728,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIはどの仕事を先に奪うのか？</title>
+      <title>AI文学の胎動：星新一賞と生成AIの共生創作論でAIは何が変わる？</title>
       <description>AI文学の胎動：星新一賞と生成AIの共生創作論</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">326d5063-4c88-40cf-93f0-5d169b42557d</guid>
@@ -2755,7 +2755,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>ビットコインの救世主はどこまで進める？</title>
+      <title>ビットコインの救世主はどこまで進める？（ビットコインの救世主：失われた暗号資）</title>
       <description>Bitcoin Savior: Success in Recovering Lost Crypto Assets</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">30eb6ebe-0300-4626-b539-da25db9ac910</guid>
@@ -2773,7 +2773,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>ニューラル アーキテクチャから文化的アイコンまではなぜ注目される？</title>
+      <title>ニューラル アーキテクチャから文化的アイコンまではなぜ注目される？（トランスフォーマー: ニューラル ア）</title>
       <description>Transformers: From Neural Architectures to Cultural Icons</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">2ded8a66-da5a-4c69-bb22-350ac57fa46a</guid>
@@ -2800,7 +2800,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIが一番得意なのは何か？</title>
+      <title>メンタル モデルと の認知抽出でAIは何が変わる？</title>
       <description>Distilling Great Minds: Mental Models and AI Cognitive Extraction</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">2c716dc6-b60b-415e-a5ab-cb11e0c84ea2</guid>
@@ -2809,7 +2809,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>2026年の展望と多極化への適応はなぜ注目される？</title>
+      <title>2026年の展望と多極化への適応はなぜ注目される？（キューバ経済の構造的転換と地政学的レ）</title>
       <description>Automatic summary for 2babb9cb-6e0e-4d72-b336-38f0b9a69e01.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">2babb9cb-6e0e-4d72-b336-38f0b9a69e01</guid>
@@ -2818,7 +2818,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIは本当に使える？</title>
+      <title>O 2026 と の民主化にAIを使うと何が楽になる？</title>
       <description>Disrupting the Disrupters: Google I/O 2026 and AI Democratization</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">2b429d4f-760c-48ff-b54a-16908514301e</guid>
@@ -2827,7 +2827,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIは何を覚えて何を忘れるのか？</title>
+      <title>AIでパフォーマンスよりも習熟を優先するの見方は変わる？</title>
       <description>The AI Learning Companion: Prioritizing Mastery Over Performance</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">2b02c835-d0e6-42ba-aa43-b6f951fc46e4</guid>
@@ -2845,7 +2845,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>デジタルプレイとプレイヤーの行動の科学はどこまで進める？</title>
+      <title>デジタルプレイとプレイヤーの行動の科学はどこまで進める？（5aa7）</title>
       <description>Automatic summary for 29c14959-da0e-4419-8380-6cd8742e61b2.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">29c14959-da0e-4419-8380-6cd8742e61b2</guid>
@@ -2863,7 +2863,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>DBで一番つらい作業は何か？</title>
+      <title>DBで一番つらい作業は何か？（SQLite GUI ツールおよび開）</title>
       <description>Automatic summary for 25c9396f-0dab-4a18-9ab8-5f210216b80f.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">25c9396f-0dab-4a18-9ab8-5f210216b80f</guid>
@@ -2917,7 +2917,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>SPARC と商用核融合エネルギーのデジタルの制約はどこ？</title>
+      <title>SPARC と商用核融合エネルギーのデジタルの制約はどこ？（SPARC と商用核融合エネルギーの）</title>
       <description>SPARC and the Digital Future of Commercial Fusion Energy</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">1f73c54a-0a2f-460a-950a-8249638377f0</guid>
@@ -2926,7 +2926,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>勝ち残るモデルの条件は何か？</title>
+      <title>レート制限とサブスクリプションの緊張にAIを使うと何が楽になる？</title>
       <description>Grok Rate Limits and Subscription Tensions</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">1e3d9e8a-41de-40b1-beaf-1b4eee6138b6</guid>
@@ -2935,7 +2935,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIはどこで人間を超えるのか？</title>
+      <title>最新の AITuber 開発および実装ガイドにAIを入れると何が起きる？</title>
       <description>The Modern AITuber Development and Implementation Guide</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">1e360c76-4b99-418e-86e8-53b2a71f9f73</guid>
@@ -2944,7 +2944,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIエージェントに任せていい作業はどこまでか？</title>
+      <title>倫理、ガバナンス、財務分析フレームワークにAIを入れると何が起きる？</title>
       <description>Autonomous AI: Ethics, Governance, and Financial Analysis Frameworks</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">1dc1623c-abc7-4752-8081-5af7fa3556e6</guid>
@@ -2971,7 +2971,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>オントロジー開発およびデータベース管理ガイドはなぜ注目される？</title>
+      <title>オントロジー開発およびデータベース管理ガイドはなぜ注目される？（オントロジー開発およびデータベース管）</title>
       <description>Ontology Development and Database Management Guide</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">1bfbf238-14a6-4a76-ad8b-c0ead81778ec</guid>
@@ -2980,7 +2980,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>自律AIの失敗はどこで起きる？</title>
+      <title>AIでAlphaAgent: 耐崩壊性アルファ マイニの見方は変わる？</title>
       <description>AlphaAgent: LLM-Driven Regularized Exploration for Decay-Resistant Alpha Mining</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">1aa1a224-b752-4e27-a19e-fa376babd911</guid>
@@ -2989,7 +2989,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIはどの仕事を先に奪うのか？</title>
+      <title>構造化出力および Gemini トラブルシューティングでAIが先に効くのはどこか？</title>
       <description>LLM Structured Output and Gemini Troubleshooting Guide 2026</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">1a284305-bc17-4e49-9b71-ed91762a523e</guid>
@@ -3016,7 +3016,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>ニューラル アーキテクチャから文化的アイコンまではなぜ注目される？</title>
+      <title>ニューラル アーキテクチャから文化的アイコンまではなぜ注目される？（4f53）</title>
       <description>Automatic summary for 188ce845-c266-4578-bfad-effb6f11d47d.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">188ce845-c266-4578-bfad-effb6f11d47d</guid>
@@ -3025,7 +3025,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>三菱重工のサステナビリティ・エネルギーイノベーション戦略勝ち筋は？</title>
+      <title>三菱重工のサステナビリティ・エネルギーイノベーション戦略勝ち筋は？（三菱重工のサステナビリティ・エネルギ）</title>
       <description>Mitsubishi Heavy Industries Sustainability and Energy Innovation Strategies</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">176822b9-3e06-441c-8dcb-8b1c8c06b97b</guid>
@@ -3034,7 +3034,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIは何を覚えて何を忘れるのか？</title>
+      <title>AIエージェント導入・ガバナンスと実務スキル完全でAIは何が変わる？</title>
       <description>AIエージェント導入・ガバナンスと実務スキル完全ガイド</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">16fed6ba-53a1-440d-9c3f-ed6fd3bc48bc</guid>
@@ -3043,7 +3043,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>ミニマリズムと隠者の考え方はどこまで進める？</title>
+      <title>ミニマリズムと隠者の考え方はどこまで進める？（0221）</title>
       <description>Automatic summary for 1684f688-7941-440d-8c43-28765000b30f.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">1684f688-7941-440d-8c43-28765000b30f</guid>
@@ -3052,7 +3052,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AI導入で最初に変わるのはどこか？</title>
+      <title>University Arizona GraduationにAIを入れると何が起きる？</title>
       <description>University of Arizona Graduation: Eric Schmidt Booed Over AI Speech</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">16279e27-6704-425a-b7ba-13059874c1a7</guid>
@@ -3061,7 +3061,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AI導入で最初に変わるのはどこか？</title>
+      <title>Google の高効率 圧縮および量子化戦略にAIを使うと何が楽になる？</title>
       <description>TurboQuant: Google’s High-Efficiency LLM Compression and Quantization Strategy</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">1606ed65-451d-497d-b2ab-1ae04948b886</guid>
@@ -3070,7 +3070,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>ゼオライト合成および逆設計のための拡散モデルどう設計する？</title>
+      <title>ゼオライト合成および逆設計のための拡散モデルどう設計する？（ゼオライト合成および逆設計のための拡）</title>
       <description>Automatic summary for 15ed61b3-c321-4527-a146-3697a78c6613.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">15ed61b3-c321-4527-a146-3697a78c6613</guid>
@@ -3088,7 +3088,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIはどの仕事を先に奪うのか？</title>
+      <title>ARK Invest 2026 年第 1 四半期にAIを使うと何が楽になる？</title>
       <description>ARK Invest Q1 2026: The Frontier of Innovation and AI</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">143a4c0c-b1e5-4ff1-a576-91cc017d18c4</guid>
@@ -3097,7 +3097,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>ハート オブ クラウンどう勝つ？</title>
+      <title>ハート オブ クラウンどう勝つ？（cb27）</title>
       <description>Automatic summary for 14024072-f222-45ea-93e4-1f4f0f89d813.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">14024072-f222-45ea-93e4-1f4f0f89d813</guid>
@@ -3115,7 +3115,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>1 兆ドルのベンチャーキャピタルのパラドックスはなぜ注目される？</title>
+      <title>1 兆ドルのベンチャーキャピタルのパラドックスはなぜ注目される？（SBF の失われた財産: 1 兆ドル）</title>
       <description>Automatic summary for 134bfdcc-5fc1-4abd-a968-01cab7fa1715.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">134bfdcc-5fc1-4abd-a968-01cab7fa1715</guid>
@@ -3133,7 +3133,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIは本当に使える？</title>
+      <title>AIで導入、生産性、仕事の見方は変わる？</title>
       <description>The AI Paradox: Adoption, Productivity, and the Future of Work</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">1323d500-01f8-41dc-9a10-940e49c2540e</guid>
@@ -3151,7 +3151,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>神経調和と健康の促進は何から直す？</title>
+      <title>神経調和と健康の促進は何から直す？（自閉症と予測心: 神経調和と健康の促）</title>
       <description>Automatic summary for 11d9073c-7a80-40fc-98e4-9ef71dc8e96b.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">11d9073c-7a80-40fc-98e4-9ef71dc8e96b</guid>
@@ -3160,7 +3160,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>運用の手間はどこまで減る？</title>
+      <title>運用の手間はどこまで減る？（SQLite GUI ツールおよび開）</title>
       <description>Automatic summary for 11b572f3-00c5-4a94-98d0-05547197f9e0.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">11b572f3-00c5-4a94-98d0-05547197f9e0</guid>
@@ -3196,7 +3196,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>UnityでVRを仕上げるコツは？</title>
+      <title>UnityでVRを仕上げるコツは？（VRChat および Linux 技）</title>
       <description>VRChat and Linux Technical Configuration Guides</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">0cb848aa-8883-43cc-b96e-0e7e430ff7b7</guid>
@@ -3205,7 +3205,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>大規模言語モデルを使用したオントロジーで強化されたナレッの落とし穴はどこ？</title>
+      <title>大規模言語モデルを使用したオントロジーで強化されたナレッの落とし穴はどこ？（0ba6）</title>
       <description>Ontology-Enhanced Knowledge Graph Completion using Large Language Models</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">0b376ffa-a355-4194-a0e3-c1eef87af888</guid>
@@ -3214,7 +3214,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>LLMサプライチェーン侵害はどう起きる？</title>
+      <title>LLMサプライチェーン侵害はどう起きる？（AXTの戦略的拡大とリン化インジウム）</title>
       <description>AXT Strategic Expansion and Indium Phosphide Supply Chain Analysis</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">0ae82232-562d-4ce9-bc22-bf0d527523de</guid>
@@ -3232,7 +3232,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIが一番得意なのは何か？</title>
+      <title>エージェント向けのスケーラブルな長期メモリ アーキテクチでAIが先に効くのはどこか？</title>
       <description>Mem0: A Scalable Long-Term Memory Architecture for AI Agents</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">06bbd86a-573b-4538-bb52-6149ce30ae00</guid>
@@ -3241,7 +3241,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIはどこで人間を超えるのか？</title>
+      <title>人間と の主権をめぐる世界的な競争にAIを使うと何が楽になる？</title>
       <description>Anthropic and the Global Race for AI Sovereignty</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">0680c4a5-0ffd-4250-86a7-e00afd021555</guid>
@@ -3250,7 +3250,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIは記憶をどう持つ？</title>
+      <title>ガバナンスのギャップを埋めるでAIは何が変わる？</title>
       <description>AI Memory Systems vs RAG: Bridging the Governance Gap</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">0675fa79-9bf4-43b3-8326-f4f1fce64f85</guid>
@@ -3259,7 +3259,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>本当に買い時なのはどこか？</title>
+      <title>本当に買い時なのはどこか？（シグマ投資スクール2017 金融研修）</title>
       <description>Automatic summary for 0602399d-8a04-4e73-95f1-917f7b3d2472.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">0602399d-8a04-4e73-95f1-917f7b3d2472</guid>
@@ -3268,7 +3268,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>ハートオブクラウンの攻略と王女継承ガイドどう勝つ？</title>
+      <title>ハートオブクラウンの攻略と王女継承ガイドどう勝つ？（ハートオブクラウンの攻略と王女継承ガ）</title>
       <description>Heart of Crown Strategy and Princess Succession Guide</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">05e817d1-641d-4430-847a-7293568db63c</guid>
@@ -3277,7 +3277,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>GTO戦略とファストフォールドダイナミクスをマスターする勝ち筋は？</title>
+      <title>GTO戦略とファストフォールドダイナミクスをマスターする勝ち筋は？（956a）</title>
       <description>Automatic summary for 042c67ba-26de-4f7f-b93e-a308cf153817.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">042c67ba-26de-4f7f-b93e-a308cf153817</guid>
@@ -3286,7 +3286,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>理論と実際の実行戦略勝ち筋は？</title>
+      <title>理論と実際の実行戦略勝ち筋は？（a6b7）</title>
       <description>Automatic summary for 03f771db-9671-4d3b-986a-b67b0252d6e2.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">03f771db-9671-4d3b-986a-b67b0252d6e2</guid>
@@ -3304,7 +3304,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>アンドレイ・カルパシーがループ時代について語るはどこまで進める？</title>
+      <title>アンドレイ・カルパシーがループ時代について語るはどこまで進める？（dac1）</title>
       <description>The Agent Psychosis: Andrej Karpathy on the Loopy Era</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">03c0b453-092b-4ab2-8439-4527e9adaaeb</guid>
@@ -3322,7 +3322,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>安全設計で一番大事なのは何か？</title>
+      <title>安全設計で一番大事なのは何か？（グローバル AI ガバナンスと安全フ）</title>
       <description>Global AI Governance and the Robustness of Safety Frameworks</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">029991df-8e4b-4be7-bec3-73e847536edb</guid>
@@ -3331,7 +3331,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>この投資テーマはどこで勝敗が決まる？</title>
+      <title>この投資テーマはどこで勝敗が決まる？（シグマ投資スクール2017 金融研修）</title>
       <description>Automatic summary for 021f9cc9-6005-4721-ab27-8bb1a36793e9.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">021f9cc9-6005-4721-ab27-8bb1a36793e9</guid>
@@ -3340,7 +3340,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>プロジェクト 2025はどこまで進める？</title>
+      <title>プロジェクト 2025はどこまで進める？（プロジェクト 2025: 実施と保守）</title>
       <description>Project 2025: Implementation and Conservative Policy Frameworks</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">0205fb78-da66-44e4-807f-03e86778f460</guid>
@@ -3349,7 +3349,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>応用情報技術者試験の過去問と解答はどう使いこなす？</title>
+      <title>応用情報技術者試験の過去問と解答はどう使いこなす？（a6e6）</title>
       <description>Automatic summary for 01c8209e-94e4-43d3-be17-0e9019727302.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">01c8209e-94e4-43d3-be17-0e9019727302</guid>
@@ -3358,7 +3358,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>応用情報技術者試験の過去問と解答はどう使いこなす？</title>
+      <title>応用情報技術者試験の過去問と解答はどう使いこなす？（b021）</title>
       <description>Automatic summary for 00dd90d7-f860-4657-972e-bc74702dbb58.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">00dd90d7-f860-4657-972e-bc74702dbb58</guid>
@@ -3367,7 +3367,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>Antigravity CLI アーキテクチャおよび Sは誰に効く？</title>
+      <title>Antigravity CLI アーキテクチャおよび Sは誰に効く？（Antigravity CLI アー）</title>
       <description>The Antigravity CLI Architecture and Systemd Integration Guide</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">f8e2aba1-a465-48a7-909f-533130ce5bab</guid>
@@ -3376,7 +3376,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>次の勝ち筋は設計か製造か？</title>
+      <title>次の勝ち筋は設計か製造か？（132d）</title>
       <description>AI Semiconductor Market 2026: TSMC and NVIDIA Strategic Analysis</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">f7e1106f-c2f7-4835-97b1-5f9e4451b384</guid>
@@ -3385,7 +3385,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>資産形成白書 2025の見方は変わる？</title>
+      <title>資産形成白書 2025の見方は変わる？（資産形成白書 2025：家計の行動と）</title>
       <description>資産形成白書 2025：家計の行動と新NISAの展望</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">f6a0fc6e-21b8-4fc8-ae1a-562d8e479aab</guid>
@@ -3394,7 +3394,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIは本当に使える？</title>
+      <title>の残骸のその後とフロンティア輸出規制にAIを使うと何が楽になる？</title>
       <description>The Afterlife of AI Debris and Frontier Export Controls</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">f2fea01f-a739-4d30-8914-46bcebe91015</guid>
@@ -3403,7 +3403,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>スーパーインテリジェンスへのロードマップの見落としは何？</title>
+      <title>スーパーインテリジェンスへのロードマップの見落としは何？（スーパーインテリジェンスへのロードマ）</title>
       <description>Roadmaps to Superintelligence: Safety, Scaling, and Self-Improvement</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">efad6b29-9770-4c48-8088-da1a0f218afd</guid>
@@ -3412,7 +3412,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIが一番得意なのは何か？</title>
+      <title>AIで軌道フロンティアの見方は変わる？</title>
       <description>The Orbital Frontier: AI, Solar Power, and Space Logistics</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">e93570b7-0234-4204-937e-94f2fe51154c</guid>
@@ -3430,7 +3430,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>資産形成白書 2025の見方は変わる？</title>
+      <title>資産形成白書 2025の見方は変わる？（928f）</title>
       <description>資産形成白書 2025：家計の行動と新NISAの展望</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">d5ecf5a1-8ec1-4ee6-87da-b0ca6545a195</guid>
@@ -3439,7 +3439,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>スーパーインテリジェンスへのロードマップの見落としは何？</title>
+      <title>スーパーインテリジェンスへのロードマップの見落としは何？（a319）</title>
       <description>Roadmaps to Superintelligence: Safety, Scaling, and Self-Improvement</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">d5e7c458-166b-461c-a359-bb877b3c59e2</guid>
@@ -3448,7 +3448,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIはどの仕事を先に奪うのか？</title>
+      <title>2026 年の戦略にAIを入れると何が起きる？</title>
       <description>TSMC and the Global AI Chip Race: 2026 Strategy Analysis</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">c29e2bb7-6864-43bd-a892-1abe95bfa165</guid>
@@ -3466,7 +3466,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>自動化されたポッドキャスト パイプライン アーキテクチャはどこで勝負が決まる？</title>
+      <title>自動化されたポッドキャスト パイプライン アーキテクチャはどこで勝負が決まる？（自動化されたポッドキャスト パイプラ）</title>
       <description>Automated Podcast Pipeline Architecture</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">9558cba7-961b-4349-bc3a-0dc58850c459</guid>
@@ -3475,7 +3475,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>グローバルなカード発行、BIN 基準、および日本の支払いの見方は変わる？</title>
+      <title>グローバルなカード発行、BIN 基準、および日本の支払いの見方は変わる？（グローバルなカード発行、BIN 基準）</title>
       <description>Global Card Issuance, BIN Standards, and Japanese Payment Policies</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">8cb0ab32-caaa-462f-a086-0f3518fa7ecd</guid>
@@ -3484,7 +3484,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIが一番得意なのは何か？</title>
+      <title>2026 年の戦略でAIは何が変わる？</title>
       <description>TSMC and the Global AI Chip Race: 2026 Strategy Analysis</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">89de2085-fcd6-4d4e-983f-92c55d47b1ee</guid>
@@ -3493,7 +3493,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>スーパーインテリジェンスへのロードマップの見落としは何？</title>
+      <title>スーパーインテリジェンスへのロードマップの見落としは何？（9fdd）</title>
       <description>Roadmaps to Superintelligence: Safety, Scaling, and Self-Improvement</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">887693e2-04ed-482b-bebf-dfc711815260</guid>
@@ -3502,7 +3502,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>自動化されたポッドキャスト パイプライン アーキテクチャはどこで勝負が決まる？</title>
+      <title>自動化されたポッドキャスト パイプライン アーキテクチャはどこで勝負が決まる？（c5ef）</title>
       <description>Automated Podcast Pipeline Architecture</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">860e3c64-7ec9-4c52-9255-2acccf971b75</guid>
@@ -3529,7 +3529,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>Antigravity CLI アーキテクチャおよび Sは誰に効く？</title>
+      <title>Antigravity CLI アーキテクチャおよび Sは誰に効く？（cbfc）</title>
       <description>The Antigravity CLI Architecture and Systemd Integration Guide</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">6a92e10d-1626-45f6-84d9-74a59fd5bcf4</guid>
@@ -3538,7 +3538,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>エキゾチック スフィア、スピードラン戦略、およびリソース勝ち筋は？</title>
+      <title>エキゾチック スフィア、スピードラン戦略、およびリソース勝ち筋は？（Palworld: エキゾチック ス）</title>
       <description>Palworld: Exotic Spheres, Speedrun Strategies, and Resource Guides</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">6a4adc85-0f16-468a-8f6d-3f6d42445200</guid>
@@ -3547,7 +3547,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AI導入で最初に変わるのはどこか？</title>
+      <title>の残骸のその後とフロンティア輸出規制でAIが先に効くのはどこか？</title>
       <description>The Afterlife of AI Debris and Frontier Export Controls</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">5aacb6b1-c8e8-4d80-ad56-e1aad8dae61f</guid>
@@ -3565,7 +3565,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>グローバルなカード発行、BIN 基準、および日本の支払いの見方は変わる？</title>
+      <title>グローバルなカード発行、BIN 基準、および日本の支払いの見方は変わる？（8804）</title>
       <description>Global Card Issuance, BIN Standards, and Japanese Payment Policies</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">4e49bc19-8224-4c84-8224-8e252bd6d341</guid>
@@ -3574,7 +3574,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AGI から ASI への道は誰に効く？</title>
+      <title>AGI から ASI への道は誰に効く？（スーパーインテリジェンスへの道: A）</title>
       <description>The Road to Superintelligence: Pathways from AGI to ASI</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">4c33bb05-84ae-40c8-ad3e-16d20595b5d6</guid>
@@ -3583,7 +3583,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>自動化されたポッドキャスト パイプライン アーキテクチャはどこで勝負が決まる？</title>
+      <title>自動化されたポッドキャスト パイプライン アーキテクチャはどこで勝負が決まる？（7246）</title>
       <description>Automated Podcast Pipeline Architecture</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">423a9dd8-7efa-4054-8fc7-49b9f0134fab</guid>
@@ -3592,7 +3592,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>音声作品で一番効く工夫は何か？</title>
+      <title>音声作品で一番効く工夫は何か？（次世代の音声 AI およびメディア処）</title>
       <description>Next-Generation Voice AI and Media Processing Tools</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">4132c615-7b9a-4af8-bdd9-7e251ada0353</guid>
@@ -3601,7 +3601,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AIはどこで人間を超えるのか？</title>
+      <title>軌道フロンティアにAIを使うと何が楽になる？</title>
       <description>The Orbital Frontier: AI, Solar Power, and Space Logistics</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">40cfb19e-8bbf-42ce-8d65-9cfc67bb11be</guid>
@@ -3610,7 +3610,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>AI導入で最初に変わるのはどこか？</title>
+      <title>AIで2026 年の戦略の見方は変わる？</title>
       <description>TSMC and the Global AI Chip Race: 2026 Strategy Analysis</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">39921ce4-ce4b-4b57-8338-7af24fecbad0</guid>
@@ -3637,7 +3637,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>エキゾチック スフィア、スピードラン戦略、およびリソース勝ち筋は？</title>
+      <title>エキゾチック スフィア、スピードラン戦略、およびリソース勝ち筋は？（f6b0）</title>
       <description>Palworld: Exotic Spheres, Speedrun Strategies, and Resource Guides</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">16a7d237-4eb3-4c94-9395-854f817b2c4f</guid>
@@ -3646,7 +3646,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>日本の戦略的資産管理とインフレ防御勝ち筋は？</title>
+      <title>日本の戦略的資産管理とインフレ防御勝ち筋は？（日本の戦略的資産管理とインフレ防御）</title>
       <description>Strategic Asset Management and Inflation Defense in Japan</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">10ff384c-4a8b-4983-9f58-b79c5a2d628f</guid>
@@ -3655,7 +3655,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>スーパーインテリジェンスへのロードマップの見落としは何？</title>
+      <title>スーパーインテリジェンスへのロードマップの見落としは何？（ac50）</title>
       <description>Roadmaps to Superintelligence: Safety, Scaling, and Self-Improvement</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">0c4fa677-e454-4a9e-8f70-02104c343bde</guid>
@@ -3664,7 +3664,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>賃貸の水漏れトラブル、責任はどこにある？</title>
+      <title>賃貸の水漏れトラブル、責任はどこにある？（エアコンの水漏れ: トラブルシューテ）</title>
       <description>Air Conditioner Leakage: Troubleshooting, Installation, and Rental Liability</description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">013d7de2-7dd2-4859-b2fb-ba66e47e86df</guid>
