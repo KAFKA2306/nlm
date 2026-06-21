@@ -2701,7 +2701,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>理論と実際の実行戦略勝ち筋は？（Modern GTO Poker:）</title>
+      <title>理論と実際の実行戦略勝ち筋は？（9e86）</title>
       <description>Automatic summary for 359e1b7e-c4ca-4dd1-a5eb-88d832c8674c.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">359e1b7e-c4ca-4dd1-a5eb-88d832c8674c</guid>
@@ -3373,6 +3373,15 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <guid isPermaLink="false">f8e2aba1-a465-48a7-909f-533130ce5bab</guid>
       <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/f8e2aba1-a465-48a7-909f-533130ce5bab.m4a" type="audio/mp4" length="39837538"/>
       <itunes:duration>00:20:37</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>次の勝ち筋は設計か製造か？（AI 半導体市場 2026: TSM）</title>
+      <description>AI Semiconductor Market 2026: TSMC and NVIDIA Strategic Analysis</description>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">f7e1106f-c2f7-4835-97b1-5f9e4451b384</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/f7e1106f-c2f7-4835-97b1-5f9e4451b384.m4a" type="audio/mp4" length="39293578"/>
+      <itunes:duration>00:20:20</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
   </channel>
