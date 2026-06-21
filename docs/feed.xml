@@ -4,8 +4,8 @@
     <title>KAFKA探究室</title>
     <link>https://kafka2306.github.io/nlm/</link>
     <atom:link href="https://kafka2306.github.io/nlm/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>The provided documents include a 2023 annual report from Baron Select Funds, a 2026 financial news article from FinTech Weekly, and a transcript of a 2026 ARK Funds market update. The Baron Funds report details the year-end performance and top holdings for various portfolios, highlighting a significant investment concentration in Tesla. Transitioning to a future timeline, the FinTech Weekly article reports on SpaceX's 2026 confidential IPO filing, noting that the company’s multi-trillion-dollar valuation depends on integrated artificial intelligence and satellite data services. Complementing this, the ARK Funds webinar discusses the macroeconomic landscape of 2026, including the impacts of Middle East tensions and low core inflation. The transcript further explores ARK’s new positions in OpenAI, the market potential for space-based data centers, and the evolving competitive dynamics between Uber and Tesla in the autonomous vehicle sector. Together, these sources track the shift from traditional growth fund management to a future dominated by orbital infrastructure and foundational AI technologies.</description>
-    <itunes:summary>The provided documents include a 2023 annual report from Baron Select Funds, a 2026 financial news article from FinTech Weekly, and a transcript of a 2026 ARK Funds market update. The Baron Funds report details the year-end performance and top holdings for various portfolios, highlighting a significant investment concentration in Tesla. Transitioning to a future timeline, the FinTech Weekly article reports on SpaceX's 2026 confidential IPO filing, noting that the company’s multi-trillion-dollar valuation depends on integrated artificial intelligence and satellite data services. Complementing this, the ARK Funds webinar discusses the macroeconomic landscape of 2026, including the impacts of Middle East tensions and low core inflation. The transcript further explores ARK’s new positions in OpenAI, the market potential for space-based data centers, and the evolving competitive dynamics between Uber and Tesla in the autonomous vehicle sector. Together, these sources track the shift from traditional growth fund management to a future dominated by orbital infrastructure and foundational AI technologies.</itunes:summary>
+    <description>These sources comprise a 2023 annual financial report for Baron Select Funds, a 2026 news article regarding a massive SpaceX initial public offering, and a 2026 investment webinar transcript from ARK Funds. The Baron Funds document details audited financial performance and significant holdings, specifically highlighting heavy investment in Tesla, Inc. and various growth sectors. The futuristic news and webinar transcripts describe a shifting financial landscape where SpaceX prepares to go public at a multi-trillion dollar valuation by integrating satellite internet with advanced artificial intelligence. ARK Funds executives analyze this transition, emphasizing how orbital data centers and frontier AI models like OpenAI’s products are redefining global productivity and software markets. Together, the texts illustrate the evolution of active investment strategies as they pivot toward disruptive technologies in space and autonomous systems. This collection provides a comprehensive look at both historical fund management and projected trends in high-stakes technology investing.</description>
+    <itunes:summary>These sources comprise a 2023 annual financial report for Baron Select Funds, a 2026 news article regarding a massive SpaceX initial public offering, and a 2026 investment webinar transcript from ARK Funds. The Baron Funds document details audited financial performance and significant holdings, specifically highlighting heavy investment in Tesla, Inc. and various growth sectors. The futuristic news and webinar transcripts describe a shifting financial landscape where SpaceX prepares to go public at a multi-trillion dollar valuation by integrating satellite internet with advanced artificial intelligence. ARK Funds executives analyze this transition, emphasizing how orbital data centers and frontier AI models like OpenAI’s products are redefining global productivity and software markets. Together, the texts illustrate the evolution of active investment strategies as they pivot toward disruptive technologies in space and autonomous systems. This collection provides a comprehensive look at both historical fund management and projected trends in high-stakes technology investing.</itunes:summary>
     <language>ja</language>
     <itunes:author>KAFKA</itunes:author>
     <itunes:type>serial</itunes:type>
@@ -1116,7 +1116,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>ASMRで離脱を防ぐのは何か？</title>
+      <title>声の設計で何が変わる？（音声のニュアンス: ASMR 生成と）</title>
       <description>Nuance in Speech: ASMR Generation and Filler Detection Breakthroughs</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">bcfc3af5-bc1d-4019-8434-3d25e62215b3</guid>
@@ -1233,7 +1233,7 @@
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>ASMRで離脱を防ぐのは何か？（ASMR の未来: AI 合成とクリ）</title>
+      <title>ASMRで離脱を防ぐのは何か？</title>
       <description>The Future of ASMR: AI Synthesis and Creative Design</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">b111f5f9-5e6e-47e9-aec1-1ddfbed72b8a</guid>
@@ -2539,7 +2539,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>Necrobinder のヒントとボス戦略勝ち筋は？</title>
+      <title>Necrobinder のヒントとボスの戦略勝ち筋は？</title>
       <description>Slay the Spire 2: Necrobinder Tips and Boss Strategies</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">456b3c13-48a2-4839-a877-7be271fbf658</guid>
@@ -2683,7 +2683,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>Palworld 作業適性と基本最適化ガイドはどこで勝負が決まる？</title>
+      <title>Palworld 作業適性および基本最適化ガイドはどこで勝負が決まる？（Palworld 作業適性および基本）</title>
       <description>Automatic summary for 3694676d-53c0-4a86-91d0-9fef02874ecf.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">3694676d-53c0-4a86-91d0-9fef02874ecf</guid>
@@ -2701,7 +2701,7 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
-      <title>理論と実際の実行戦略勝ち筋は？（9e86）</title>
+      <title>理論と実際の実行戦略勝ち筋は？（Modern GTO Poker:）</title>
       <description>Automatic summary for 359e1b7e-c4ca-4dd1-a5eb-88d832c8674c.m4a</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">359e1b7e-c4ca-4dd1-a5eb-88d832c8674c</guid>
@@ -3373,303 +3373,6 @@ Slay the Spire 2: Character Strategy and Build Guides</description>
       <guid isPermaLink="false">f8e2aba1-a465-48a7-909f-533130ce5bab</guid>
       <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/f8e2aba1-a465-48a7-909f-533130ce5bab.m4a" type="audio/mp4" length="39837538"/>
       <itunes:duration>00:20:37</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>次の勝ち筋は設計か製造か？（AI 半導体市場 2026: TSM）</title>
-      <description>AI Semiconductor Market 2026: TSMC and NVIDIA Strategic Analysis</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">f7e1106f-c2f7-4835-97b1-5f9e4451b384</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/f7e1106f-c2f7-4835-97b1-5f9e4451b384.m4a" type="audio/mp4" length="39293578"/>
-      <itunes:duration>00:20:20</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>資産形成白書 2025の見方は変わる？（資産形成白書 2025：家計の行動と）</title>
-      <description>資産形成白書 2025：家計の行動と新NISAの展望</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">f6a0fc6e-21b8-4fc8-ae1a-562d8e479aab</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/f6a0fc6e-21b8-4fc8-ae1a-562d8e479aab.m4a" type="audio/mp4" length="39011829"/>
-      <itunes:duration>00:20:12</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>の残骸のその後とフロンティア輸出規制にAIを使うと何が楽になる？</title>
-      <description>The Afterlife of AI Debris and Frontier Export Controls</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">f2fea01f-a739-4d30-8914-46bcebe91015</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/f2fea01f-a739-4d30-8914-46bcebe91015.m4a" type="audio/mp4" length="38564972"/>
-      <itunes:duration>00:19:58</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>スーパーインテリジェンスへのロードマップの見落としは何？</title>
-      <description>Roadmaps to Superintelligence: Safety, Scaling, and Self-Improvement</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">efad6b29-9770-4c48-8088-da1a0f218afd</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/efad6b29-9770-4c48-8088-da1a0f218afd.m4a" type="audio/mp4" length="25475848"/>
-      <itunes:duration>00:13:11</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>AIで軌道フロンティアの見方は変わる？</title>
-      <description>The Orbital Frontier: AI, Solar Power, and Space Logistics</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">e93570b7-0234-4204-937e-94f2fe51154c</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/e93570b7-0234-4204-937e-94f2fe51154c.m4a" type="audio/mp4" length="36957516"/>
-      <itunes:duration>00:19:08</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>VR酔いはなぜ起きる？</title>
-      <description>PICO 4 and Ultra Troubleshooting and OS Maintenance Guide</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">d76fb9f1-6de6-4a78-b673-7b775be4b61f</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/d76fb9f1-6de6-4a78-b673-7b775be4b61f.m4a" type="audio/mp4" length="50058497"/>
-      <itunes:duration>00:25:55</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>資産形成白書 2025の見方は変わる？（928f）</title>
-      <description>資産形成白書 2025：家計の行動と新NISAの展望</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">d5ecf5a1-8ec1-4ee6-87da-b0ca6545a195</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/d5ecf5a1-8ec1-4ee6-87da-b0ca6545a195.m4a" type="audio/mp4" length="45318367"/>
-      <itunes:duration>00:23:28</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>スーパーインテリジェンスへのロードマップの見落としは何？（スーパーインテリジェンスへのロードマ）</title>
-      <description>Roadmaps to Superintelligence: Safety, Scaling, and Self-Improvement</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">d5e7c458-166b-461c-a359-bb877b3c59e2</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/d5e7c458-166b-461c-a359-bb877b3c59e2.m4a" type="audio/mp4" length="42830588"/>
-      <itunes:duration>00:22:10</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>2026 年の戦略にAIを入れると何が起きる？</title>
-      <description>TSMC and the Global AI Chip Race: 2026 Strategy Analysis</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">c29e2bb7-6864-43bd-a892-1abe95bfa165</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/c29e2bb7-6864-43bd-a892-1abe95bfa165.m4a" type="audio/mp4" length="36009184"/>
-      <itunes:duration>00:18:38</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>エアコンの水漏れ、修理代は誰が払う？</title>
-      <description>Air Conditioner Leakage: Troubleshooting, Installation, and Rental Liability</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">adb3e0b9-d897-4dc1-8198-cbe6a7525779</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/adb3e0b9-d897-4dc1-8198-cbe6a7525779.m4a" type="audio/mp4" length="40445113"/>
-      <itunes:duration>00:20:56</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>自動化されたポッドキャスト パイプライン アーキテクチャはどこで勝負が決まる？（自動化されたポッドキャスト パイプラ）</title>
-      <description>Automated Podcast Pipeline Architecture</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">9558cba7-961b-4349-bc3a-0dc58850c459</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/9558cba7-961b-4349-bc3a-0dc58850c459.m4a" type="audio/mp4" length="42397820"/>
-      <itunes:duration>00:21:57</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>グローバルなカード発行、BIN 基準、および日本の支払いの見方は変わる？（グローバルなカード発行、BIN 基準）</title>
-      <description>Global Card Issuance, BIN Standards, and Japanese Payment Policies</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">8cb0ab32-caaa-462f-a086-0f3518fa7ecd</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/8cb0ab32-caaa-462f-a086-0f3518fa7ecd.m4a" type="audio/mp4" length="34880692"/>
-      <itunes:duration>00:18:03</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>2026 年の戦略でAIは何が変わる？</title>
-      <description>TSMC and the Global AI Chip Race: 2026 Strategy Analysis</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">89de2085-fcd6-4d4e-983f-92c55d47b1ee</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/89de2085-fcd6-4d4e-983f-92c55d47b1ee.m4a" type="audio/mp4" length="37065097"/>
-      <itunes:duration>00:19:11</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>スーパーインテリジェンスへのロードマップの見落としは何？（9fdd）</title>
-      <description>Roadmaps to Superintelligence: Safety, Scaling, and Self-Improvement</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">887693e2-04ed-482b-bebf-dfc711815260</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/887693e2-04ed-482b-bebf-dfc711815260.m4a" type="audio/mp4" length="35113884"/>
-      <itunes:duration>00:18:11</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>自動化されたポッドキャスト パイプライン アーキテクチャはどこで勝負が決まる？（c5ef）</title>
-      <description>Automated Podcast Pipeline Architecture</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">860e3c64-7ec9-4c52-9255-2acccf971b75</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/860e3c64-7ec9-4c52-9255-2acccf971b75.m4a" type="audio/mp4" length="38140434"/>
-      <itunes:duration>00:19:45</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>まず守るべき基準は何か？</title>
-      <description>YouTuberヒカルとVALU騒動：信頼崩壊から再生への全記録</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">817c457a-4933-47f1-8c10-e6d4788bb77e</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/817c457a-4933-47f1-8c10-e6d4788bb77e.m4a" type="audio/mp4" length="34254441"/>
-      <itunes:duration>00:17:44</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>AGI から ASI への道は誰に効く？（スーパーインテリジェンスへの道: A）</title>
-      <description>The Road to Superintelligence: Pathways from AGI to ASI</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">73e7c636-a2cc-424a-8730-91f4b7ee857a</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/73e7c636-a2cc-424a-8730-91f4b7ee857a.m4a" type="audio/mp4" length="40873398"/>
-      <itunes:duration>00:21:09</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>Antigravity CLI アーキテクチャおよび Sは誰に効く？（cbfc）</title>
-      <description>The Antigravity CLI Architecture and Systemd Integration Guide</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">6a92e10d-1626-45f6-84d9-74a59fd5bcf4</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/6a92e10d-1626-45f6-84d9-74a59fd5bcf4.m4a" type="audio/mp4" length="25350229"/>
-      <itunes:duration>00:13:07</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>エキゾチック スフィア、スピードラン戦略、およびリソース勝ち筋は？（Palworld: エキゾチック ス）</title>
-      <description>Palworld: Exotic Spheres, Speedrun Strategies, and Resource Guides</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">6a4adc85-0f16-468a-8f6d-3f6d42445200</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/6a4adc85-0f16-468a-8f6d-3f6d42445200.m4a" type="audio/mp4" length="44008269"/>
-      <itunes:duration>00:22:47</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>の破片のその後とフロンティア輸出規制にAIを入れると何が起きる？</title>
-      <description>The Afterlife of AI Debris and Frontier Export Controls</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">5aacb6b1-c8e8-4d80-ad56-e1aad8dae61f</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/5aacb6b1-c8e8-4d80-ad56-e1aad8dae61f.m4a" type="audio/mp4" length="36460511"/>
-      <itunes:duration>00:18:52</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>製造キャパは本当に足りる？</title>
-      <description>AI Semiconductor Market 2026: TSMC and NVIDIA Strategic Analysis</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">52e6fe45-03bb-499c-8266-af08a7d577ea</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/52e6fe45-03bb-499c-8266-af08a7d577ea.m4a" type="audio/mp4" length="26137209"/>
-      <itunes:duration>00:13:32</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>グローバルなカード発行、BIN 基準、および日本の支払いの見方は変わる？（8804）</title>
-      <description>Global Card Issuance, BIN Standards, and Japanese Payment Policies</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">4e49bc19-8224-4c84-8224-8e252bd6d341</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/4e49bc19-8224-4c84-8224-8e252bd6d341.m4a" type="audio/mp4" length="35420286"/>
-      <itunes:duration>00:18:20</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>AGI から ASI への道は誰に効く？（8bb0）</title>
-      <description>The Road to Superintelligence: Pathways from AGI to ASI</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">4c33bb05-84ae-40c8-ad3e-16d20595b5d6</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/4c33bb05-84ae-40c8-ad3e-16d20595b5d6.m4a" type="audio/mp4" length="44148081"/>
-      <itunes:duration>00:22:51</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>自動化されたポッドキャスト パイプライン アーキテクチャはどこで勝負が決まる？（7246）</title>
-      <description>Automated Podcast Pipeline Architecture</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">423a9dd8-7efa-4054-8fc7-49b9f0134fab</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/423a9dd8-7efa-4054-8fc7-49b9f0134fab.m4a" type="audio/mp4" length="38324321"/>
-      <itunes:duration>00:19:50</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>音声作品で一番効く工夫は何か？（次世代の音声 AI およびメディア処）</title>
-      <description>Next-Generation Voice AI and Media Processing Tools</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">4132c615-7b9a-4af8-bdd9-7e251ada0353</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/4132c615-7b9a-4af8-bdd9-7e251ada0353.m4a" type="audio/mp4" length="39499761"/>
-      <itunes:duration>00:20:27</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>軌道フロンティアにAIを使うと何が楽になる？</title>
-      <description>The Orbital Frontier: AI, Solar Power, and Space Logistics</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">40cfb19e-8bbf-42ce-8d65-9cfc67bb11be</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/40cfb19e-8bbf-42ce-8d65-9cfc67bb11be.m4a" type="audio/mp4" length="39951951"/>
-      <itunes:duration>00:20:41</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>AIで2026 年の戦略の見方は変わる？</title>
-      <description>TSMC and the Global AI Chip Race: 2026 Strategy Analysis</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">39921ce4-ce4b-4b57-8338-7af24fecbad0</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/39921ce4-ce4b-4b57-8338-7af24fecbad0.m4a" type="audio/mp4" length="45380411"/>
-      <itunes:duration>00:23:30</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>半導体供給は追いつくのか？</title>
-      <description>AI Semiconductor Market 2026: TSMC and NVIDIA Strategic Analysis</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">3716779b-795f-4b62-9da8-4665bf0438f6</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/3716779b-795f-4b62-9da8-4665bf0438f6.m4a" type="audio/mp4" length="44272089"/>
-      <itunes:duration>00:22:55</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>日本の戦略的資産管理とインフレ防御勝ち筋は？</title>
-      <description>Strategic Asset Management and Inflation Defense in Japan</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">22a9a299-0375-4904-a019-6725cb59bd1f</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/22a9a299-0375-4904-a019-6725cb59bd1f.m4a" type="audio/mp4" length="36997864"/>
-      <itunes:duration>00:19:09</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>エキゾチック スフィア、スピードラン戦略、およびリソース勝ち筋は？（f6b0）</title>
-      <description>Palworld: Exotic Spheres, Speedrun Strategies, and Resource Guides</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">16a7d237-4eb3-4c94-9395-854f817b2c4f</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/16a7d237-4eb3-4c94-9395-854f817b2c4f.m4a" type="audio/mp4" length="37346100"/>
-      <itunes:duration>00:19:20</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>日本の戦略的資産管理とインフレ防御勝ち筋は？（日本の戦略的資産管理とインフレ防御）</title>
-      <description>Strategic Asset Management and Inflation Defense in Japan</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">10ff384c-4a8b-4983-9f58-b79c5a2d628f</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/10ff384c-4a8b-4983-9f58-b79c5a2d628f.m4a" type="audio/mp4" length="38014184"/>
-      <itunes:duration>00:19:41</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>スーパーインテリジェンスへのロードマップの見落としは何？（ac50）</title>
-      <description>Roadmaps to Superintelligence: Safety, Scaling, and Self-Improvement</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">0c4fa677-e454-4a9e-8f70-02104c343bde</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/0c4fa677-e454-4a9e-8f70-02104c343bde.m4a" type="audio/mp4" length="31375058"/>
-      <itunes:duration>00:16:14</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>賃貸の水漏れトラブル、責任はどこにある？（エアコンの水漏れ: トラブルシューテ）</title>
-      <description>Air Conditioner Leakage: Troubleshooting, Installation, and Rental Liability</description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">013d7de2-7dd2-4859-b2fb-ba66e47e86df</guid>
-      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/013d7de2-7dd2-4859-b2fb-ba66e47e86df.m4a" type="audio/mp4" length="42212555"/>
-      <itunes:duration>00:21:51</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
   </channel>
