@@ -4,8 +4,8 @@
     <title>KAFKA探究室</title>
     <link>https://kafka2306.github.io/nlm/</link>
     <atom:link href="https://kafka2306.github.io/nlm/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>The provided text analyzes the business structures and supply chains of prominent Japanese and Chinese robotics firms within the Japanese market. Companies like Unitree and AGIBOT demonstrate high vertical integration, self-producing critical components such as actuators and sensors to maintain price competitiveness. In contrast, Japanese players like CYBERDYNE and GROOVE X focus on lifecycle revenue models, prioritizing recurring income through rentals, maintenance, and cloud services. GMO AI &amp; Robotics Holdings functions as a strategic middleman and infrastructure provider, bridging international hardware with domestic implementation. Meanwhile, Donut Robotics emphasizes specialized sales channels and proprietary AI over hardware transparency. Ultimately, the report highlights that market leadership is determined by the balance between in-house manufacturing capabilities and the ability to provide long-term operational support.</description>
-    <itunes:summary>The provided text analyzes the business structures and supply chains of prominent Japanese and Chinese robotics firms within the Japanese market. Companies like Unitree and AGIBOT demonstrate high vertical integration, self-producing critical components such as actuators and sensors to maintain price competitiveness. In contrast, Japanese players like CYBERDYNE and GROOVE X focus on lifecycle revenue models, prioritizing recurring income through rentals, maintenance, and cloud services. GMO AI &amp; Robotics Holdings functions as a strategic middleman and infrastructure provider, bridging international hardware with domestic implementation. Meanwhile, Donut Robotics emphasizes specialized sales channels and proprietary AI over hardware transparency. Ultimately, the report highlights that market leadership is determined by the balance between in-house manufacturing capabilities and the ability to provide long-term operational support.</itunes:summary>
+    <description>The provided text explores the technical frameworks of OpenAI and Anthropic to define the concept of Loop Engineering within autonomous AI systems. It categorizes these operations into three distinct layers: the execution loop for basic tool use, the validation loop for iterative repair based on evaluation, and the improvement flywheel for long-term system optimization through data traces. Industry documentation increasingly replaces broad terms with specific terminology like closed-loop agent workflows and harness design to describe the integration of instructions, routing, and safety guardrails. Ultimately, the sources suggest that while "Loop Engineering" serves as a useful umbrella term, professional precision requires distinguishing between runtime execution, structured feedback, and continuous improvement cycles. This shift highlights a transition from simple prompt engineering toward the comprehensive management of the agentic environment and its associated performance contracts.</description>
+    <itunes:summary>The provided text explores the technical frameworks of OpenAI and Anthropic to define the concept of Loop Engineering within autonomous AI systems. It categorizes these operations into three distinct layers: the execution loop for basic tool use, the validation loop for iterative repair based on evaluation, and the improvement flywheel for long-term system optimization through data traces. Industry documentation increasingly replaces broad terms with specific terminology like closed-loop agent workflows and harness design to describe the integration of instructions, routing, and safety guardrails. Ultimately, the sources suggest that while "Loop Engineering" serves as a useful umbrella term, professional precision requires distinguishing between runtime execution, structured feedback, and continuous improvement cycles. This shift highlights a transition from simple prompt engineering toward the comprehensive management of the agentic environment and its associated performance contracts.</itunes:summary>
     <language>ja</language>
     <itunes:author>KAFKA</itunes:author>
     <itunes:type>serial</itunes:type>
@@ -17,6 +17,42 @@
       <itunes:email>ag1i5rer@gmail.com</itunes:email>
     </itunes:owner>
     <itunes:category text="Technology"/>
+    <item>
+      <title>OpenAI Agents SDK Architecture and Multi-Agent Orchestration</title>
+      <description>OpenAI Agents SDK Architecture and Multi-Agent Orchestration</description>
+      <pubDate>Sat, 27 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">d70ae953-0dcc-4914-bb7a-41c06e10e98d</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/d70ae953-0dcc-4914-bb7a-41c06e10e98d.m4a" type="audio/mp4" length="44923739"/>
+      <itunes:duration>00:23:15</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Evolution of AI Agents: From Context to Harness Engineering</title>
+      <description>Evolution of AI Agents: From Context to Harness Engineering</description>
+      <pubDate>Sat, 27 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">a11d004f-28de-477f-8f53-9b2c86fda178</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/a11d004f-28de-477f-8f53-9b2c86fda178.m4a" type="audio/mp4" length="33638650"/>
+      <itunes:duration>00:17:25</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>The Architecture of Closed-Loop Agent Harness Design</title>
+      <description>The Architecture of Closed-Loop Agent Harness Design</description>
+      <pubDate>Sat, 27 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">5d9d049f-b1e4-4f63-ab84-584fcf2d6253</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/5d9d049f-b1e4-4f63-ab84-584fcf2d6253.m4a" type="audio/mp4" length="29283401"/>
+      <itunes:duration>00:15:09</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Agent Tool Use and Loop Engineering Guide</title>
+      <description>Agent Tool Use and Loop Engineering Guide</description>
+      <pubDate>Sat, 27 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">19566a9a-67e2-4a24-83e0-b67946601f81</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/19566a9a-67e2-4a24-83e0-b67946601f81.m4a" type="audio/mp4" length="36273636"/>
+      <itunes:duration>00:18:47</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
     <item>
       <title>Global Robotics Market Analysis: Supply Chains and Business Models</title>
       <description>Global Robotics Market Analysis: Supply Chains and Business Models</description>
