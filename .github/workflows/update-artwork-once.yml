@@ -1,0 +1,36 @@
+name: Update podcast artwork once
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/update-artwork-once.yml
+
+permissions:
+  contents: write
+
+jobs:
+  update-artwork:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Download refreshed artwork
+        run: |
+          set -euo pipefail
+          curl -L --fail --retry 3 'https://at.adobe.com/1kp1LzJspVxs4UIa' -o docs/artwork.png
+          test "$(head -c 8 docs/artwork.png | xxd -p)" = "89504e470d0a1a0a"
+          test -s docs/artwork.png
+      - name: Commit artwork
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/artwork.png
+          if git diff --cached --quiet; then
+            echo 'Artwork already current.'
+            exit 0
+          fi
+          git commit -m 'docs: refresh KAFKA探究室 artwork'
+          git push origin HEAD:main
