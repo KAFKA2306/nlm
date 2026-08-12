@@ -3,34 +3,253 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KAFKA探究室</title>
+  <meta name="description" content="KAFKA探究室の視聴チャンネル一覧。AI・技術・社会・投資を、一次情報から深掘りする音声ノート。">
+  <title>KAFKA探究室 | 視聴チャンネル</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; line-height: 1.6; text-align: center; background: #121212; color: #e0e0e0; }
-    a { color: #bb86fc; text-decoration: none; font-weight: bold; }
-    a:hover { text-decoration: underline; }
-    .card { background: #1e1e1e; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); margin-top: 20px; }
-    .btn-list { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
-    .btn { display: block; padding: 12px; background: #2e2e2e; border-radius: 6px; border: 1px solid #3e3e3e; }
-    .btn:hover { background: #3e3e3e; }
-    .secondary { font-size: 0.9rem; color: #aaa; }
+    :root {
+      --paper: #f8f4ea;
+      --ink: #26242b;
+      --muted: #6f6a73;
+      --lavender: #ddd7f6;
+      --mint: #dcefe6;
+      --yellow: #f6e7a9;
+      --pink: #f1dce7;
+      --white: #fffdf8;
+      --line: #2d2933;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Inter, "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(980px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 56px 0 72px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 11px;
+      border: 2px solid var(--line);
+      border-radius: 999px;
+      background: var(--yellow);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .12em;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 36px;
+      align-items: center;
+      margin-top: 18px;
+      padding: 28px;
+      background: var(--white);
+      border: 2px solid var(--line);
+      border-radius: 28px;
+      box-shadow: 8px 8px 0 var(--lavender);
+    }
+
+    .cover {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border: 2px solid var(--line);
+      border-radius: 22px;
+      background: var(--mint);
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(38px, 7vw, 72px);
+      line-height: 1;
+      letter-spacing: -.045em;
+    }
+
+    .lead {
+      margin: 0;
+      max-width: 640px;
+      font-size: clamp(16px, 2.4vw, 20px);
+      font-weight: 650;
+    }
+
+    .sub {
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    section { margin-top: 52px; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(26px, 4vw, 38px);
+      letter-spacing: -.03em;
+    }
+
+    .section-note {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .channels {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .channel {
+      display: grid;
+      grid-template-columns: 56px 1fr auto;
+      gap: 16px;
+      align-items: center;
+      min-height: 112px;
+      padding: 18px;
+      color: var(--ink);
+      text-decoration: none;
+      background: var(--mint);
+      border: 2px solid var(--line);
+      border-radius: 20px;
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+
+    .channel:hover,
+    .channel:focus-visible {
+      transform: translate(-3px, -3px);
+      box-shadow: 6px 6px 0 var(--line);
+      outline: none;
+    }
+
+    .channel-mark {
+      display: grid;
+      place-items: center;
+      width: 56px;
+      height: 56px;
+      border: 2px solid var(--line);
+      border-radius: 16px;
+      background: var(--white);
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: -.04em;
+    }
+
+    .channel-name {
+      display: block;
+      font-size: 20px;
+      font-weight: 850;
+      line-height: 1.25;
+    }
+
+    .channel-meta {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 650;
+    }
+
+    .arrow {
+      font-size: 28px;
+      font-weight: 800;
+    }
+
+    .feed {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 16px 18px;
+      background: var(--pink);
+      border: 2px solid var(--line);
+      border-radius: 18px;
+      font-size: 13px;
+    }
+
+    .feed a {
+      color: var(--ink);
+      font-weight: 800;
+    }
+
+    footer {
+      margin-top: 30px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    @media (max-width: 720px) {
+      main { padding-top: 28px; }
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        padding: 20px;
+      }
+      .cover { max-width: 240px; }
+      .section-head { align-items: start; flex-direction: column; }
+      .feed { align-items: flex-start; flex-direction: column; }
+    }
   </style>
 </head>
 <body>
-  <h1>KAFKA探究室</h1>
-  <p><img src="artwork.png" alt="KAFKA探究室 cover art" width="240" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.5);"></p>
-  <p>The provided text outlines a framework for redefining Loop Engineering within the official technical vocabularies of OpenAI and Anthropic. It categorizes agentic structures into three distinct levels: the execution layer for basic task handling, the validation layer for iterative refinement through feedback, and the improvement flywheel for long-term system optimization. Major industry players prefer specific terms like agent loop, closed-loop workflow, and harness design to describe the orchestration of tools, handoffs, and safety guardrails. Ultimately, the sources suggest that while &quot;Loop Engineering&quot; serves as a useful umbrella term, technical precision requires distinguishing between runtime operations and evaluative improvement cycles. This shift emphasizes that modern AI design focuses on the entire operational environment and feedback mechanisms rather than just prompt construction.</p>
+  <main>
+    <span class="eyebrow">KAFKA / AUDIO RESEARCH</span>
 
-  <div class="card">
-    <h3>配信先で聴く</h3>
-    <p>実際の配信ページから再生できます。</p>
-    <div class="btn-list">
-      <a class="btn" href="https://music.amazon.co.jp/podcasts/2c114020-989c-491a-9439-fa2c93700e24/episodes/526f27d3-3be5-48f6-96a5-c7a49b6c09f6/kafka%E6%8E%A2%E7%A9%B6%E5%AE%A4-%E9%99%90%E5%AE%9A%E3%81%95%E3%82%8C%E3%81%9F%E5%90%88%E7%90%86%E6%80%A7%E3%81%A8%E8%BF%85%E9%80%9F%E3%81%8B%E3%81%A4%E5%80%B9%E7%B4%84%E7%9A%84%E3%81%AA%E6%84%8F%E6%80%9D%E6%B1%BA%E5%AE%9A%E3%83%84%E3%83%AA%E3%83%BC%E3%81%AE%E3%82%A2%E3%83%BC%E3%82%AD%E3%81%AF%E3%81%AA%E3%81%9C%E6%B3%A8%E7%9B%AE%E3%81%95%E3%82%8C%E3%82%8B%EF%BC%9F">Amazon Music で聴く</a>
-    </div>
-  </div>
+    <header class="hero">
+      <img class="cover" src="artwork.png" alt="KAFKA探究室 カバーアート">
+      <div>
+        <h1>KAFKA探究室</h1>
+        <p class="lead">AI・技術・社会・投資を、一次情報から深掘りする音声ノート。</p>
+        <p class="sub">登録方法ではなく、実際に視聴できる番組ページをまとめています。</p>
+      </div>
+    </header>
 
-  <div class="card secondary">
-    <h3>RSS</h3>
-    <a href="feed.xml">RSS Feed</a>
-  </div>
+    <section aria-labelledby="channels-title">
+      <div class="section-head">
+        <h2 id="channels-title">視聴チャンネル</h2>
+        <p class="section-note">確認できた配信先のみ掲載</p>
+      </div>
+
+      <div class="channels">
+        <a class="channel" href="https://music.amazon.co.jp/podcasts/2c114020-989c-491a-9439-fa2c93700e24/kafka%E6%8E%A2%E7%A9%B6%E5%AE%A4" target="_blank" rel="noopener noreferrer">
+          <span class="channel-mark">AM</span>
+          <span>
+            <span class="channel-name">Amazon Music</span>
+            <span class="channel-meta">KAFKA探究室 · 配信中</span>
+          </span>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section aria-labelledby="feed-title">
+      <div class="feed">
+        <div>
+          <strong id="feed-title">配信フィード</strong><br>
+          <span>プレイヤー登録用ではなく、配信基盤・検証用の正準フィード。</span>
+        </div>
+        <a href="feed.xml">feed.xml</a>
+      </div>
+    </section>
+
+    <footer>KAFKA探究室 / KAFKA2306</footer>
+  </main>
 </body>
 </html>
