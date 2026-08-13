@@ -1,6 +1,12 @@
 # nlm
 
-NotebookLM を CLI から操作する Go クライアントです。このリポジトリには CLI 本体に加えて、`KAFKA探究室` の Podcast 配信物も置かれています。
+**ブラウザでしかできない作業を、毎回手で繰り返す必要はない。**
+
+NotebookLMでnotebookを作る、sourceを追加する、内容を確認する、audioやartifactを生成する――同じ操作を何度も行うなら、手順をコマンドとして再実行できる方が、何を実行したかも検証しやすくなります。一方で、実装ファイルが存在するだけの機能を「使える」と書くと、READMEと実際のcommand surfaceがずれます。
+
+nlmは、NotebookLMの操作をCLIから再現可能に扱うGoクライアントです。このrepositoryにはCLI本体に加えて、`KAFKA探究室` のPodcast配信物も置かれています。CLI、RPC、batchexecute、MCPなどの技術語は、利用者が何を自動化できるかを理解した後で扱います。
+
+READMEの入口は [`KAFKA2306/articles#34`](https://github.com/KAFKA2306/articles/issues/34) の「広い問題 → 具体例 → 技術」の編集原則を維持します。実装済みでもcommand dispatcherへ登録されていない `nlm mcp` はsupported commandとして扱いません。
 
 ## Repository contract
 
