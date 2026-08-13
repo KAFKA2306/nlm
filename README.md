@@ -2,23 +2,9 @@
 
 **ブラウザでしかできない作業を、毎回手で繰り返す必要はない。**
 
-NotebookLMでnotebookを作る、sourceを追加する、内容を確認する、audioやartifactを生成する――同じ操作を何度も行うなら、手順をコマンドとして再実行できる方が、何を実行したかも検証しやすくなります。一方で、実装ファイルが存在するだけの機能を「使える」と書くと、READMEと実際のcommand surfaceがずれます。
+NotebookLMでnotebookを作る、sourceを追加する、内容を確認する、audioやartifactを生成する――同じ操作を何度も行うなら、手順をコマンドとして再実行できる方が、何を実行したかも検証しやすくなります。実装ファイルが存在していても、command dispatcherへ登録されていない機能はCLIから利用できません。
 
-nlmは、NotebookLMの操作をCLIから再現可能に扱うGoクライアントです。このrepositoryにはCLI本体に加えて、`KAFKA探究室` のPodcast配信物も置かれています。CLI、RPC、batchexecute、MCPなどの技術語は、利用者が何を自動化できるかを理解した後で扱います。
-
-READMEの入口は [`KAFKA2306/articles#34`](https://github.com/KAFKA2306/articles/issues/34) の「広い問題 → 具体例 → 技術」の編集原則を維持します。実装済みでもcommand dispatcherへ登録されていない `nlm mcp` はsupported commandとして扱いません。
-
-## Repository contract
-
-README は入口であり、実装の代わりではありません。事実確認は次の順で行います。
-
-1. CLI の実挙動: `cmd/nlm/main.go`
-2. 認証: `cmd/nlm/auth.go`, `internal/auth/`
-3. API / schema: `proto/`, `gen/`, `internal/notebooklm/`
-4. build / test: `go.mod`, `Makefile`, `*_test.go`
-5. 公開配信物: `docs/`
-
-README と実装が食い違う場合は、実装と実行結果を優先します。未実行のものを `PASS` と扱いません。
+nlmは、NotebookLMの操作をCLIから再現可能に扱うGoクライアントです。このrepositoryにはCLI本体に加えて、`KAFKA探究室` のPodcast配信物も置かれています。NotebookLMとの通信にはRPC / batchexecute実装を使い、実装済みでもdispatcher未登録の`nlm mcp`は現時点のsupported commandとして扱いません。
 
 ## Current boundaries
 
@@ -135,18 +121,14 @@ make generate
 - `UNVERIFIED`: 実行環境または証跡がなく未確認
 - `ASK_USER`: 外部判断が必要で機械的に決められない
 
-README、コメント、Issue、LLM 出力だけを `PASS` の根拠にしません。
+`PASS`には対象commandまたはtestの実行証跡が必要です。
 
 ## Development
 
 - 1変更1目的を基本にする
-- user-facing command を変えたら `README.md` と test を同じ変更で更新する
-- 同じ説明を複数の `.md` に複製しない
 - generated code を手編集せず、`proto/` / template 側を変更して `make generate` する
 - 認証情報・cookie・token を commit しない
 - arbitrary な行数制限や、実装と矛盾する開発ルールを追加しない
-
-人間向けドキュメントの正準入口はこの `README.md`、agent 用の実行契約は `AGENTS.md` です。
 
 ## Podcast: KAFKA探究室
 
