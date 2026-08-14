@@ -469,3 +469,18 @@ terms:
         source_type: "protocol_spec"
     verified_at: "2026-08-14"
     status: "verified"
+
+  - id: "notebooklm-source"
+    term: "NotebookLM source"
+    aliases: ["source"]
+    domain: "ai"
+    definition_ja: "NotebookLMへimportまたはuploadした文書のcopyまたは自動同期版で、モデルが質問回答やrequest処理の根拠として使う情報源。"
+    why_it_matters: "NotebookLMで何が回答根拠になるか、元ファイルとの同期や利用範囲を理解する基礎になる。"
+    example: "PDFやGoogle Docsをnotebookへ追加し、そのsourceを選択して内容について質問する。"
+    related_terms: ["notebooklm"]
+    sources:
+      - title: "Add or discover new sources for your notebook"
+        url: "https://support.google.com/notebooklm/answer/16215270"
+        source_type: "official_docs"
+    verified_at: "2026-08-14"
+    status: "verified"
