@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/KAFKA2306/nlm/blob/main/data/glossary/schema.json",
+  "title": "nlm canonical learning glossary",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "verified_at", "source_scope", "terms"],
+  "properties": {
+    "version": {"const": 1},
+    "verified_at": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "source_scope": {"type": "string", "minLength": 1},
+    "terms": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/term"}
+    }
+  },
+  "$defs": {
+    "term": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "term",
+        "aliases",
+        "domain",
+        "definition_ja",
+        "why_it_matters",
+        "example",
+        "related_terms",
+        "sources",
+        "verified_at",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "term": {"type": "string", "minLength": 1},
+        "aliases": {
+          "type": "array",
+          "items": {"type": "string", "minLength": 1},
+          "uniqueItems": true
+        },
+        "domain": {"type": "string", "minLength": 1},
+        "definition_ja": {"type": "string", "minLength": 1},
+        "why_it_matters": {"type": "string", "minLength": 1},
+        "example": {"type": "string", "minLength": 1},
+        "related_terms": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "uniqueItems": true
+        },
+        "sources": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/source"}
+        },
+        "verified_at": {
+          "type": "string",
+          "format": "date",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        },
+        "status": {"enum": ["verified", "needs_review"]}
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {"status": {"const": "verified"}},
+            "required": ["status"]
+          },
+          "then": {
+            "properties": {"sources": {"minItems": 1}}
+          }
+        }
+      ]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "url", "source_type"],
+      "properties": {
+        "title": {"type": "string", "minLength": 1},
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "source_type": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}
