@@ -7,13 +7,14 @@ policy:
   canonical_verified_store: data/glossary/terms.yaml
   promotion_rule: Promote a needs_review term only after its definition is supported by a primary source, standard, or original
     paper.
+  review_rotation_rule: If a term cannot be unambiguously verified, keep it needs_review and move it to the tail of its domain queue.
   exclusions: Personal identifiers, secrets, credentials, account details, and ordinary non-technical words.
   coverage_note: Inventory records terms found in the recent context available to this task. It must not be described as a
     complete export of all ChatGPT history.
 counts:
   total: 294
-  verified: 29
-  needs_review: 265
+  verified: 30
+  needs_review: 264
 verified_terms:
 - GitHub Actions
 - Workflow
@@ -44,10 +45,9 @@ verified_terms:
 - Provenance
 - Ontology
 - End-to-end testing (E2E)
+- MCP server
 needs_review_by_domain:
   ai:
-  - LLM domain inference
-  - MCP server
   - NotebookLM source
   - NotebookLM note
   - Large Language Model (LLM)
@@ -65,6 +65,7 @@ needs_review_by_domain:
   - Output validation
   - Agent orchestration
   - Self-built agent
+  - LLM domain inference
   cloud-computing:
   - Serverless
   cloud-operations:

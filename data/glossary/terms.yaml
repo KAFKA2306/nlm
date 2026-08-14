@@ -451,3 +451,21 @@ terms:
         source_type: "official_docs"
     verified_at: "2026-08-14"
     status: "verified"
+
+  - id: "mcp-server"
+    term: "MCP server"
+    aliases: ["Model Context Protocol server"]
+    domain: "ai"
+    definition_ja: "MCP clientへcontextやcapabilityを提供し、resources・prompts・toolsなどのserver featureを公開するserver。"
+    why_it_matters: "外部toolやdata sourceをAIから扱う際、client側とserver側の責務や安全境界を切り分ける基礎概念になる。"
+    example: "MCP clientがserverへ接続し、serverが公開するtoolsやresourcesを利用する。"
+    related_terms: ["mcp", "rest-api"]
+    sources:
+      - title: "Architecture overview"
+        url: "https://modelcontextprotocol.io/docs/learn/architecture"
+        source_type: "official_docs"
+      - title: "Server features overview"
+        url: "https://modelcontextprotocol.io/specification/2025-06-18/server/index"
+        source_type: "protocol_spec"
+    verified_at: "2026-08-14"
+    status: "verified"
