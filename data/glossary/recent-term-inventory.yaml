@@ -1,0 +1,204 @@
+version: 1
+extracted_at: '2026-08-14'
+scope: Recent conversation context and recovered recent-work summaries available in ChatGPT for this task.
+policy:
+  purpose: Audit inventory of observed technical terms; not the canonical definition store.
+  canonical_verified_store: data/glossary/terms.yaml
+  promotion_rule: Promote a needs_review term only after its definition is supported by a primary source, standard, or original paper.
+  exclusions: Personal identifiers, secrets, credentials, account details, and ordinary non-technical words.
+counts:
+  total: 151
+  verified: 29
+  needs_review: 122
+verified_terms:
+- GitHub Actions
+- Workflow
+- Runner
+- Continuous Integration (CI)
+- Pull Request (PR)
+- Branch
+- Remote-tracking branch
+- Merge
+- Squash and merge
+- Draft Pull Request
+- GitHub Pages
+- Workflow artifact
+- GitHub Actions budget / spending limit
+- Commit
+- Object ID / commit SHA
+- SHA-256
+- REST API
+- Model Context Protocol (MCP)
+- NotebookLM
+- Supabase
+- PostgreSQL / Postgres
+- Row Level Security (RLS)
+- OAuth 2.0
+- Supabase Edge Functions
+- Database schema
+- Deployment
+- Provenance
+- Ontology
+- End-to-end testing (E2E)
+needs_review_by_domain:
+  ai:
+  - LLM domain inference
+  - MCP server
+  - NotebookLM source
+  - NotebookLM note
+  - Large Language Model (LLM)
+  - Retrieval-Augmented Generation (RAG)
+  cloud-computing:
+  - Serverless
+  cloud-operations:
+  - Billing
+  data:
+  - World Development Indicators (WDI)
+  data-engineering:
+  - Collector
+  - Materialization
+  - Dataset
+  - data_requirements
+  - Raw data
+  - Derived data
+  - Data lake
+  - Data mart
+  data-format:
+  - JSON
+  data-governance:
+  - Stable asset ID
+  - Registry
+  - Data accessibility
+  - Artifact provenance
+  - Stable asset identifier
+  data-modeling:
+  - Work / Edition / Holding model
+  data-platform:
+  - Snowflake
+  data-quality:
+  - Duplicate precheck
+  - Count consistency
+  - Data quality gate
+  data-validation:
+  - Check digit
+  database:
+  - Unique constraint
+  - Indexing
+  - Point-in-Time Recovery (PITR)
+  - SQLite
+  - unique(user_id, game_id)
+  database-security:
+  - RLS policy
+  distributed-systems:
+  - Remote Procedure Call (RPC)
+  financial-data:
+  - EDGAR
+  git:
+  - Blob SHA
+  - Mutable ref
+  - Git blob
+  github:
+  - Private repository
+  - Self-hosted runner
+  - Self-delete Actions
+  - GitHub Issue
+  - Repository topic
+  - Repository setting
+  - Workflow run
+  - GitHub Actions job
+  graph-database:
+  - Neo4j
+  - FalkorDB
+  - Amazon Neptune
+  graphics:
+  - Render metadata
+  industry-classification:
+  - ISIC
+  information-retrieval:
+  - Reranker
+  knowledge-organization:
+  - Semantic zone
+  - Classification debt
+  - agent-zone-* topic
+  - unclassified
+  - Classification
+  knowledge-representation:
+  - Context Graph
+  - Graphiti
+  - Fact
+  - Episode
+  - Temporal information
+  learning:
+  - Study guide
+  - FAQ
+  - Flashcard
+  machine-learning:
+  - Deep Q-Network (DQN)
+  - Long Short-Term Memory (LSTM)
+  - Walk-forward evaluation
+  - Future leakage
+  - Data split
+  - Embedder
+  ml-operations:
+  - training_attempted
+  - training_executed
+  - evaluation_executed
+  - observed_metrics
+  operating-systems:
+  - Standard input/output (stdio)
+  publishing:
+  - ISBN
+  - ISBN-13
+  quant-finance:
+  - Continuous futures
+  - Sharpe ratio
+  - Turnover regularization
+  - Pinnacle CLC
+  - Backtest
+  - Universe
+  reinforcement-learning:
+  - Discrete action space
+  - Reward
+  research:
+  - arXiv
+  - arXiv version pin
+  - Paper-specific dataset
+  - Paper-specific protocol
+  - Falsification condition
+  - Reproducibility
+  - Paper-vintage data
+  research-engineering:
+  - Exact-data gate
+  - Stage B artifact
+  security:
+  - Google OAuth
+  - Fail-closed
+  - Authorization
+  - SSL/TLS
+  - Network restriction
+  - Supabase Google OAuth
+  software-engineering:
+  - Language fallback
+  - Manifest
+  - Configuration
+  - Version pin
+  - Open-source software (OSS)
+  - Command dispatcher
+  - CRUD
+  software-testing:
+  - Regression test
+  - Mobile regression test
+  standard:
+  - ISO 3166-1
+  statistics:
+  - Out-of-sample (OOS)
+  web:
+  - Document Object Model (DOM)
+  - CSS align-content
+  - CSS align-items
+  - Hotlink
+  - Vercel
+  - FastAPI
+  - Mutable main hotlink
+  web-protocol:
+  - batchexecute
