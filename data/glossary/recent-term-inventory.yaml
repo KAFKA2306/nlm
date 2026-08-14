@@ -13,8 +13,8 @@ policy:
     complete export of all ChatGPT history.
 counts:
   total: 294
-  verified: 33
-  needs_review: 261
+  verified: 34
+  needs_review: 260
 verified_terms:
 - GitHub Actions
 - Workflow
@@ -49,9 +49,9 @@ verified_terms:
 - NotebookLM source
 - NotebookLM note
 - Large Language Model (LLM)
+- Retrieval-Augmented Generation (RAG)
 needs_review_by_domain:
   ai:
-  - Retrieval-Augmented Generation (RAG)
   - Read-only MCP
   - Remote MCP
   - tools/list
