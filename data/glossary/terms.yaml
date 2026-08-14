@@ -1,0 +1,453 @@
+version: 1
+verified_at: "2026-08-14"
+source_scope: "Recent ChatGPT conversations around KAFKA2306 development, research, deployment, and data workflows"
+terms:
+  - id: "github-actions"
+    term: "GitHub Actions"
+    aliases: ["Actions"]
+    domain: "github"
+    definition_ja: "GitHub上のイベントやスケジュールを契機に、ビルド、テスト、デプロイなどの自動処理を実行する仕組み。"
+    why_it_matters: "直近の作業では、CI、Pages配信、定期実行、Issue/PR運用の自動化基盤として繰り返し登場した。"
+    example: "pushやpull requestを契機にテストworkflowを実行する。"
+    related_terms: ["workflow", "runner", "continuous-integration", "github-pages"]
+    sources:
+      - title: "Concepts for GitHub Actions"
+        url: "https://docs.github.com/en/actions/concepts"
+        source_type: "official_docs"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "workflow"
+    term: "Workflow"
+    aliases: ["GitHub Actions workflow"]
+    domain: "github"
+    definition_ja: "1つ以上のjobを実行する設定可能な自動プロセス。GitHub ActionsではYAMLファイルとしてリポジトリの .github/workflows に定義する。"
+    why_it_matters: "Actionsの失敗原因や定期処理を理解するときの最上位単位になる。"
+    example: "CI workflow、GitHub Pages deploy workflow。"
+    related_terms: ["github-actions", "runner", "workflow-artifact"]
+    sources:
+      - title: "Workflows"
+        url: "https://docs.github.com/en/actions/concepts/workflows-and-actions/workflows"
+        source_type: "official_docs"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "runner"
+    term: "Runner"
+    aliases: ["GitHub Actions runner"]
+    domain: "github"
+    definition_ja: "GitHub Actionsのjobを実際に実行するマシンまたは実行環境。GitHub-hostedとself-hostedがある。"
+    why_it_matters: "直近ではBillingやspending制約によりrunner起動前に停止するケースの切り分けで重要だった。"
+    example: "runs-on: ubuntu-latest でGitHub-hosted runner上にjobを割り当てる。"
+    related_terms: ["github-actions", "workflow", "github-actions-budget"]
+    sources:
+      - title: "GitHub Actions Runners"
+        url: "https://docs.github.com/en/actions/concepts/runners"
+        source_type: "official_docs"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "continuous-integration"
+    term: "Continuous Integration"
+    aliases: ["CI", "継続的インテグレーション"]
+    domain: "software-engineering"
+    definition_ja: "コードを共有リポジトリへ頻繁に統合し、その更新を継続的にビルド・テストして不具合を早期検出する実践。"
+    why_it_matters: "PRをmergeする前に変更が既存挙動を壊していないか確認する基本ゲートになる。"
+    example: "PR head SHAに対してgo testやlintを自動実行する。"
+    related_terms: ["github-actions", "workflow", "pull-request"]
+    sources:
+      - title: "Continuous integration"
+        url: "https://docs.github.com/en/actions/get-started/continuous-integration"
+        source_type: "official_docs"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "pull-request"
+    term: "Pull Request"
+    aliases: ["PR"]
+    domain: "github"
+    definition_ja: "GitHub上でコード変更を提案し、議論・レビュー・mergeするための単位。"
+    why_it_matters: "直近の自律開発では、実装をmainへ入れる前の正準な作業線として繰り返し使われた。"
+    example: "feature branchからmainへの変更をPRとして提案する。"
+    related_terms: ["branch", "merge", "squash-merge", "draft-pull-request"]
+    sources:
+      - title: "Pull requests documentation"
+        url: "https://docs.github.com/en/pull-requests"
+        source_type: "official_docs"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "branch"
+    term: "Branch"
+    aliases: ["Git branch"]
+    domain: "git"
+    definition_ja: "Gitにおける独立した開発ライン。既存の安定版へ直接影響させずに変更を進めるために使う。"
+    why_it_matters: "作業branch、main、不要branchのcleanupという形で直近のGitHub運用に頻出した。"
+    example: "feat/... branchで作業し、PR merge後に削除する。"
+    related_terms: ["pull-request", "remote-tracking-branch", "merge", "commit"]
+    sources:
+      - title: "Git Glossary"
+        url: "https://git-scm.com/docs/gitglossary.html"
+        source_type: "official_docs"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "remote-tracking-branch"
+    term: "Remote-tracking branch"
+    aliases: ["remote branch", "リモート追跡ブランチ"]
+    domain: "git"
+    definition_ja: "別のリポジトリ上のbranchの状態を追跡するための参照。通常 refs/remotes/<remote>/<branch> の形を取る。"
+    why_it_matters: "merge後にremote側へ不要branchが残っていないか監査する文脈で使われた。"
+    example: "origin/main はremote repositoryのmainを追跡する参照。"
+    related_terms: ["branch", "commit"]
+    sources:
+      - title: "Git Glossary"
+        url: "https://git-scm.com/docs/gitglossary.html"
+        source_type: "official_docs"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "merge"
+    term: "Merge"
+    aliases: ["マージ"]
+    domain: "git"
+    definition_ja: "別branchの内容を現在のbranchへ取り込む操作。GitHubではPRを通じて実行されることが多い。"
+    why_it_matters: "実装完了後にmainへ成果を確定させる操作として、CI成功と並んで完了条件になっている。"
+    example: "PRの変更をmainへmergeする。"
+    related_terms: ["pull-request", "branch", "squash-merge"]
+    sources:
+      - title: "Git Glossary"
+        url: "https://git-scm.com/docs/gitglossary.html"
+        source_type: "official_docs"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "squash-merge"
+    term: "Squash and merge"
+    aliases: ["squash merge"]
+    domain: "github"
+    definition_ja: "PR内の複数commitを1つのcommitへまとめてbase branchへmergeする方式。"
+    why_it_matters: "直近のPR完了操作で明示的に選ばれており、履歴を1変更1commitへ整理するために使われた。"
+    example: "小さなfixup commitをまとめてmainへ1commitとして入れる。"
+    related_terms: ["merge", "pull-request", "commit"]
+    sources:
+      - title: "Pull request merges"
+        url: "https://docs.github.com/en/pull-requests/reference/pull-request-merges"
+        source_type: "official_docs"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "draft-pull-request"
+    term: "Draft Pull Request"
+    aliases: ["Draft PR"]
+    domain: "github"
+    definition_ja: "まだmerge可能な完成状態ではないことを示すPull Request。GitHubではdraftのPRはmergeできない。"
+    why_it_matters: "実装途中の正準作業線を残す場合と、不要・重複Draft PRをcleanupする場合の区別に使われた。"
+    example: "未完了の実装をDraft PRとして共有し、完成後にready for reviewへ移す。"
+    related_terms: ["pull-request", "merge"]
+    sources:
+      - title: "Merging a pull request"
+        url: "https://docs.github.com/en/pull-requests/how-tos/merge-and-close-pull-requests/merging-a-pull-request"
+        source_type: "official_docs"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "github-pages"
+    term: "GitHub Pages"
+    aliases: ["Pages"]
+    domain: "github"
+    definition_ja: "GitHubリポジトリからWebサイトを公開できるホスティング機能。branchまたはGitHub Actions workflowを公開元にできる。"
+    why_it_matters: "直近ではCI成功後の公開先、deploy確認先、repository settingのblockerとして登場した。"
+    example: "Actionsで静的ファイルをartifact化し、deploy-pagesで公開する。"
+    related_terms: ["github-actions", "workflow-artifact", "deployment"]
+    sources:
+      - title: "GitHub Pages documentation"
+        url: "https://docs.github.com/en/pages"
+        source_type: "official_docs"
+      - title: "Using custom workflows with GitHub Pages"
+        url: "https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages"
+        source_type: "official_docs"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "workflow-artifact"
+    term: "Workflow artifact"
+    aliases: ["Actions artifact", "artifact"]
+    domain: "github"
+    definition_ja: "GitHub Actionsのworkflow run中に生成され、job完了後も保存・共有できるファイルまたはファイル群。"
+    why_it_matters: "テスト結果、build成果、証拠ファイル、Pages deploy入力などを残す用途で繰り返し登場した。"
+    example: "build出力をupload-artifactで保存して別jobから利用する。"
+    related_terms: ["workflow", "github-actions", "provenance"]
+    sources:
+      - title: "Workflow artifacts"
+        url: "https://docs.github.com/en/actions/concepts/workflows-and-actions/workflow-artifacts"
+        source_type: "official_docs"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "github-actions-budget"
+    term: "GitHub Actions budget"
+    aliases: ["spending limit", "Actions billing budget"]
+    domain: "github"
+    definition_ja: "GitHub Actionsなどの従量課金製品について、支出額を監視または上限到達時に利用停止させるためのbudget設定。"
+    why_it_matters: "private repositoryのActionsがrunner起動前にBilling / spending条件で停止した原因切り分けに直接関係した。"
+    example: "Actionsのbudget上限到達により追加のrunner利用を止める。"
+    related_terms: ["github-actions", "runner", "workflow"]
+    sources:
+      - title: "Budgets and alerts"
+        url: "https://docs.github.com/en/billing/concepts/budgets-and-alerts"
+        source_type: "official_docs"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "commit"
+    term: "Commit"
+    aliases: ["Git commit"]
+    domain: "git"
+    definition_ja: "Git履歴に保存されるプロジェクト状態のスナップショット。親commit、author、committer、日時、treeなどの情報を持つ。"
+    why_it_matters: "PR headの固定、mainの状態確認、成果の証拠URL提示でcommit単位の識別が使われた。"
+    example: "CIが特定のcommitに対して成功したことを確認する。"
+    related_terms: ["branch", "object-id", "squash-merge"]
+    sources:
+      - title: "Git Glossary"
+        url: "https://git-scm.com/docs/gitglossary.html"
+        source_type: "official_docs"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "object-id"
+    term: "Object ID"
+    aliases: ["OID", "object name", "commit SHA"]
+    domain: "git"
+    definition_ja: "Git objectを一意に識別するobject name。会話ではcommit SHAとして、PR headやmainの状態固定に使われた。"
+    why_it_matters: "branch名のような可変参照ではなく、特定のcommitを固定してCIやmerge対象を確認できる。"
+    example: "expected head SHAを指定してPR headが動いていないことを確認してからmergeする。"
+    related_terms: ["commit", "sha-256"]
+    sources:
+      - title: "Git Glossary"
+        url: "https://git-scm.com/docs/gitglossary.html"
+        source_type: "official_docs"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "sha-256"
+    term: "SHA-256"
+    aliases: ["Secure Hash Algorithm 256"]
+    domain: "security"
+    definition_ja: "メッセージからダイジェストを生成するハッシュアルゴリズム。生成後に内容が変わっていないか確認する用途に使える。"
+    why_it_matters: "画像・PDF・artifactの再取得後一致確認やprovenance証跡で頻出した。"
+    example: "アップロード前後のファイルSHA-256を比較して同一性を確認する。"
+    related_terms: ["provenance", "object-id"]
+    sources:
+      - title: "SHA-256 - NIST CSRC Glossary"
+        url: "https://csrc.nist.gov/glossary/term/sha_256"
+        source_type: "standard_body"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "rest-api"
+    term: "REST API"
+    aliases: ["REST"]
+    domain: "software-engineering"
+    definition_ja: "HTTP経由でリソースを操作するAPI設計の一形態。GitHubではREST APIを用いてIssue、PR、repository、Actionsなどを自動操作できる。"
+    why_it_matters: "GitHubの自動操作や外部サービス連携の実装面で頻繁に登場した。"
+    example: "GitHub REST APIでIssueを作成する。"
+    related_terms: ["github-actions", "mcp"]
+    sources:
+      - title: "About the REST API"
+        url: "https://docs.github.com/en/rest/about-the-rest-api"
+        source_type: "official_docs"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "mcp"
+    term: "Model Context Protocol"
+    aliases: ["MCP"]
+    domain: "ai"
+    definition_ja: "LLMアプリケーションを外部データソースやツールへ標準化された形で接続するためのオープンプロトコル。"
+    why_it_matters: "GitHub、研究、データベース、NotebookLMなどの外部機能をAIから扱う文脈で繰り返し登場した。"
+    example: "LLMクライアントからMCP serverが公開するtoolを呼び出す。"
+    related_terms: ["rest-api", "notebooklm"]
+    sources:
+      - title: "Model Context Protocol Specification"
+        url: "https://modelcontextprotocol.io/specification/2025-11-25"
+        source_type: "protocol_spec"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "notebooklm"
+    term: "NotebookLM"
+    aliases: []
+    domain: "ai"
+    definition_ja: "GoogleのAIリサーチ支援サービス。ソースを取り込み、そのソースに基づく質問回答、要約、学習ガイド等の生成を行える。"
+    why_it_matters: "nlm repository自体の対象であり、用語集を学習ガイドやsourceへ再利用する先として選定した。"
+    example: "用語集MarkdownをNotebookLM sourceとして追加し、学習ガイドを生成する。"
+    related_terms: ["mcp"]
+    sources:
+      - title: "Learn about NotebookLM"
+        url: "https://support.google.com/notebooklm/answer/16164461"
+        source_type: "official_docs"
+      - title: "Add or discover new sources for your notebook"
+        url: "https://support.google.com/notebooklm/answer/16215270"
+        source_type: "official_docs"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "supabase"
+    term: "Supabase"
+    aliases: []
+    domain: "database"
+    definition_ja: "Postgresを中核にDatabase、Auth、Storage、Realtime、Edge Functionsなどを提供する開発プラットフォーム。"
+    why_it_matters: "画像資産、認証、RLS、Webアプリのbackend設定に関する直近会話で頻出した。"
+    example: "Supabase Storageへ画像を保存し、RLSでアクセス制御する。"
+    related_terms: ["postgresql", "row-level-security", "edge-functions", "oauth-2"]
+    sources:
+      - title: "Supabase Docs"
+        url: "https://supabase.com/docs"
+        source_type: "official_docs"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "postgresql"
+    term: "PostgreSQL"
+    aliases: ["Postgres"]
+    domain: "database"
+    definition_ja: "オープンソースのオブジェクト・リレーショナルデータベース管理システム。SupabaseのDatabase基盤としても使われる。"
+    why_it_matters: "Supabase、RLS、schema、データ管理の会話で基礎技術として登場した。"
+    example: "tableとschemaをPostgres上で定義する。"
+    related_terms: ["supabase", "row-level-security", "database-schema"]
+    sources:
+      - title: "PostgreSQL Documentation"
+        url: "https://www.postgresql.org/docs/current/"
+        source_type: "official_docs"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "row-level-security"
+    term: "Row Level Security"
+    aliases: ["RLS"]
+    domain: "database-security"
+    definition_ja: "テーブルの行ごとに、誰がどの行を参照・変更できるかをpolicyで制御するPostgresのアクセス制御機能。"
+    why_it_matters: "Supabase上のユーザー別データ、collection、Like等の認可条件として直近のIssue設計に登場した。"
+    example: "auth.uid()とuser_idが一致する行だけSELECT可能にするpolicyを設定する。"
+    related_terms: ["supabase", "postgresql", "oauth-2"]
+    sources:
+      - title: "Row Level Security | Supabase Docs"
+        url: "https://supabase.com/docs/guides/database/postgres/row-level-security"
+        source_type: "official_docs"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "oauth-2"
+    term: "OAuth 2.0"
+    aliases: ["OAuth"]
+    domain: "security"
+    definition_ja: "第三者アプリケーションにHTTPサービスへの限定的なアクセスを与えるための認可フレームワーク。"
+    why_it_matters: "Supabase Google OAuthなど、外部identity providerとの認証・認可設定のblockerとして登場した。"
+    example: "ユーザー承認を経てGoogleアカウント由来の認可情報をアプリへ渡す。"
+    related_terms: ["supabase", "row-level-security"]
+    sources:
+      - title: "RFC 6749: The OAuth 2.0 Authorization Framework"
+        url: "https://www.rfc-editor.org/rfc/rfc6749.html"
+        source_type: "standard"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "edge-functions"
+    term: "Supabase Edge Functions"
+    aliases: ["Edge Functions"]
+    domain: "serverless"
+    definition_ja: "Supabaseが提供するserver-side function実行環境。認証情報を検証し、Databaseや外部APIと連携する処理を置ける。"
+    why_it_matters: "Supabaseのserver-side処理、API、認証境界を理解するための基礎語として登場した。"
+    example: "認証済みユーザーのJWTを検証してPostgresへアクセスする。"
+    related_terms: ["supabase", "postgresql", "row-level-security"]
+    sources:
+      - title: "Securing Edge Functions"
+        url: "https://supabase.com/docs/guides/functions/auth"
+        source_type: "official_docs"
+      - title: "Integrating with Supabase Database (Postgres)"
+        url: "https://supabase.com/docs/guides/functions/connect-to-postgres"
+        source_type: "official_docs"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "database-schema"
+    term: "Database schema"
+    aliases: ["schema", "スキーマ"]
+    domain: "database"
+    definition_ja: "PostgreSQLではSQL objectのnamespace。より広い意味では、table定義やconstraintなどデータ構造の記述全体を指す。"
+    why_it_matters: "二重schemaを作らない、正準schemaを固定する、という設計判断で頻出した。"
+    example: "collection用tableを既存schemaへ統合し、別schemaを重複作成しない。"
+    related_terms: ["postgresql", "ontology"]
+    sources:
+      - title: "PostgreSQL Glossary"
+        url: "https://www.postgresql.org/docs/current/glossary.html"
+        source_type: "official_docs"
+      - title: "Schemas"
+        url: "https://www.postgresql.org/docs/current/ddl-schemas.html"
+        source_type: "official_docs"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "deployment"
+    term: "Deployment"
+    aliases: ["deploy", "デプロイ"]
+    domain: "web"
+    definition_ja: "buildしたアプリケーションや静的成果物を実行・公開環境へ配置し、利用可能な状態にすること。Vercelでは成功したbuildからdeploymentが生成される。"
+    why_it_matters: "Vercel、GitHub Pages、本番検証、production反映の会話で頻出した。"
+    example: "mainへのpushを契機にproduction deploymentを作成する。"
+    related_terms: ["github-pages", "continuous-integration"]
+    sources:
+      - title: "Deploying to Vercel"
+        url: "https://vercel.com/docs/deployments/overview"
+        source_type: "official_docs"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "provenance"
+    term: "Provenance"
+    aliases: ["来歴", "data provenance"]
+    domain: "data-governance"
+    definition_ja: "データや成果物が、どのentity・person・processによって生成、影響、提供されたかを記録する情報。"
+    why_it_matters: "画像・render metadata・paper dataset・artifactの出所と検証可能性を示す証拠チェーンとして頻出した。"
+    example: "assetのcommit、blob SHA、SHA-256、生成元を記録する。"
+    related_terms: ["sha-256", "workflow-artifact", "ontology"]
+    sources:
+      - title: "PROV Model Primer"
+        url: "https://www.w3.org/TR/prov-primer/"
+        source_type: "w3c_recommendation"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "ontology"
+    term: "Ontology"
+    aliases: ["オントロジー"]
+    domain: "knowledge-representation"
+    definition_ja: "特定domainの用語を形式化し、用語同士の関係を定義する共有語彙。"
+    why_it_matters: "repositoryのsemantic zone分類やfactory domain modelを一貫した意味体系で扱う文脈に登場した。"
+    example: "repositoryをagent-zone-*の意味体系に従って分類する。"
+    related_terms: ["database-schema", "provenance"]
+    sources:
+      - title: "OWL 2 Web Ontology Language Document Overview"
+        url: "https://www.w3.org/TR/owl-overview/"
+        source_type: "w3c_recommendation"
+    verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "end-to-end-testing"
+    term: "End-to-end testing"
+    aliases: ["E2E", "E2E test"]
+    domain: "software-testing"
+    definition_ja: "ユーザーが実際に行う操作に近い形で、アプリケーションを端から端まで通して挙動確認するテスト。"
+    why_it_matters: "CRUD、認可、mobile UI、本番導線までAcceptance Criteriaに含める文脈で繰り返し登場した。"
+    example: "ブラウザからログインし、list作成・並べ替え・削除まで通して検証する。"
+    related_terms: ["continuous-integration", "deployment"]
+    sources:
+      - title: "Playwright Library"
+        url: "https://playwright.dev/docs/library"
+        source_type: "official_docs"
+      - title: "Playwright Best Practices"
+        url: "https://playwright.dev/docs/best-practices"
+        source_type: "official_docs"
+    verified_at: "2026-08-14"
+    status: "verified"
