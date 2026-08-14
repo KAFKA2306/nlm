@@ -13,7 +13,7 @@ nlmは、NotebookLMの操作をCLIから再現可能に扱うGoクライアン�
 - 認証情報: `~/.nlm/env` に `0600` で保存
 - NotebookLM との通信はこのリポジトリ内の RPC / batchexecute 実装に依存するため、上流の挙動変更で壊れる可能性があります
 - `cmd/nlm/mcp.go` には stdio MCP server 実装がありますが、現行 CLI の command dispatcher には `mcp` が登録されていません。したがって **`nlm mcp` は現時点の supported command ではありません**
-- 学習用語集はデータと閲覧用Markdownまで実装済みですが、`nlm glossary ...` CLIはまだ未実装です
+- `nlm glossary ...` はNotebookLM認証を使わないローカルcommand familyです。標準ではrepository内の `data/glossary/terms.yaml` を探索し、別パスを使う場合は `NLM_GLOSSARY_PATH` を指定します
 
 ## Install
 
@@ -58,7 +58,7 @@ nlm auth -cdp-url ws://localhost:9222
 
 ## CLI
 
-完全な command surface はコードと `nlm help` を正準とします。代表的な command は以下です。
+NotebookLM側のcommand surfaceはコードと `nlm help` を正準とします。学習用語集は認証前に処理するローカルcommand familyとして別に提供します。代表的なcommandは以下です。
 
 | Area | Commands |
 |---|---|
@@ -70,6 +70,7 @@ nlm auth -cdp-url ws://localhost:9222
 | Artifact | `artifacts`, `create-artifact`, `get-artifact`, `rename-artifact`, `delete-artifact` |
 | Generate | `generate-guide`, `generate-outline`, `generate-section`, `generate-chat`, `generate-magic`, `chat` |
 | Transform | `summarize`, `rephrase`, `expand`, `critique`, `verify`, `explain`, `study-guide`, `faq`, `briefing-doc`, `mindmap`, `timeline`, `toc` |
+| Glossary | `glossary list`, `glossary search`, `glossary show`, `glossary check`, `glossary generate` |
 | Share | `share`, `share-private`, `share-details` |
 | Auth / misc | `auth`, `refresh`, `feedback`, `hb` |
 
@@ -81,6 +82,7 @@ nlm create "research"
 nlm add <notebook-id> <input>
 nlm sources <notebook-id>
 nlm chat <notebook-id>
+nlm glossary search RLS
 ```
 
 ## 学習用語集
@@ -92,6 +94,7 @@ nlm chat <notebook-id>
 - 抽出監査: **294語**
 - `verified`: **29語**
 - `needs_review`: **265語**
+- schema: [`data/glossary/schema.json`](data/glossary/schema.json)
 - 正準データ: [`data/glossary/terms.yaml`](data/glossary/terms.yaml)
 - 抽出監査inventory: [`data/glossary/recent-term-inventory.yaml`](data/glossary/recent-term-inventory.yaml)
 - 人間向けビュー: [`docs/glossary.md`](docs/glossary.md)
@@ -130,20 +133,31 @@ status: verified
 
 `needs_review` の語には、定義を推測して埋めません。現在は `RAG`, `Graphiti`, `PITR`, `fail-closed`, `walk-forward`, `Shader`, `Single Pass Instanced`, `SRP Batcher`, `UdonSharp`, `OIDC`, `ReAct`, `Whisper`, `Matter`, `Thread` などが検証待ちに含まれます。
 
-### Planned glossary CLI
+### Glossary CLI
 
-Issue #4では次を実装予定です。
+用語集commandはNotebookLMのcookie/tokenを必要としません。
 
-```text
+```bash
 nlm glossary list
 nlm glossary search <query>
-nlm glossary show <term>
+nlm glossary show <term|id|alias>
 nlm glossary check
+nlm glossary generate [output-path]
 ```
 
-`check` は少なくともschema不正、重複ID、重複term、必須source URL、日付形式、`related_terms` の参照切れを検出し、異常時は非0終了にします。さらに `docs/glossary.md` を正準YAMLから再生成可能にします。
+- `list`: 正準用語をterm/domain/status/idで一覧表示
+- `search`: term、id、alias、domain、説明、例から部分一致検索
+- `show`: term、id、aliasの完全一致で学習用詳細を表示
+- `check`: strict YAML schema、必須項目、ID/term重複、status、一次情報URL、日付形式、`related_terms`参照切れを検査し、異常時は非0終了
+- `generate`: `terms.yaml` から決定論的にMarkdownを生成。output-pathを省略した場合は `docs/glossary.md` を更新
 
-**現時点ではこれらの`glossary` commandはまだsupported commandではありません。** 実装されるまで、CLI tableには載せません。
+標準パス以外の正準YAMLを検査する場合:
+
+```bash
+NLM_GLOSSARY_PATH=/path/to/terms.yaml nlm glossary check
+```
+
+**`docs/glossary.md` は生成物です。直接編集せず、必ず `nlm glossary generate` で再生成してください。** 正準データは `data/glossary/terms.yaml` です。
 
 ## Debug
 
@@ -169,6 +183,7 @@ make test
 ```bash
 go build ./cmd/nlm
 go test ./...
+go run ./cmd/nlm glossary check
 ```
 
 protobuf / generated client を更新した場合:
@@ -194,6 +209,7 @@ make generate
 - arbitrary な行数制限や、実装と矛盾する開発ルールを追加しない
 - 用語集の`verified` entryは、一次情報・標準仕様・原論文の根拠URLなしで追加しない
 - `recent-term-inventory.yaml` は抽出監査、`terms.yaml` は検証済み正準データとして責務を分ける
+- `docs/glossary.md` は手編集せず、`nlm glossary generate` で再生成する
 
 ## Podcast: KAFKA探究室
 
