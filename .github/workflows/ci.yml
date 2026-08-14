@@ -41,16 +41,7 @@ jobs:
       - name: Check glossary
         run: go run ./cmd/nlm glossary check
 
-      - name: Generate glossary
-        run: go run ./cmd/nlm glossary generate /tmp/glossary.md
-
-      - name: Upload generated glossary
-        uses: actions/upload-artifact@v4
-        with:
-          name: generated-glossary
-          path: /tmp/glossary.md
-          if-no-files-found: error
-          retention-days: 1
-
       - name: Verify generated glossary
-        run: diff -u docs/glossary.md /tmp/glossary.md
+        run: |
+          go run ./cmd/nlm glossary generate /tmp/glossary.md
+          diff -u docs/glossary.md /tmp/glossary.md
