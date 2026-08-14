@@ -547,3 +547,21 @@ terms:
         source_type: "official_docs"
     verified_at: "2026-08-14"
     status: "verified"
+
+  - id: "mcp-tools-list"
+    term: "tools/list"
+    aliases: ["MCP tools/list"]
+    domain: "ai"
+    definition_ja: "MCP clientがserverへ利用可能なtool一覧を要求するためのJSON-RPC method。"
+    why_it_matters: "clientがserverのtool surfaceをdiscoverし、利用可能な操作とschemaを把握する入口になる。"
+    example: "clientが method: tools/list を送信し、serverからTool配列と必要に応じてnextCursorを受け取る。"
+    related_terms: ["mcp", "mcp-server"]
+    sources:
+      - title: "Schema Reference - tools/list"
+        url: "https://modelcontextprotocol.io/specification/2025-11-25/schema"
+        source_type: "protocol_spec"
+      - title: "Pagination"
+        url: "https://modelcontextprotocol.io/specification/2025-11-25/server/utilities/pagination"
+        source_type: "protocol_spec"
+    verified_at: "2026-08-14"
+    status: "verified"
