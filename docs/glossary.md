@@ -38,3 +38,4 @@
 | NotebookLM note | NotebookLMで情報を記録・整理し、sourceから得た洞察や解釈、自分の考え、保存したchat responseなどを保持するnotebook内のメモ。 | [Create & add notes in NotebookLM](https://support.google.com/notebooklm/answer/16262519) |
 | Large Language Model | 非常に大規模なデータセットにdeep learningを適用し、自然なテキストを予測・構成する計算モデル。 | [Large Language Models MeSH Descriptor Data 2026](https://meshb.nlm.nih.gov/record/ui?ui=D000098342) |
 | Retrieval-Augmented Generation | 事前学習済み生成モデルのparametric memoryと、検索でアクセスするnon-parametric memoryを組み合わせて文章生成を行う手法。 | [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://papers.nips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html) |
+| Remote MCP server | local machineではなくinternet上にhostされ、MCP clientへtools・prompts・resourcesなどを提供するMCP server。 | [Connect to remote MCP Servers](https://modelcontextprotocol.io/docs/develop/connect-remote-servers) |
