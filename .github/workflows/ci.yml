@@ -37,3 +37,11 @@ jobs:
 
       - name: Test
         run: go test ./...
+
+      - name: Check glossary
+        run: go run ./cmd/nlm glossary check
+
+      - name: Verify generated glossary
+        run: |
+          go run ./cmd/nlm glossary generate /tmp/glossary.md
+          diff -u docs/glossary.md /tmp/glossary.md
