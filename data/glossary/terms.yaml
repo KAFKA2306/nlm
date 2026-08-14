@@ -484,3 +484,18 @@ terms:
         source_type: "official_docs"
     verified_at: "2026-08-14"
     status: "verified"
+
+  - id: "notebooklm-note"
+    term: "NotebookLM note"
+    aliases: ["note"]
+    domain: "ai"
+    definition_ja: "NotebookLMで情報を記録・整理し、sourceから得た洞察や解釈、自分の考え、保存したchat responseなどを保持するnotebook内のメモ。"
+    why_it_matters: "sourceそのものと、自分の整理・解釈・保存した回答を分けて扱い、後から学習素材やsourceへ再利用するための作業単位になる。"
+    example: "StudioのNotesでメモを書いたり、chat responseをSave to Noteして残す。"
+    related_terms: ["notebooklm", "notebooklm-source"]
+    sources:
+      - title: "Create & add notes in NotebookLM"
+        url: "https://support.google.com/notebooklm/answer/16262519"
+        source_type: "official_docs"
+    verified_at: "2026-08-14"
+    status: "verified"
