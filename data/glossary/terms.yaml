@@ -499,3 +499,18 @@ terms:
         source_type: "official_docs"
     verified_at: "2026-08-14"
     status: "verified"
+
+  - id: "large-language-model"
+    term: "Large Language Model"
+    aliases: ["LLM", "Large Language Models"]
+    domain: "ai"
+    definition_ja: "非常に大規模なデータセットにdeep learningを適用し、自然なテキストを予測・構成する計算モデル。"
+    why_it_matters: "生成AI、agent、MCP、RAGなど直近のAIワークフローを理解する基礎概念になる。"
+    example: "大量のテキストデータから学習したモデルが、入力に続く自然な文章を予測・生成する。"
+    related_terms: ["mcp", "notebooklm"]
+    sources:
+      - title: "Large Language Models MeSH Descriptor Data 2026"
+        url: "https://meshb.nlm.nih.gov/record/ui?ui=D000098342"
+        source_type: "controlled_vocabulary"
+    verified_at: "2026-08-14"
+    status: "verified"
