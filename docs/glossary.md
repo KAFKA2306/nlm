@@ -3,6 +3,7 @@
 このページは、直近の会話で実際に使われた技術用語を学習用に整理した人間向けビューです。
 
 - 正準データ: [`data/glossary/terms.yaml`](../data/glossary/terms.yaml)
+- 抽出監査: [`data/glossary/recent-term-inventory.yaml`](../data/glossary/recent-term-inventory.yaml) — 151語（verified 29 / needs_review 122）
 - 確認日: 2026-08-14
 - `verified` は一次情報または標準仕様で定義を確認した項目だけに付けます。
 - 定義・数値・仕様を確認できない語は、この一覧では `verified` として追加しません。
@@ -57,8 +58,8 @@
 | Ontology | domainの用語と、その用語間の関係を形式化した共有語彙。 | [W3C OWL 2 Overview](https://www.w3.org/TR/owl-overview/) |
 | End-to-end testing (E2E) | user操作に近い形でapplicationを端から端まで通して確認するtest。 | [Playwright Docs](https://playwright.dev/docs/library) |
 
-## 次に拾う候補
+## 未検証語の扱い
 
-直近ログには、まだ正準entryへ昇格していない語もあります。たとえば `fail-closed`、`version pin`、`data lake`、`data mart`、`future leakage`、`walk-forward`、`out-of-sample`、`PITR`、`Neo4j`、`Graphiti`、`RAG` などです。
+直近会話から抽出したが、まだ一次情報・標準・原論文で定義を確認していない122語は、[`recent-term-inventory.yaml`](../data/glossary/recent-term-inventory.yaml) に `needs_review` として保持します。
 
-これらは、各語について一次情報・標準・原論文まで確認してから `data/glossary/terms.yaml` へ追加します。
+`fail-closed`、`version pin`、`data lake`、`data mart`、`future leakage`、`walk-forward`、`out-of-sample`、`PITR`、`Neo4j`、`Graphiti`、`RAG` などもここに含まれます。確認が完了した語だけを `data/glossary/terms.yaml` へ昇格します。
