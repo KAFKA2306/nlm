@@ -36,3 +36,4 @@
 | MCP server | MCP clientへcontextやcapabilityを提供し、resources・prompts・toolsなどのserver featureを公開するserver。 | [Architecture overview](https://modelcontextprotocol.io/docs/learn/architecture) |
 | NotebookLM source | NotebookLMへimportまたはuploadした文書のcopyまたは自動同期版で、モデルが質問回答やrequest処理の根拠として使う情報源。 | [Add or discover new sources for your notebook](https://support.google.com/notebooklm/answer/16215270) |
 | NotebookLM note | NotebookLMで情報を記録・整理し、sourceから得た洞察や解釈、自分の考え、保存したchat responseなどを保持するnotebook内のメモ。 | [Create & add notes in NotebookLM](https://support.google.com/notebooklm/answer/16262519) |
+| Large Language Model | 非常に大規模なデータセットにdeep learningを適用し、自然なテキストを予測・構成する計算モデル。 | [Large Language Models MeSH Descriptor Data 2026](https://meshb.nlm.nih.gov/record/ui?ui=D000098342) |
