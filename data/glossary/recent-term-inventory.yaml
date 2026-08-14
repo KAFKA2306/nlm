@@ -1,15 +1,19 @@
 version: 1
 extracted_at: '2026-08-14'
-scope: Recent conversation context and recovered recent-work summaries available in ChatGPT for this task.
+scope: Recent ChatGPT conversation context and recovered recent-work summaries available for this task, augmented with recent-conversation
+  retrieval; not a claim of access to every historical chat transcript.
 policy:
   purpose: Audit inventory of observed technical terms; not the canonical definition store.
   canonical_verified_store: data/glossary/terms.yaml
-  promotion_rule: Promote a needs_review term only after its definition is supported by a primary source, standard, or original paper.
+  promotion_rule: Promote a needs_review term only after its definition is supported by a primary source, standard, or original
+    paper.
   exclusions: Personal identifiers, secrets, credentials, account details, and ordinary non-technical words.
+  coverage_note: Inventory records terms found in the recent context available to this task. It must not be described as a
+    complete export of all ChatGPT history.
 counts:
-  total: 151
+  total: 294
   verified: 29
-  needs_review: 122
+  needs_review: 265
 verified_terms:
 - GitHub Actions
 - Workflow
@@ -48,10 +52,25 @@ needs_review_by_domain:
   - NotebookLM note
   - Large Language Model (LLM)
   - Retrieval-Augmented Generation (RAG)
+  - Read-only MCP
+  - Remote MCP
+  - tools/list
+  - Context compaction
+  - CodeGraph traversal
+  - Self-improving skills
+  - Skill Synthesis
+  - Validated workflow generation
+  - ReAct
+  - Multi-agent
+  - Output validation
+  - Agent orchestration
+  - Self-built agent
   cloud-computing:
   - Serverless
   cloud-operations:
   - Billing
+  - Quota owner
+  - Dry-run
   data:
   - World Development Indicators (WDI)
   data-engineering:
@@ -63,14 +82,31 @@ needs_review_by_domain:
   - Derived data
   - Data lake
   - Data mart
+  - Incremental sync
+  - Deterministic sort
+  - Checksum manifest
+  - Adapter
+  - Delta detection
+  - Asset indexing
+  - Raw-vintage data
+  - Derived-revision data
   data-format:
   - JSON
+  - JSONL
+  - Parquet
+  - CSV
   data-governance:
   - Stable asset ID
   - Registry
   - Data accessibility
   - Artifact provenance
   - Stable asset identifier
+  - Single Source of Truth (SSOT)
+  - Architecture Records
+  - Knowledge Runtime
+  - Source commit
+  - Parity
+  - null_reason
   data-modeling:
   - Work / Edition / Holding model
   data-platform:
@@ -91,12 +127,18 @@ needs_review_by_domain:
   - RLS policy
   distributed-systems:
   - Remote Procedure Call (RPC)
+  - App Server handshake
+  - Transport smoke test
+  - Controller comment
+  - Terminal worker state
   financial-data:
   - EDGAR
   git:
   - Blob SHA
   - Mutable ref
   - Git blob
+  - Expected head SHA
+  - Branch-ref cleanup
   github:
   - Private repository
   - Self-hosted runner
@@ -106,16 +148,49 @@ needs_review_by_domain:
   - Repository setting
   - Workflow run
   - GitHub Actions job
+  - Reusable workflow
+  - workflow_call
+  - Caller workflow
+  - Callee workflow
+  - GITHUB_TOKEN
+  - GitHub permissions
+  - GitHub annotation
+  - Mergeability
+  - Host-side safety rejection
+  - Self-cleaning CI
   graph-database:
   - Neo4j
   - FalkorDB
   - Amazon Neptune
   graphics:
   - Render metadata
+  - Shader
+  - Shader Variant
+  - Shader source
+  - Shader cache
+  - Compiled shader variant
+  - Custom shader
+  - Transparent rendering
+  - Depth
+  - Overlapping mesh
+  - GrabPass
+  - SRP Batcher
+  - CommandBuffer
+  - URP Deferred
+  - Fog
+  - Refraction
+  - VR parallax
+  - GPU
+  - Shader count
+  - Polygon count
+  - Draw calls
   industry-classification:
   - ISIC
   information-retrieval:
   - Reranker
+  - Terminology-enhanced queries
+  - DeepPerception-RAG
+  - Gold Path Coverage
   knowledge-organization:
   - Semantic zone
   - Classification debt
@@ -128,6 +203,8 @@ needs_review_by_domain:
   - Fact
   - Episode
   - Temporal information
+  - GraphService
+  - ERRI
   learning:
   - Study guide
   - FAQ
@@ -139,11 +216,18 @@ needs_review_by_domain:
   - Future leakage
   - Data split
   - Embedder
+  - Exploratory Data Analysis (EDA)
+  - Feature engineering
   ml-operations:
   - training_attempted
   - training_executed
   - evaluation_executed
   - observed_metrics
+  - Deployment monitoring
+  - Runtime telemetry
+  - Persistent execution
+  - Watchdog
+  - Uptime logs
   operating-systems:
   - Standard input/output (stdio)
   publishing:
@@ -177,6 +261,7 @@ needs_review_by_domain:
   - SSL/TLS
   - Network restriction
   - Supabase Google OAuth
+  - HF_TOKEN
   software-engineering:
   - Language fallback
   - Manifest
@@ -185,9 +270,20 @@ needs_review_by_domain:
   - Open-source software (OSS)
   - Command dispatcher
   - CRUD
+  - Compatibility layer
+  - Error recovery
+  - Workflow planning
+  - Incomplete procedures
+  - Methodological deviations
+  - Execution fragility
   software-testing:
   - Regression test
   - Mobile regression test
+  - Evidence gate
+  - Entity gate
+  - Smoke test
+  - Read-only transport smoke test
+  - Documentation Quality Check
   standard:
   - ISO 3166-1
   statistics:
@@ -202,3 +298,62 @@ needs_review_by_domain:
   - Mutable main hotlink
   web-protocol:
   - batchexecute
+  ai-platform:
+  - AI Studio
+  - Jules
+  - Antigravity
+  - Gemini Live
+  - Ask Home
+  developer-tools:
+  - Snakemake
+  - MkDocs
+  github-security:
+  - OpenID Connect (OIDC)
+  - 'id-token: write'
+  - Trusted Publishers
+  home-automation:
+  - Home Assistant
+  - Matter
+  - Thread
+  - Home APIs
+  - Automation Engine
+  - Voice Match
+  - Speaker Reference Design
+  research-data:
+  - Point-in-time vintage
+  - Revision stage
+  - Revision history
+  - Revision stage continuity
+  - Stable key
+  - Deduplicated canonical view
+  - Facet
+  - Primary category
+  - Deterministic distribution layer
+  - Atom API
+  - OAI-PMH
+  speech:
+  - Whisper
+  - Piper
+  - Voice Activity Detection (VAD)
+  vr-3d:
+  - Single Pass Instanced
+  - Stereo rendering
+  - Build optimization
+  - XR Management
+  - World-space Canvas
+  - Occlusion mesh
+  - OSC-based telemetry
+  - Modular Avatar
+  - UdonSharp
+  - Spatial DID
+  - VRCSDK3
+  - Avatar fitting
+  - Avatar deformation
+  - blendshapedeformer
+  - bpyutils
+  web-deployment:
+  - CI & Deploy to Hugging Face Spaces
+  - Deploy MkDocs Simple
+  - Hugging Face publish
+  - Pages/API generation
+  - Cross-repository review
