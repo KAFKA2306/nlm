@@ -529,3 +529,21 @@ terms:
         source_type: "original_paper"
     verified_at: "2026-08-14"
     status: "verified"
+
+  - id: "remote-mcp-server"
+    term: "Remote MCP server"
+    aliases: ["Remote MCP"]
+    domain: "ai"
+    definition_ja: "local machineではなくinternet上にhostされ、MCP clientへtools・prompts・resourcesなどを提供するMCP server。"
+    why_it_matters: "local installationなしで外部serviceやdata sourceへ接続でき、HTTP transport・authentication・公開endpointの設計を理解する基礎になる。"
+    example: "Streamable HTTP endpointで公開されたremote MCP serverへclientがinternet経由で接続する。"
+    related_terms: ["mcp", "mcp-server"]
+    sources:
+      - title: "Connect to remote MCP Servers"
+        url: "https://modelcontextprotocol.io/docs/develop/connect-remote-servers"
+        source_type: "official_docs"
+      - title: "Architecture overview"
+        url: "https://modelcontextprotocol.io/docs/learn/architecture"
+        source_type: "official_docs"
+    verified_at: "2026-08-14"
+    status: "verified"
