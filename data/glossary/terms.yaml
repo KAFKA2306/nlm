@@ -514,3 +514,18 @@ terms:
         source_type: "controlled_vocabulary"
     verified_at: "2026-08-14"
     status: "verified"
+
+  - id: "retrieval-augmented-generation"
+    term: "Retrieval-Augmented Generation"
+    aliases: ["RAG"]
+    domain: "ai"
+    definition_ja: "事前学習済み生成モデルのparametric memoryと、検索でアクセスするnon-parametric memoryを組み合わせて文章生成を行う手法。"
+    why_it_matters: "モデル内部の知識だけに依存せず外部知識を検索して使えるため、知識更新やprovenanceを扱うAI設計の基礎になる。"
+    example: "質問に関連する文書をretrieverで検索し、取得したpassageを使ってgeneratorが回答を生成する。"
+    related_terms: ["large-language-model", "provenance"]
+    sources:
+      - title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
+        url: "https://papers.nips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html"
+        source_type: "original_paper"
+    verified_at: "2026-08-14"
+    status: "verified"
