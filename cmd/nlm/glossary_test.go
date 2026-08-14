@@ -19,7 +19,7 @@ func validGlossaryFixture() *glossaryDocument {
 				Term:         "Alpha",
 				Aliases:      []string{"A"},
 				Domain:       "test",
-				DefinitionJA: "Alphaの定義。",
+				DefinitionJA: "Alphaの定義。続きの詳しい説明。",
 				WhyItMatters: "Alphaが重要な理由。",
 				Example:      "Alphaの例。",
 				RelatedTerms: []string{"beta"},
@@ -124,7 +124,7 @@ func TestSearchAndShowGlossary(t *testing.T) {
 	if err := showGlossary(&show, doc, "a"); err != nil {
 		t.Fatal(err)
 	}
-	for _, want := range []string{"Alpha", "Definition: Alphaの定義。", "https://example.com/alpha"} {
+	for _, want := range []string{"Alpha", "Definition: Alphaの定義。続きの詳しい説明。", "https://example.com/alpha"} {
 		if !strings.Contains(show.String(), want) {
 			t.Fatalf("show output = %q, want %q", show.String(), want)
 		}
@@ -140,12 +140,16 @@ func TestRenderGlossaryMarkdownDeterministic(t *testing.T) {
 	}
 	for _, want := range []string{
 		"直接編集しないでください",
-		"## Alpha",
-		"**なぜ重要か:** Alphaが重要な理由。",
-		"[Alpha spec](https://example.com/alpha)",
+		"| 用語 | 一言説明 | 一次情報 |",
+		"| Alpha | Alphaの定義。 | [Alpha spec](https://example.com/alpha) |",
 	} {
 		if !bytes.Contains(first, []byte(want)) {
 			t.Fatalf("generated markdown missing %q", want)
+		}
+	}
+	for _, unwanted := range []string{"## Alpha", "Alphaが重要な理由。", "Alphaの例。", "続きの詳しい説明。"} {
+		if bytes.Contains(first, []byte(unwanted)) {
+			t.Fatalf("generated markdown should stay compact; found %q", unwanted)
 		}
 	}
 }
@@ -216,7 +220,7 @@ terms:
 	if err != nil {
 		t.Fatal(err)
 	}
-	if !bytes.Contains(generated, []byte("## Alpha")) {
+	if !bytes.Contains(generated, []byte("| Alpha | Alphaの定義。 |")) {
 		t.Fatalf("generated markdown = %q", generated)
 	}
 }
