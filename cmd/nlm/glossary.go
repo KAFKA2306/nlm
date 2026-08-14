@@ -432,38 +432,35 @@ func renderGlossaryMarkdown(doc *glossaryDocument) []byte {
 	var b bytes.Buffer
 	fmt.Fprintln(&b, "# 学習用語集")
 	fmt.Fprintln(&b)
-	fmt.Fprintln(&b, "> このファイルは `data/glossary/terms.yaml` から `nlm glossary generate` で生成します。直接編集しないでください。")
+	fmt.Fprintln(&b, "> `data/glossary/terms.yaml` から自動生成。詳しく見たい語は `nlm glossary show <term>`。直接編集しないでください。")
 	fmt.Fprintln(&b)
-	fmt.Fprintf(&b, "- Schema version: `%d`\n", doc.Version)
-	fmt.Fprintf(&b, "- Terms: **%d**\n", len(doc.Terms))
-	fmt.Fprintf(&b, "- Verified at: `%s`\n", doc.VerifiedAt)
-	fmt.Fprintf(&b, "- Source scope: %s\n", doc.SourceScope)
-
+	fmt.Fprintln(&b, "| 用語 | 一言説明 | 一次情報 |")
+	fmt.Fprintln(&b, "|---|---|---|")
 	for _, term := range doc.Terms {
-		fmt.Fprintf(&b, "\n## %s\n\n", term.Term)
-		fmt.Fprintf(&b, "`%s` · `%s` · `%s`\n\n", term.ID, term.Domain, term.Status)
-		fmt.Fprintln(&b, term.DefinitionJA)
-		fmt.Fprintln(&b)
-		fmt.Fprintf(&b, "- **Aliases:** %s\n", markdownList(term.Aliases))
-		fmt.Fprintf(&b, "- **なぜ重要か:** %s\n", term.WhyItMatters)
-		fmt.Fprintf(&b, "- **例:** %s\n", term.Example)
-		fmt.Fprintf(&b, "- **関連語:** %s\n", markdownList(term.RelatedTerms))
-		fmt.Fprintf(&b, "- **確認日:** `%s`\n", term.VerifiedAt)
-		fmt.Fprintln(&b, "- **Sources:**")
-		for _, source := range term.Sources {
-			fmt.Fprintf(&b, "  - [%s](%s) — `%s`\n", source.Title, source.URL, source.SourceType)
+		source := "-"
+		if len(term.Sources) > 0 {
+			source = fmt.Sprintf("[%s](%s)", markdownTableCell(term.Sources[0].Title), term.Sources[0].URL)
 		}
+		fmt.Fprintf(
+			&b,
+			"| %s | %s | %s |\n",
+			markdownTableCell(term.Term),
+			markdownTableCell(shortGlossaryDefinition(term.DefinitionJA)),
+			source,
+		)
 	}
 	return b.Bytes()
 }
 
-func markdownList(values []string) string {
-	if len(values) == 0 {
-		return "-"
+func shortGlossaryDefinition(value string) string {
+	value = strings.Join(strings.Fields(value), " ")
+	if i := strings.Index(value, "。"); i >= 0 {
+		return value[:i+len("。")]
 	}
-	quoted := make([]string, 0, len(values))
-	for _, value := range values {
-		quoted = append(quoted, "`"+strings.ReplaceAll(value, "`", "'")+"`")
-	}
-	return strings.Join(quoted, ", ")
+	return value
+}
+
+func markdownTableCell(value string) string {
+	value = strings.Join(strings.Fields(value), " ")
+	return strings.ReplaceAll(value, "|", `\|`)
 }
