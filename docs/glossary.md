@@ -34,3 +34,4 @@
 | Ontology | 特定domainの用語を形式化し、用語同士の関係を定義する共有語彙。 | [OWL 2 Web Ontology Language Document Overview](https://www.w3.org/TR/owl-overview/) |
 | End-to-end testing | ユーザーが実際に行う操作に近い形で、アプリケーションを端から端まで通して挙動確認するテスト。 | [Playwright Library](https://playwright.dev/docs/library) |
 | MCP server | MCP clientへcontextやcapabilityを提供し、resources・prompts・toolsなどのserver featureを公開するserver。 | [Architecture overview](https://modelcontextprotocol.io/docs/learn/architecture) |
+| NotebookLM source | NotebookLMへimportまたはuploadした文書のcopyまたは自動同期版で、モデルが質問回答やrequest処理の根拠として使う情報源。 | [Add or discover new sources for your notebook](https://support.google.com/notebooklm/answer/16215270) |
