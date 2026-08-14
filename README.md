@@ -4,7 +4,7 @@
 
 NotebookLMでnotebookを作る、sourceを追加する、内容を確認する、audioやartifactを生成する――同じ操作を何度も行うなら、手順をコマンドとして再実行できる方が、何を実行したかも検証しやすくなります。実装ファイルが存在していても、command dispatcherへ登録されていない機能はCLIから利用できません。
 
-nlmは、NotebookLMの操作をCLIから再現可能に扱うGoクライアントです。このrepositoryにはCLI本体に加えて、`KAFKA探究室` のPodcast配信物も置かれています。NotebookLMとの通信にはRPC / batchexecute実装を使い、実装済みでもdispatcher未登録の`nlm mcp`は現時点のsupported commandとして扱いません。
+nlmは、NotebookLMの操作をCLIから再現可能に扱うGoクライアントです。このrepositoryにはCLI本体に加えて、`KAFKA探究室` のPodcast配信物と、会話・開発・研究で実際に使った技術用語を学習用に整理する用語集を置いています。NotebookLMとの通信にはRPC / batchexecute実装を使い、実装済みでもdispatcher未登録の`nlm mcp`は現時点のsupported commandとして扱いません。
 
 ## Current boundaries
 
@@ -13,6 +13,7 @@ nlmは、NotebookLMの操作をCLIから再現可能に扱うGoクライアン�
 - 認証情報: `~/.nlm/env` に `0600` で保存
 - NotebookLM との通信はこのリポジトリ内の RPC / batchexecute 実装に依存するため、上流の挙動変更で壊れる可能性があります
 - `cmd/nlm/mcp.go` には stdio MCP server 実装がありますが、現行 CLI の command dispatcher には `mcp` が登録されていません。したがって **`nlm mcp` は現時点の supported command ではありません**
+- 学習用語集はデータと閲覧用Markdownまで実装済みですが、`nlm glossary ...` CLIはまだ未実装です
 
 ## Install
 
@@ -84,13 +85,65 @@ nlm chat <notebook-id>
 
 ## 学習用語集
 
-直近の会話で実際に使われた技術用語を、一次情報で確認したうえで学習用に蓄積します。
+会話・開発・研究で**実際に使った技術用語**を拾い、学習用の正準データとして継続的に育てます。LLMがもっともらしい定義を生成して終わりにせず、一次情報・標準仕様・原論文で確認できた語だけを `verified` に昇格させます。
 
+### Current snapshot — 2026-08-14
+
+- 抽出監査: **294語**
+- `verified`: **29語**
+- `needs_review`: **265語**
 - 正準データ: [`data/glossary/terms.yaml`](data/glossary/terms.yaml)
+- 抽出監査inventory: [`data/glossary/recent-term-inventory.yaml`](data/glossary/recent-term-inventory.yaml)
 - 人間向けビュー: [`docs/glossary.md`](docs/glossary.md)
-- `verified` は一次情報または標準仕様で確認できたentryだけに付与します
+- 追跡Issue: [#4 学習用の正準用語集を追加し、継続更新できる仕組みにする](https://github.com/KAFKA2306/nlm/issues/4)
 
-現時点ではglossary用CLIは未実装です。Issue #4で `list/search/show/check` とMarkdown自動生成を実装予定であり、README上でsupported commandとしては扱いません。
+現在の294語は、この作業で取得できた直近ChatGPT会話コンテキストとrecent-work retrievalから抽出した監査集合です。**ChatGPT全履歴の完全exportとは扱いません。**
+
+### Promotion rule
+
+用語は次の順で正準用語集へ昇格します。
+
+1. 会話・Issue・PR・研究作業で実際に使われた語をinventoryへ追加する
+2. aliasesとdomainを正規化する
+3. 一次情報、標準仕様、原論文のいずれかで意味を確認する
+4. 日本語の短い定義、なぜ重要か、具体例、関連語、source URL、確認日を付ける
+5. 検証できたentryだけを `data/glossary/terms.yaml` の `verified` として保持する
+
+正準entryの主な項目は以下です。
+
+```yaml
+id: row-level-security
+term: Row Level Security
+aliases: [RLS]
+domain: database-security
+definition_ja: ...
+why_it_matters: ...
+example: ...
+related_terms: [...]
+sources:
+  - title: ...
+    url: ...
+    source_type: official_docs
+verified_at: "2026-08-14"
+status: verified
+```
+
+`needs_review` の語には、定義を推測して埋めません。現在は `RAG`, `Graphiti`, `PITR`, `fail-closed`, `walk-forward`, `Shader`, `Single Pass Instanced`, `SRP Batcher`, `UdonSharp`, `OIDC`, `ReAct`, `Whisper`, `Matter`, `Thread` などが検証待ちに含まれます。
+
+### Planned glossary CLI
+
+Issue #4では次を実装予定です。
+
+```text
+nlm glossary list
+nlm glossary search <query>
+nlm glossary show <term>
+nlm glossary check
+```
+
+`check` は少なくともschema不正、重複ID、重複term、必須source URL、日付形式、`related_terms` の参照切れを検出し、異常時は非0終了にします。さらに `docs/glossary.md` を正準YAMLから再生成可能にします。
+
+**現時点ではこれらの`glossary` commandはまだsupported commandではありません。** 実装されるまで、CLI tableには載せません。
 
 ## Debug
 
@@ -139,6 +192,8 @@ make generate
 - generated code を手編集せず、`proto/` / template 側を変更して `make generate` する
 - 認証情報・cookie・token を commit しない
 - arbitrary な行数制限や、実装と矛盾する開発ルールを追加しない
+- 用語集の`verified` entryは、一次情報・標準仕様・原論文の根拠URLなしで追加しない
+- `recent-term-inventory.yaml` は抽出監査、`terms.yaml` は検証済み正準データとして責務を分ける
 
 ## Podcast: KAFKA探究室
 
