@@ -1,5 +1,7 @@
 # nlm
 
+[![Go CI](https://github.com/KAFKA2306/nlm/actions/workflows/ci.yml/badge.svg)](https://github.com/KAFKA2306/nlm/actions/workflows/ci.yml)
+
 **ブラウザでしかできない作業を、毎回手で繰り返す必要はない。**
 
 NotebookLMでnotebookを作る、sourceを追加する、内容を確認する、audioやartifactを生成する――同じ操作を何度も行うなら、手順をコマンドとして再実行できる方が、何を実行したかも検証しやすくなります。実装ファイルが存在していても、command dispatcherへ登録されていない機能はCLIから利用できません。
