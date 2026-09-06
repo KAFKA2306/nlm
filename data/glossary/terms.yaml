@@ -1,5 +1,5 @@
 version: 1
-verified_at: "2026-08-14"
+verified_at: "2026-09-07"
 source_scope: "Recent ChatGPT conversations around KAFKA2306 development, research, deployment, and data workflows"
 terms:
   - id: "github-actions"
@@ -564,4 +564,52 @@ terms:
         url: "https://modelcontextprotocol.io/specification/2025-11-25/server/utilities/pagination"
         source_type: "protocol_spec"
     verified_at: "2026-08-14"
+    status: "verified"
+
+  - id: "dinks"
+    term: "DINKs"
+    aliases: ["DINKS", "Double Income, No Kids"]
+    domain: "demography / household"
+    definition_ja: "結婚するが子どもは持たず、仕事を一生続けるライフコースを指す語。"
+    why_it_matters: "婚姻・出生・就業を同時に扱う議論で、単なる『子どもがいない夫婦』と就業継続を含むDINKSコースを区別するために使う。"
+    example: "出生動向基本調査のライフコース分類としてDINKSコースを確認する。"
+    related_terms: []
+    sources:
+      - title: "平成25年版 男女共同参画白書 第1部 第1節"
+        url: "https://www.gender.go.jp/about_danjo/whitepaper/h25/zentai/html/honpen/b1_s00_03.html"
+        source_type: "official_government"
+      - title: "第14回出生動向基本調査"
+        url: "https://www.ipss.go.jp/ps-doukou/j/doukou14_s/doukou14_s.asp"
+        source_type: "official_statistics"
+    verified_at: "2026-09-07"
+    status: "verified"
+
+  - id: "single-parent-household"
+    term: "ひとり親世帯"
+    aliases: ["母子世帯", "父子世帯"]
+    domain: "household / social-policy"
+    definition_ja: "父または母の一方と、20歳未満の未婚の子どもから構成される世帯を扱う公的調査上の概念。母子世帯・父子世帯はそれぞれ父または母がいない状態で母または父が子どもを扶養する世帯として定義される。"
+    why_it_matters: "SNSで使われる『片親』という口語と、公的統計・政策で用いる母子世帯・父子世帯等の定義を区別するために使う。"
+    example: "全国ひとり親世帯等調査では母子世帯と父子世帯を定義して集計する。"
+    related_terms: []
+    sources:
+      - title: "令和3年度 全国ひとり親世帯等調査の結果"
+        url: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000188147_00013.html"
+        source_type: "official_statistics"
+    verified_at: "2026-09-07"
+    status: "verified"
+
+  - id: "dual-income-household"
+    term: "共働き世帯"
+    aliases: ["共働き"]
+    domain: "labor / household"
+    definition_ja: "夫妻の双方が就業または有業である世帯を扱う統計上の概念。調査ごとに参照期間と『就業』『有業』の定義が異なる。"
+    why_it_matters: "共働きという一般語を使う際に、国勢調査・労働力調査・就業構造基本調査で定義が同一ではないことを明示するために使う。"
+    example: "国勢調査では夫妻ともに就業、就業構造基本調査では夫妻ともに有業の世帯として集計する。"
+    related_terms: []
+    sources:
+      - title: "統計局FAQ 16A-Q12 共働き世帯に関する統計"
+        url: "https://www.stat.go.jp/library/faq/faq16/faq16a12.html"
+        source_type: "official_statistics"
+    verified_at: "2026-09-07"
     status: "verified"
