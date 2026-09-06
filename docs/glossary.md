@@ -40,3 +40,6 @@
 | Retrieval-Augmented Generation | 事前学習済み生成モデルのparametric memoryと、検索でアクセスするnon-parametric memoryを組み合わせて文章生成を行う手法。 | [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://papers.nips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html) |
 | Remote MCP server | local machineではなくinternet上にhostされ、MCP clientへtools・prompts・resourcesなどを提供するMCP server。 | [Connect to remote MCP Servers](https://modelcontextprotocol.io/docs/develop/connect-remote-servers) |
 | tools/list | MCP clientがserverへ利用可能なtool一覧を要求するためのJSON-RPC method。 | [Schema Reference - tools/list](https://modelcontextprotocol.io/specification/2025-11-25/schema) |
+| DINKs | 結婚するが子どもは持たず、仕事を一生続けるライフコースを指す語。 | [平成25年版 男女共同参画白書 第1部 第1節](https://www.gender.go.jp/about_danjo/whitepaper/h25/zentai/html/honpen/b1_s00_03.html) |
+| ひとり親世帯 | 父または母の一方と、20歳未満の未婚の子どもから構成される世帯を扱う公的調査上の概念。 | [令和3年度 全国ひとり親世帯等調査の結果](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000188147_00013.html) |
+| 共働き世帯 | 夫妻の双方が就業または有業である世帯を扱う統計上の概念。 | [統計局FAQ 16A-Q12 共働き世帯に関する統計](https://www.stat.go.jp/library/faq/faq16/faq16a12.html) |
