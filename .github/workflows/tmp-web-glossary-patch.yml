@@ -1,0 +1,59 @@
+name: Temporary web glossary patch
+
+on:
+  push:
+    branches:
+      - research/web-glossary-bulk-review-20260909
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/web-glossary-bulk-review-20260909
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - name: Apply verified web glossary batch
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          terms = Path('data/glossary/terms.yaml')
+          t = terms.read_text()
+          if '  - id: "document-object-model"\n' not in t:
+              t += '''\n\n  - id: "document-object-model"\n    term: "Document Object Model"\n    aliases: ["DOM"]\n    domain: "web"\n    definition_ja: "HTMLやXMLなどのdocumentをnode treeとして表し、documentの構造へアクセス・操作するためのWeb platformのmodelとAPI。"\n    why_it_matters: "browser上の要素取得、tree操作、event処理を、文字列HTMLではなくnode構造として理解する基礎になる。"\n    example: "DocumentからElement nodeを取得し、属性や子nodeを操作する。"\n    related_terms: []\n    sources:\n      - title: "DOM Standard"\n        url: "https://dom.spec.whatwg.org/"\n        source_type: "living_standard"\n    verified_at: "2026-09-09"\n    status: "verified"\n\n  - id: "css-align-content"\n    term: "CSS align-content"\n    aliases: ["align-content"]\n    domain: "web"\n    definition_ja: "alignment containerの中でcontentをblock/cross axis方向に配置・分配するCSS property。layout modeに応じてalignment subjectが決まる。"\n    why_it_matters: "flexやgridで余白をどう分配するかを、個々のitemのalign-selfとは分けて判断するために使う。"\n    example: "multi-line flex containerでalign-content: space-betweenを指定し、flex line間へ余白を分配する。"\n    related_terms: ["css-align-items"]\n    sources:\n      - title: "CSS Box Alignment Module Level 3"\n        url: "https://www.w3.org/TR/css-align-3/"\n        source_type: "w3c_spec"\n    verified_at: "2026-09-09"\n    status: "verified"\n\n  - id: "css-align-items"\n    term: "CSS align-items"\n    aliases: ["align-items"]\n    domain: "web"\n    definition_ja: "containerの子boxに対するdefault align-selfを設定し、block/cross axis方向のself-alignmentを決めるCSS property。"\n    why_it_matters: "container全体のcontent分配を行うalign-contentと、各child boxの既定alignmentを分けて理解するために使う。"\n    example: "flex containerでalign-items: centerを指定し、各flex itemのcross-axis既定位置を中央にする。"\n    related_terms: ["css-align-content"]\n    sources:\n      - title: "CSS Box Alignment Module Level 3"\n        url: "https://www.w3.org/TR/css-align-3/"\n        source_type: "w3c_spec"\n    verified_at: "2026-09-09"\n    status: "verified"\n\n  - id: "vercel"\n    term: "Vercel"\n    aliases: []\n    domain: "web"\n    definition_ja: "source codeやframework projectからWeb applicationやserviceをbuild・deployし、global deliveryやserver-side computeなどを提供するdeployment platform。"\n    why_it_matters: "repositoryからproduction deploymentを作る経路と、単なるlocal buildを区別するために使う。"\n    example: "Git repositoryをVercel projectへ接続し、pushからPreviewまたはProduction deploymentを作る。"\n    related_terms: ["deployment"]\n    sources:\n      - title: "Vercel"\n        url: "https://vercel.com/"\n        source_type: "official_docs"\n    verified_at: "2026-09-09"\n    status: "verified"\n\n  - id: "fastapi"\n    term: "FastAPI"\n    aliases: []\n    domain: "web"\n    definition_ja: "Pythonの標準type hintを中心にAPIを定義し、OpenAPI schemaやinteractive API documentationを生成できるPython Web API framework。"\n    why_it_matters: "Python backendでrequest/response schemaとAPI documentationを同じ型定義から扱う設計を理解する基礎になる。"\n    example: "Python functionとtype annotationからHTTP endpointを定義し、OpenAPI documentとSwagger UIを生成する。"\n    related_terms: ["rest-api"]\n    sources:\n      - title: "FastAPI Features"\n        url: "https://fastapi.tiangolo.com/features/"\n        source_type: "official_docs"\n    verified_at: "2026-09-09"\n    status: "verified"\n'''
+              terms.write_text(t)
+
+          inv = Path('data/glossary/recent-term-inventory.yaml')
+          s = inv.read_text()
+          replacements = {
+              '  verified: 58\n  needs_review: 236\n': '  verified: 63\n  needs_review: 231\n',
+              '- RLS policy\nneeds_review_by_domain:': '- RLS policy\n- Document Object Model (DOM)\n- CSS align-content\n- CSS align-items\n- Vercel\n- FastAPI\nneeds_review_by_domain:',
+              '  web:\n  - Document Object Model (DOM)\n  - CSS align-content\n  - CSS align-items\n  - Hotlink\n  - Vercel\n  - FastAPI\n  - Mutable main hotlink\n': '  web:\n  - Hotlink\n  - Mutable main hotlink\n',
+          }
+          for old, new in replacements.items():
+              if old not in s:
+                  raise SystemExit(f'expected inventory block missing: {old!r}')
+              s = s.replace(old, new, 1)
+          inv.write_text(s)
+          PY
+          go run ./cmd/nlm glossary generate
+          go run ./cmd/nlm glossary check
+          go test ./...
+          go build ./cmd/nlm
+      - name: Commit generated canonical change
+        shell: bash
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add data/glossary/terms.yaml data/glossary/recent-term-inventory.yaml docs/glossary.md
+          git diff --cached --check
+          git commit -m "Verify web glossary terms from primary specs"
+          git push origin HEAD:research/web-glossary-bulk-review-20260909
