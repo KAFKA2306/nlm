@@ -31,6 +31,13 @@ jobs:
         run: go test ./...
       - name: Build
         run: go build ./cmd/nlm
+      - name: Normalize final newline
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('data/glossary/terms.yaml')
+          p.write_text(p.read_text(encoding='utf-8').rstrip() + '\n', encoding='utf-8')
+          PY
       - name: Diff check
         run: git diff --check
       - name: Commit batch
