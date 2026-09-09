@@ -1022,3 +1022,79 @@ terms:
         source_type: "official_docs"
     verified_at: "2026-09-09"
     status: "verified"
+
+
+  - id: "home-assistant"
+    term: "Home Assistant"
+    aliases: []
+    domain: "home-automation"
+    definition_ja: "local controlとprivacyを重視する、freeかつopen-sourceのhome automation platform。多数のdevice/service integration、automation、dashboardを一つのsystemで扱える。"
+    why_it_matters: "smart-home機器をvendorごとに別管理せず、local-firstな統合・automation基盤として扱うときの中心概念になる。"
+    example: "照明、sensor、thermostatなどをHome Assistantへintegrateし、状態変化を条件にautomationを実行する。"
+    related_terms: ["matter", "thread"]
+    sources:
+      - title: "Home Assistant"
+        url: "https://www.home-assistant.io/"
+        source_type: "official_docs"
+    verified_at: "2026-09-10"
+    status: "verified"
+
+  - id: "matter"
+    term: "Matter"
+    aliases: ["Matter protocol"]
+    domain: "home-automation"
+    definition_ja: "Connectivity Standards Allianceが策定する、異なるbrandやecosystemのIoT device間のinteroperabilityを目的としたIP-based connectivity standard。"
+    why_it_matters: "smart-home deviceが特定vendor ecosystemに閉じず、複数platformで相互運用できるか判断する基礎になる。"
+    example: "Matter-certified deviceをThreadやWi-Fi上でcommissionし、複数のcompatible smart-home ecosystemから利用する。"
+    related_terms: ["thread", "home-assistant"]
+    sources:
+      - title: "Build With Matter"
+        url: "https://csa-iot.org/all-solutions/matter/"
+        source_type: "official_standard_body"
+    verified_at: "2026-09-10"
+    status: "verified"
+
+  - id: "thread"
+    term: "Thread"
+    aliases: ["Thread protocol"]
+    domain: "home-automation"
+    definition_ja: "IoT向けに設計された、IPv6-based・low-power・self-healing meshのwireless networking protocol。"
+    why_it_matters: "Matterなどのapplication layerとは別に、battery-powered smart-home deviceをIP networkへ接続するnetwork layerを理解するために使う。"
+    example: "Thread Border Routerを介してThread mesh上のIoT deviceをhome IP networkへ接続する。"
+    related_terms: ["matter", "home-assistant"]
+    sources:
+      - title: "Thread Group — What is Thread?"
+        url: "https://threadgroup.org/"
+        source_type: "official_standard_body"
+    verified_at: "2026-09-10"
+    status: "verified"
+
+  - id: "google-home-apis"
+    term: "Home APIs"
+    aliases: ["Google Home APIs"]
+    domain: "home-automation"
+    definition_ja: "Android/iOS applicationからGoogle Homeのdevice、structure、Matter infrastructure、commissioning、automation機能へaccessするためのGoogle Home developer API群。"
+    why_it_matters: "Google Home ecosystemのdevice制御やcommissioning、automationを独自appへ組み込むときの正式なintegration surfaceになる。"
+    example: "iOS appからDevice APIでdeviceを制御し、Commissioning APIでMatter deviceを追加し、Automation APIでautomationを作成する。"
+    related_terms: ["matter", "voice-match"]
+    sources:
+      - title: "Home APIs"
+        url: "https://developers.home.google.com/apis"
+        source_type: "official_docs"
+    verified_at: "2026-09-10"
+    status: "verified"
+
+  - id: "voice-match"
+    term: "Voice Match"
+    aliases: []
+    domain: "home-automation"
+    definition_ja: "Google Homeのshared device上でvoice assistantが話者の声を認識し、そのGoogle Accountに基づくpersonalized responseやservice selectionへ使う機能。"
+    why_it_matters: "共有speaker/displayで、誰が話しているかによってcalendarやmediaなどのpersonalized experienceを分ける仕組みを理解するために使う。"
+    example: "shared speakerでVoice Matchが話者を認識し、そのuserに紐づくpersonal resultsやmedia preferenceを利用する。"
+    related_terms: ["google-home-apis"]
+    sources:
+      - title: "Set up and manage Voice Match for your home or devices"
+        url: "https://support.google.com/googlehome/answer/7320960"
+        source_type: "official_docs"
+    verified_at: "2026-09-10"
+    status: "verified"

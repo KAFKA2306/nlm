@@ -13,8 +13,8 @@ policy:
     complete export of all ChatGPT history.
 counts:
   total: 294
-  verified: 63
-  needs_review: 231
+  verified: 68
+  needs_review: 226
 verified_terms:
 - GitHub Actions
 - Workflow
@@ -79,6 +79,11 @@ verified_terms:
 - CSS align-items
 - Vercel
 - FastAPI
+- Home Assistant
+- Matter
+- Thread
+- Home APIs
+- Voice Match
 needs_review_by_domain:
   ai:
   - Context compaction
@@ -313,12 +318,7 @@ needs_review_by_domain:
   github-security:
   - Trusted Publishers
   home-automation:
-  - Home Assistant
-  - Matter
-  - Thread
-  - Home APIs
   - Automation Engine
-  - Voice Match
   - Speaker Reference Design
   research-data:
   - Point-in-time vintage
