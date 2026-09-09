@@ -26,6 +26,7 @@ jobs:
           go run ./cmd/nlm glossary generate
           go test ./...
           go build ./cmd/nlm
+          python -c "from pathlib import Path; p=Path('data/glossary/terms.yaml'); p.write_text(p.read_text().rstrip() + '\\n')"
           rm .github/workflows/tmp-ml-glossary-bulk.yml
           rm .github/tmp_ml_glossary_patch.py
           rm -f .tmp-ml-glossary-trigger
