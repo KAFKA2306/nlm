@@ -13,8 +13,8 @@ policy:
     complete export of all ChatGPT history.
 counts:
   total: 294
-  verified: 36
-  needs_review: 258
+  verified: 50
+  needs_review: 244
 verified_terms:
 - GitHub Actions
 - Workflow
@@ -52,6 +52,20 @@ verified_terms:
 - Retrieval-Augmented Generation (RAG)
 - Remote MCP
 - tools/list
+- Private repository
+- Self-hosted runner
+- GitHub Issue
+- Repository topic
+- Workflow run
+- GitHub Actions job
+- Reusable workflow
+- workflow_call
+- Caller workflow
+- Callee workflow / called workflow
+- GITHUB_TOKEN
+- GitHub permissions
+- OpenID Connect (OIDC)
+- 'id-token: write'
 needs_review_by_domain:
   ai:
   - Context compaction
@@ -141,20 +155,8 @@ needs_review_by_domain:
   - Expected head SHA
   - Branch-ref cleanup
   github:
-  - Private repository
-  - Self-hosted runner
   - Self-delete Actions
-  - GitHub Issue
-  - Repository topic
   - Repository setting
-  - Workflow run
-  - GitHub Actions job
-  - Reusable workflow
-  - workflow_call
-  - Caller workflow
-  - Callee workflow
-  - GITHUB_TOKEN
-  - GitHub permissions
   - GitHub annotation
   - Mergeability
   - Host-side safety rejection
@@ -309,8 +311,6 @@ needs_review_by_domain:
   - Snakemake
   - MkDocs
   github-security:
-  - OpenID Connect (OIDC)
-  - 'id-token: write'
   - Trusted Publishers
   home-automation:
   - Home Assistant
