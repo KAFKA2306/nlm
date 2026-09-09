@@ -1,5 +1,5 @@
 version: 1
-verified_at: "2026-09-07"
+verified_at: "2026-09-09"
 source_scope: "Recent ChatGPT conversations around KAFKA2306 development, research, deployment, and data workflows"
 terms:
   - id: "github-actions"
@@ -612,4 +612,214 @@ terms:
         url: "https://www.stat.go.jp/library/faq/faq16/faq16a12.html"
         source_type: "official_statistics"
     verified_at: "2026-09-07"
+    status: "verified"
+
+  - id: "private-repository"
+    term: "Private repository"
+    aliases: ["private repo"]
+    domain: "github"
+    definition_ja: "アクセスできるユーザーが所有者、明示的に共有されたユーザー、または組織内で許可されたメンバーに制限されるGitHub repository。"
+    why_it_matters: "repository visibilityによって共有範囲やActions/reusable workflowのアクセス条件が変わるため、公開範囲を判断する基礎になる。"
+    example: "private repositoryはインターネット上の全員ではなく、許可されたユーザーだけがアクセスできる。"
+    related_terms: ["github-actions", "repository-topic"]
+    sources:
+      - title: "About repositories"
+        url: "https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories"
+        source_type: "official_docs"
+    verified_at: "2026-09-09"
+    status: "verified"
+
+  - id: "self-hosted-runner"
+    term: "Self-hosted runner"
+    aliases: ["self-hosted runners"]
+    domain: "github"
+    definition_ja: "利用者側が管理する環境でGitHub Actionsのjobを実行するrunner。"
+    why_it_matters: "GitHub-hosted runnerと異なり、実行環境、ネットワーク、更新、runner lifecycleを利用者側で管理するため、CIの実行条件を判断する基礎になる。"
+    example: "自分で管理するLinux machineへself-hosted runner applicationを登録してworkflow jobを実行する。"
+    related_terms: ["runner", "github-actions-job"]
+    sources:
+      - title: "Self-hosted runners reference"
+        url: "https://docs.github.com/en/actions/reference/runners/self-hosted-runners"
+        source_type: "official_docs"
+    verified_at: "2026-09-09"
+    status: "verified"
+
+  - id: "github-issue"
+    term: "GitHub Issue"
+    aliases: ["Issue", "GitHub Issues"]
+    domain: "github"
+    definition_ja: "GitHub上でアイデア、フィードバック、タスク、bugなどを計画・議論・追跡する作業項目。"
+    why_it_matters: "実装課題や調査課題の正準なwork itemを、PRやcommitとは別に管理するために使う。"
+    example: "bugの再現条件とAcceptance CriteriaをIssueに記録して進捗を追跡する。"
+    related_terms: ["pull-request"]
+    sources:
+      - title: "GitHub Issues documentation"
+        url: "https://docs.github.com/en/issues"
+        source_type: "official_docs"
+    verified_at: "2026-09-09"
+    status: "verified"
+
+  - id: "repository-topic"
+    term: "Repository topic"
+    aliases: ["topic"]
+    domain: "github"
+    definition_ja: "repositoryの目的、分野、言語などを分類し、関連repositoryの発見や検索に使うGitHubのmetadata。"
+    why_it_matters: "repositoryをsubject areaで分類し、関連projectの発見や整理に使う際の公式なmetadata surfaceになる。"
+    example: "repositoryへmachine-learningなどのtopicを付けて同分野のrepositoryとして探索しやすくする。"
+    related_terms: ["private-repository"]
+    sources:
+      - title: "Classifying your repository with topics"
+        url: "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics"
+        source_type: "official_docs"
+    verified_at: "2026-09-09"
+    status: "verified"
+
+  - id: "workflow-run"
+    term: "Workflow run"
+    aliases: ["workflow run"]
+    domain: "github"
+    definition_ja: "GitHub Actions workflowがtriggerされて作成される1回の実行で、状態、結果、job、stepのlogを持つ実行単位。"
+    why_it_matters: "CIや定期処理の成否をworkflow定義そのものではなく、特定の実行結果として確認するために使う。"
+    example: "失敗したworkflow runを開き、失敗したjobとstepのlogを確認する。"
+    related_terms: ["workflow", "github-actions-job"]
+    sources:
+      - title: "Using workflow run logs"
+        url: "https://docs.github.com/en/actions/how-tos/monitor-workflows/use-workflow-run-logs"
+        source_type: "official_docs"
+    verified_at: "2026-09-09"
+    status: "verified"
+
+  - id: "github-actions-job"
+    term: "GitHub Actions job"
+    aliases: ["job"]
+    domain: "github"
+    definition_ja: "GitHub Actions workflow run内で1つ以上のstepをrunner上で実行する実行単位。"
+    why_it_matters: "workflow全体の成否だけでなく、build、test、deployなどどの実行単位で失敗したかを切り分けるために使う。"
+    example: "workflow runのJobsからtest jobを開き、各stepのlogを確認する。"
+    related_terms: ["workflow-run", "runner"]
+    sources:
+      - title: "Using workflow run logs"
+        url: "https://docs.github.com/en/actions/how-tos/monitor-workflows/use-workflow-run-logs"
+        source_type: "official_docs"
+    verified_at: "2026-09-09"
+    status: "verified"
+
+  - id: "reusable-workflow"
+    term: "Reusable workflow"
+    aliases: ["reusable workflows"]
+    domain: "github"
+    definition_ja: "別のworkflowから呼び出して共通処理を再利用できるGitHub Actions workflow。"
+    why_it_matters: "同じCI処理を複数repositoryやworkflowへ重複コピーせず、定義済みworkflowとして再利用するために使う。"
+    example: "caller workflowのjobからusesで別workflowを呼び出す。"
+    related_terms: ["workflow-call", "caller-workflow", "called-workflow"]
+    sources:
+      - title: "Reusing workflow configurations"
+        url: "https://docs.github.com/en/actions/reference/workflows-and-actions/reusing-workflow-configurations"
+        source_type: "official_docs"
+    verified_at: "2026-09-09"
+    status: "verified"
+
+  - id: "workflow-call"
+    term: "workflow_call"
+    aliases: ["on.workflow_call"]
+    domain: "github"
+    definition_ja: "GitHub Actions workflowを他のworkflowから呼び出せるreusable workflowとして定義するためにonで指定するtrigger。"
+    why_it_matters: "workflowが通常のpushやpull_requestで起動するものか、別workflowから再利用されるものかを区別する。"
+    example: "on: workflow_call を設定したworkflowを別workflowのusesから呼び出す。"
+    related_terms: ["reusable-workflow", "caller-workflow"]
+    sources:
+      - title: "Reusing workflow configurations"
+        url: "https://docs.github.com/en/actions/reference/workflows-and-actions/reusing-workflow-configurations"
+        source_type: "official_docs"
+    verified_at: "2026-09-09"
+    status: "verified"
+
+  - id: "caller-workflow"
+    term: "Caller workflow"
+    aliases: ["calling workflow"]
+    domain: "github"
+    definition_ja: "reusable workflowをjobのusesで呼び出す側のGitHub Actions workflow。"
+    why_it_matters: "reusable workflow利用時のpermission、runner、contextの基準になる側を区別するために使う。"
+    example: "top-level workflowがreusable workflowをusesで呼ぶ場合、そのtop-level workflowがcaller workflowになる。"
+    related_terms: ["reusable-workflow", "called-workflow"]
+    sources:
+      - title: "Reusing workflow configurations"
+        url: "https://docs.github.com/en/actions/reference/workflows-and-actions/reusing-workflow-configurations"
+        source_type: "official_docs"
+    verified_at: "2026-09-09"
+    status: "verified"
+
+  - id: "called-workflow"
+    term: "Called workflow"
+    aliases: ["Callee workflow", "called workflow"]
+    domain: "github"
+    definition_ja: "caller workflowから呼び出され、定義済みの処理を提供するreusable workflow。"
+    why_it_matters: "caller側とcalled側でpermissionsやrunner contextの制約が異なるため、責務を区別するために使う。"
+    example: "caller workflowからusesで参照されたreusable workflowがcalled workflowになる。"
+    related_terms: ["reusable-workflow", "caller-workflow"]
+    sources:
+      - title: "Reusing workflow configurations"
+        url: "https://docs.github.com/en/actions/reference/workflows-and-actions/reusing-workflow-configurations"
+        source_type: "official_docs"
+    verified_at: "2026-09-09"
+    status: "verified"
+
+  - id: "github-token"
+    term: "GITHUB_TOKEN"
+    aliases: ["github.token"]
+    domain: "github"
+    definition_ja: "workflow job開始時にGitHubが自動生成し、そのrepositoryに対する認証に使えるGitHub App installation access token。"
+    why_it_matters: "Actionsがrepository APIやcontentsへアクセスするときの既定認証であり、権限を必要最小限に制御する対象になる。"
+    example: "workflow内でGITHUB_TOKENを使ってGitHub APIへ認証する。"
+    related_terms: ["github-permissions", "github-actions-job"]
+    sources:
+      - title: "GITHUB_TOKEN"
+        url: "https://docs.github.com/en/actions/concepts/security/github_token"
+        source_type: "official_docs"
+    verified_at: "2026-09-09"
+    status: "verified"
+
+  - id: "github-permissions"
+    term: "GitHub permissions"
+    aliases: ["permissions"]
+    domain: "github"
+    definition_ja: "GitHub ActionsでGITHUB_TOKENなどに許可する操作範囲をworkflowまたはjob単位で制御する設定。"
+    why_it_matters: "workflowが必要以上のrepository権限を持たないようにし、caller/called workflow間の権限制約を理解するために使う。"
+    example: "permissionsでcontents: readだけを指定し、GITHUB_TOKENの書き込み権限を与えない。"
+    related_terms: ["github-token", "id-token-write"]
+    sources:
+      - title: "Reusing workflow configurations"
+        url: "https://docs.github.com/en/actions/reference/workflows-and-actions/reusing-workflow-configurations"
+        source_type: "official_docs"
+    verified_at: "2026-09-09"
+    status: "verified"
+
+  - id: "openid-connect"
+    term: "OpenID Connect"
+    aliases: ["OIDC"]
+    domain: "github-security"
+    definition_ja: "GitHub Actions workflowが外部cloud providerなどへ短命tokenで認証するために利用できるidentity federation方式。"
+    why_it_matters: "長期cloud credentialをrepository secretとして保持せずに、workflow identityを使って外部serviceへ認証する基礎になる。"
+    example: "workflowがGitHubのOIDC providerからtokenを取得し、cloud providerへ認証する。"
+    related_terms: ["id-token-write", "github-permissions"]
+    sources:
+      - title: "OpenID Connect reference"
+        url: "https://docs.github.com/en/actions/reference/security/oidc"
+        source_type: "official_docs"
+    verified_at: "2026-09-09"
+    status: "verified"
+
+  - id: "id-token-write"
+    term: "id-token: write"
+    aliases: ["id-token write permission"]
+    domain: "github-security"
+    definition_ja: "GitHub ActionsのjobまたはworkflowにOIDC tokenの要求を許可するpermissions設定で、外部resourceへの書き込み権限そのものではない。"
+    why_it_matters: "OIDC認証を有効にするとき、writeという表記を外部resourceへの書き込み権限と誤解しないために重要になる。"
+    example: "permissionsでid-token: writeを指定してOIDC JWTを要求できるようにする。"
+    related_terms: ["openid-connect", "github-permissions"]
+    sources:
+      - title: "OpenID Connect reference"
+        url: "https://docs.github.com/en/actions/reference/security/oidc"
+        source_type: "official_docs"
+    verified_at: "2026-09-09"
     status: "verified"
