@@ -81,3 +81,9 @@
 | Data split | モデルの学習用データと評価用データなど、異なる役割を持つ部分集合へデータを分割すること。 | [train_test_split — scikit-learn 1.9.0 documentation](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html) |
 | Exploratory Data Analysis | データの構造、外れ値、仮定、重要な変数などへの洞察を得るため、主に可視化を含む多様な技法でデータを探索する分析アプローチ。 | [NIST/SEMATECH e-Handbook of Statistical Methods; Chapter 1: Exploratory Data Analysis](https://www.nist.gov/publications/nistsematech-e-handbook-statistical-methods-chapter-1-exploratory-data-analysis) |
 | Feature engineering | モデル学習に有用な特徴を選び、元のデータを学習しやすい特徴表現へ変換するプロセス。 | [Machine Learning Glossary — Google for Developers](https://developers.google.com/machine-learning/glossary) |
+| Google OAuth | Google AccountのOAuth 2.0認可endpointとtoken endpointを使い、userの同意に基づいてapplicationへGoogle APIへの限定的なaccess権を付与する認可フロー。 | [Using OAuth 2.0 for Web Server Applications](https://developers.google.com/identity/protocols/oauth2/web-server) |
+| Fail-closed | 認可判定や保護機構が失敗または不確定になったとき、accessを許可せず拒否側へ倒す安全設計。 | [OWASP Authorization Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html) |
+| Authorization | 主体がresourceやoperationへaccessする権限を持つかを決定し、許可または拒否すること。 | [NIST CSRC Glossary — Authorization](https://csrc.nist.gov/glossary/term/authorization) |
+| SSL/TLS | network通信を暗号学的に保護するprotocol群を指す慣用的な表現。 | [RFC 9846 — The Transport Layer Security (TLS) Protocol Version 1.3](https://www.rfc-editor.org/rfc/rfc9846.html) |
+| Supabase Google OAuth | Supabase AuthでGoogleを外部identity providerとして設定し、GoogleのOAuth flowを介してuserをsign inさせるintegration。 | [Sign in with Google — Supabase Docs](https://supabase.com/docs/guides/auth/social-login/auth-google) |
+| HF_TOKEN | Hugging Face Hubへの認証に使うUser Access Tokenを環境変数から指定する設定。 | [Environment variables — Hugging Face Hub Python Library](https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables) |

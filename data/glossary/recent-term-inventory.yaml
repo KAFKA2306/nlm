@@ -15,8 +15,8 @@ policy:
     complete export of all ChatGPT history.
 counts:
   total: 294
-  verified: 74
-  needs_review: 201
+  verified: 80
+  needs_review: 195
   excluded_from_canonical_review: 19
 verified_terms:
 - GitHub Actions
@@ -93,6 +93,12 @@ verified_terms:
 - Data split
 - Exploratory Data Analysis (EDA)
 - Feature engineering
+- Google OAuth
+- Fail-closed
+- Authorization
+- SSL/TLS
+- Supabase Google OAuth
+- HF_TOKEN
 excluded_from_canonical_review:
   project_specific_field_or_expression:
   - data_requirements
@@ -278,13 +284,7 @@ needs_review_by_domain:
   - Paper-vintage data
   research-engineering: []
   security:
-  - Google OAuth
-  - Fail-closed
-  - Authorization
-  - SSL/TLS
   - Network restriction
-  - Supabase Google OAuth
-  - HF_TOKEN
   software-engineering:
   - Language fallback
   - Manifest
