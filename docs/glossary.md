@@ -70,3 +70,8 @@
 | CSS align-items | containerの子boxに対するdefault align-selfを設定し、block/cross axis方向のself-alignmentを決めるCSS property。 | [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/) |
 | Vercel | source codeやframework projectからWeb applicationやserviceをbuild・deployし、global deliveryやserver-side computeなどを提供するdeployment platform。 | [Vercel](https://vercel.com/) |
 | FastAPI | Pythonの標準type hintを中心にAPIを定義し、OpenAPI schemaやinteractive API documentationを生成できるPython Web API framework。 | [FastAPI Features](https://fastapi.tiangolo.com/features/) |
+| Home Assistant | local controlとprivacyを重視する、freeかつopen-sourceのhome automation platform。 | [Home Assistant](https://www.home-assistant.io/) |
+| Matter | Connectivity Standards Allianceが策定する、異なるbrandやecosystemのIoT device間のinteroperabilityを目的としたIP-based connectivity standard。 | [Build With Matter](https://csa-iot.org/all-solutions/matter/) |
+| Thread | IoT向けに設計された、IPv6-based・low-power・self-healing meshのwireless networking protocol。 | [Thread Group — What is Thread?](https://threadgroup.org/) |
+| Home APIs | Android/iOS applicationからGoogle Homeのdevice、structure、Matter infrastructure、commissioning、automation機能へaccessするためのGoogle Home developer API群。 | [Home APIs](https://developers.home.google.com/apis) |
+| Voice Match | Google Homeのshared device上でvoice assistantが話者の声を認識し、そのGoogle Accountに基づくpersonalized responseやservice selectionへ使う機能。 | [Set up and manage Voice Match for your home or devices](https://support.google.com/googlehome/answer/7320960) |
