@@ -946,3 +946,79 @@ terms:
         source_type: "official_docs"
     verified_at: "2026-09-09"
     status: "verified"
+
+
+  - id: "document-object-model"
+    term: "Document Object Model"
+    aliases: ["DOM"]
+    domain: "web"
+    definition_ja: "HTMLやXMLなどのdocumentをnode treeとして表し、documentの構造へアクセス・操作するためのWeb platformのmodelとAPI。"
+    why_it_matters: "browser上の要素取得、tree操作、event処理を、文字列HTMLではなくnode構造として理解する基礎になる。"
+    example: "DocumentからElement nodeを取得し、属性や子nodeを操作する。"
+    related_terms: []
+    sources:
+      - title: "DOM Standard"
+        url: "https://dom.spec.whatwg.org/"
+        source_type: "living_standard"
+    verified_at: "2026-09-09"
+    status: "verified"
+
+  - id: "css-align-content"
+    term: "CSS align-content"
+    aliases: ["align-content"]
+    domain: "web"
+    definition_ja: "alignment containerの中でcontentをblock/cross axis方向に配置・分配するCSS property。layout modeに応じてalignment subjectが決まる。"
+    why_it_matters: "flexやgridで余白をどう分配するかを、個々のitemのalign-selfとは分けて判断するために使う。"
+    example: "multi-line flex containerでalign-content: space-betweenを指定し、flex line間へ余白を分配する。"
+    related_terms: ["css-align-items"]
+    sources:
+      - title: "CSS Box Alignment Module Level 3"
+        url: "https://www.w3.org/TR/css-align-3/"
+        source_type: "w3c_spec"
+    verified_at: "2026-09-09"
+    status: "verified"
+
+  - id: "css-align-items"
+    term: "CSS align-items"
+    aliases: ["align-items"]
+    domain: "web"
+    definition_ja: "containerの子boxに対するdefault align-selfを設定し、block/cross axis方向のself-alignmentを決めるCSS property。"
+    why_it_matters: "container全体のcontent分配を行うalign-contentと、各child boxの既定alignmentを分けて理解するために使う。"
+    example: "flex containerでalign-items: centerを指定し、各flex itemのcross-axis既定位置を中央にする。"
+    related_terms: ["css-align-content"]
+    sources:
+      - title: "CSS Box Alignment Module Level 3"
+        url: "https://www.w3.org/TR/css-align-3/"
+        source_type: "w3c_spec"
+    verified_at: "2026-09-09"
+    status: "verified"
+
+  - id: "vercel"
+    term: "Vercel"
+    aliases: []
+    domain: "web"
+    definition_ja: "source codeやframework projectからWeb applicationやserviceをbuild・deployし、global deliveryやserver-side computeなどを提供するdeployment platform。"
+    why_it_matters: "repositoryからproduction deploymentを作る経路と、単なるlocal buildを区別するために使う。"
+    example: "Git repositoryをVercel projectへ接続し、pushからPreviewまたはProduction deploymentを作る。"
+    related_terms: ["deployment"]
+    sources:
+      - title: "Vercel"
+        url: "https://vercel.com/"
+        source_type: "official_docs"
+    verified_at: "2026-09-09"
+    status: "verified"
+
+  - id: "fastapi"
+    term: "FastAPI"
+    aliases: []
+    domain: "web"
+    definition_ja: "Pythonの標準type hintを中心にAPIを定義し、OpenAPI schemaやinteractive API documentationを生成できるPython Web API framework。"
+    why_it_matters: "Python backendでrequest/response schemaとAPI documentationを同じ型定義から扱う設計を理解する基礎になる。"
+    example: "Python functionとtype annotationからHTTP endpointを定義し、OpenAPI documentとSwagger UIを生成する。"
+    related_terms: ["rest-api"]
+    sources:
+      - title: "FastAPI Features"
+        url: "https://fastapi.tiangolo.com/features/"
+        source_type: "official_docs"
+    verified_at: "2026-09-09"
+    status: "verified"
