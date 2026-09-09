@@ -13,8 +13,8 @@ policy:
     complete export of all ChatGPT history.
 counts:
   total: 294
-  verified: 50
-  needs_review: 244
+  verified: 58
+  needs_review: 236
 verified_terms:
 - GitHub Actions
 - Workflow
@@ -66,6 +66,14 @@ verified_terms:
 - GitHub permissions
 - OpenID Connect (OIDC)
 - 'id-token: write'
+- JSON
+- Parquet
+- CSV
+- Unique constraint
+- Indexing
+- Point-in-Time Recovery (PITR)
+- SQLite
+- RLS policy
 needs_review_by_domain:
   ai:
   - Context compaction
@@ -106,10 +114,7 @@ needs_review_by_domain:
   - Raw-vintage data
   - Derived-revision data
   data-format:
-  - JSON
   - JSONL
-  - Parquet
-  - CSV
   data-governance:
   - Stable asset ID
   - Registry
@@ -133,13 +138,8 @@ needs_review_by_domain:
   data-validation:
   - Check digit
   database:
-  - Unique constraint
-  - Indexing
-  - Point-in-Time Recovery (PITR)
-  - SQLite
   - unique(user_id, game_id)
-  database-security:
-  - RLS policy
+  database-security: []
   distributed-systems:
   - Remote Procedure Call (RPC)
   - App Server handshake

@@ -823,3 +823,126 @@ terms:
         source_type: "official_docs"
     verified_at: "2026-09-09"
     status: "verified"
+
+  - id: "json"
+    term: "JSON"
+    aliases: ["JavaScript Object Notation"]
+    domain: "data-format"
+    definition_ja: "構造化データを可搬な形で表現するための、軽量・テキストベース・言語非依存のデータ交換形式。"
+    why_it_matters: "API応答、canonical artifact、設定やprovenanceの交換形式として頻出し、object、array、primitiveの意味を正しく区別する基礎になる。"
+    example: "API responseをJSON objectとarrayで表現し、ネットワーク上ではUTF-8で交換する。"
+    related_terms: ["rest-api"]
+    sources:
+      - title: "RFC 8259: The JavaScript Object Notation (JSON) Data Interchange Format"
+        url: "https://www.rfc-editor.org/info/rfc8259"
+        source_type: "internet_standard"
+    verified_at: "2026-09-09"
+    status: "verified"
+
+  - id: "parquet"
+    term: "Parquet"
+    aliases: ["Apache Parquet"]
+    domain: "data-format"
+    definition_ja: "効率的な保存と取得を目的に設計された、オープンソースの列指向データファイル形式。"
+    why_it_matters: "分析用の大きな表形式データを列単位で読みやすくし、圧縮・encodingを含むbulk dataの保存形式を判断する基礎になる。"
+    example: "多数列を持つ分析datasetをParquetで保存し、必要なcolumn chunkだけを読み取る。"
+    related_terms: []
+    sources:
+      - title: "Apache Parquet"
+        url: "https://parquet.apache.org/"
+        source_type: "official_docs"
+      - title: "Parquet File Format"
+        url: "https://parquet.apache.org/docs/file-format/"
+        source_type: "official_spec"
+    verified_at: "2026-09-09"
+    status: "verified"
+
+  - id: "csv"
+    term: "CSV"
+    aliases: ["Comma-Separated Values"]
+    domain: "data-format"
+    definition_ja: "レコードを行、fieldをcommaで区切って表す広く使われるテキスト形式。RFC 4180は一般的な形式を文書化し、text/csv MIME typeを登録している。"
+    why_it_matters: "表形式データの受け渡しで頻出する一方、RFC 4180はInternet Standardではないため、実装差を前提にformat contractを明示する必要がある。"
+    example: "header付きCSVで各recordをCRLF区切りにし、commaや改行を含むfieldをdouble quoteで囲む。"
+    related_terms: []
+    sources:
+      - title: "RFC 4180: Common Format and MIME Type for Comma-Separated Values (CSV) Files"
+        url: "https://www.rfc-editor.org/info/rfc4180"
+        source_type: "informational_rfc"
+    verified_at: "2026-09-09"
+    status: "verified"
+
+  - id: "unique-constraint"
+    term: "Unique constraint"
+    aliases: ["UNIQUE constraint"]
+    domain: "database"
+    definition_ja: "1列または複数列の値の組み合わせがtable内の全rowで一意になることを保証するdatabase constraint。"
+    why_it_matters: "重複rowを禁止するdata modelを明示し、application codeだけに重複防止を任せないために使う。"
+    example: "PostgreSQLでUNIQUE (user_id, game_id)を定義し、同じ組み合わせの重複を拒否する。"
+    related_terms: ["postgresql"]
+    sources:
+      - title: "PostgreSQL 18: Constraints — Unique Constraints"
+        url: "https://www.postgresql.org/docs/current/ddl-constraints.html"
+        source_type: "official_docs"
+    verified_at: "2026-09-09"
+    status: "verified"
+
+  - id: "indexing"
+    term: "Indexing"
+    aliases: ["Database index", "Index"]
+    domain: "database"
+    definition_ja: "table全体を順番に走査せず、条件に合うrowをより効率よく探せるようにindexを維持・利用する仕組み。"
+    why_it_matters: "検索やjoinを高速化できる一方、indexの維持にはwrite時のoverheadがあるため、実際に使うqueryに合わせて設計する必要がある。"
+    example: "頻繁に検索するid columnへindexを作り、query plannerがsequential scanより有利な場合に利用する。"
+    related_terms: ["postgresql"]
+    sources:
+      - title: "PostgreSQL 18: Indexes — Introduction"
+        url: "https://www.postgresql.org/docs/current/indexes-intro.html"
+        source_type: "official_docs"
+    verified_at: "2026-09-09"
+    status: "verified"
+
+  - id: "point-in-time-recovery"
+    term: "Point-in-Time Recovery"
+    aliases: ["PITR"]
+    domain: "database"
+    definition_ja: "base backupとarchived Write-Ahead Logを使い、WAL replayを指定時点で止めてdatabaseをその時点の整合した状態へ戻す復旧方式。"
+    why_it_matters: "単一の最新backupへ戻すだけでなく、誤操作直前など特定時点へ復旧するdata recovery設計を判断するために使う。"
+    example: "base backupをrestoreし、archived WALをreplayして誤削除直前の時刻で停止する。"
+    related_terms: ["postgresql"]
+    sources:
+      - title: "PostgreSQL 18: Continuous Archiving and Point-in-Time Recovery (PITR)"
+        url: "https://www.postgresql.org/docs/current/continuous-archiving.html"
+        source_type: "official_docs"
+    verified_at: "2026-09-09"
+    status: "verified"
+
+  - id: "sqlite"
+    term: "SQLite"
+    aliases: []
+    domain: "database"
+    definition_ja: "別server processを必要とせずapplication process内で動作する、self-contained・serverless・zero-configuration・transactionalなSQL database engine。"
+    why_it_matters: "単一fileのlocal data storeや組み込み用途で、client/server databaseとは異なる運用・配布特性を判断する基礎になる。"
+    example: "applicationがSQLite libraryを組み込み、単一database fileを直接読み書きする。"
+    related_terms: []
+    sources:
+      - title: "About SQLite"
+        url: "https://sqlite.org/about.html"
+        source_type: "official_docs"
+    verified_at: "2026-09-09"
+    status: "verified"
+
+  - id: "rls-policy"
+    term: "RLS policy"
+    aliases: ["Row security policy", "Row-Level Security policy"]
+    domain: "database-security"
+    definition_ja: "Row-Level Securityを有効にしたtableで、userやcommandごとにどのrowを参照・追加・更新・削除できるかをBoolean expressionで制御するpolicy。"
+    why_it_matters: "table-level privilegeだけでは表現できないrow単位のaccess controlをdatabase側で強制するために使う。"
+    example: "CREATE POLICYでcurrent_userに対応するrowだけをSELECT・UPDATEできる条件を定義する。"
+    related_terms: ["row-level-security", "postgresql"]
+    sources:
+      - title: "PostgreSQL 18: Row Security Policies"
+        url: "https://www.postgresql.org/docs/current/ddl-rowsecurity.html"
+        source_type: "official_docs"
+    verified_at: "2026-09-09"
+    status: "verified"
