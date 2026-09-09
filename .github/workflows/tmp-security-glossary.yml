@@ -23,13 +23,16 @@ jobs:
           cache-dependency-path: go.sum
       - name: Apply patch
         run: python scripts/tmp_apply_security_glossary.py
-      - name: Regenerate and verify
-        run: |
-          go run ./cmd/nlm glossary generate docs/glossary.md
-          go run ./cmd/nlm glossary check
-          go test ./...
-          go build ./cmd/nlm
-          git diff --check
+      - name: Generate glossary
+        run: go run ./cmd/nlm glossary generate docs/glossary.md
+      - name: Check glossary
+        run: go run ./cmd/nlm glossary check
+      - name: Test
+        run: go test ./...
+      - name: Build
+        run: go build ./cmd/nlm
+      - name: Diff check
+        run: git diff --check
       - name: Commit batch
         run: |
           git config user.name "github-actions[bot]"
