@@ -8,13 +8,16 @@ policy:
   promotion_rule: Promote a needs_review term only after its definition is supported by a primary source, standard, or original
     paper.
   review_rotation_rule: If a term cannot be unambiguously verified, keep it needs_review and move it to the tail of its domain queue.
+  canonical_exclusion_rule: Repository-specific field names, concrete schema expressions, wildcard labels, and internal workflow-stage labels
+    that are not intended as general technical concepts are excluded from canonical review and recorded under excluded_from_canonical_review.
   exclusions: Personal identifiers, secrets, credentials, account details, and ordinary non-technical words.
   coverage_note: Inventory records terms found in the recent context available to this task. It must not be described as a
     complete export of all ChatGPT history.
 counts:
   total: 294
   verified: 68
-  needs_review: 226
+  needs_review: 215
+  excluded_from_canonical_review: 11
 verified_terms:
 - GitHub Actions
 - Workflow
@@ -84,6 +87,20 @@ verified_terms:
 - Thread
 - Home APIs
 - Voice Match
+excluded_from_canonical_review:
+  project_specific_field_or_expression:
+  - data_requirements
+  - null_reason
+  - unique(user_id, game_id)
+  - training_attempted
+  - training_executed
+  - evaluation_executed
+  - observed_metrics
+  - agent-zone-* topic
+  internal_workflow_or_stage_label:
+  - Exact-data gate
+  - Stage B artifact
+  - Host-side safety rejection
 needs_review_by_domain:
   ai:
   - Context compaction
@@ -110,7 +127,6 @@ needs_review_by_domain:
   - Collector
   - Materialization
   - Dataset
-  - data_requirements
   - Raw data
   - Derived data
   - Data lake
@@ -136,7 +152,6 @@ needs_review_by_domain:
   - Knowledge Runtime
   - Source commit
   - Parity
-  - null_reason
   data-modeling:
   - Work / Edition / Holding model
   data-platform:
@@ -147,8 +162,7 @@ needs_review_by_domain:
   - Data quality gate
   data-validation:
   - Check digit
-  database:
-  - unique(user_id, game_id)
+  database: []
   database-security: []
   distributed-systems:
   - Remote Procedure Call (RPC)
@@ -169,7 +183,6 @@ needs_review_by_domain:
   - Repository setting
   - GitHub annotation
   - Mergeability
-  - Host-side safety rejection
   - Self-cleaning CI
   graph-database:
   - Neo4j
@@ -207,7 +220,6 @@ needs_review_by_domain:
   knowledge-organization:
   - Semantic zone
   - Classification debt
-  - agent-zone-* topic
   - unclassified
   - Classification
   knowledge-representation:
@@ -232,10 +244,6 @@ needs_review_by_domain:
   - Exploratory Data Analysis (EDA)
   - Feature engineering
   ml-operations:
-  - training_attempted
-  - training_executed
-  - evaluation_executed
-  - observed_metrics
   - Deployment monitoring
   - Runtime telemetry
   - Persistent execution
@@ -264,9 +272,7 @@ needs_review_by_domain:
   - Falsification condition
   - Reproducibility
   - Paper-vintage data
-  research-engineering:
-  - Exact-data gate
-  - Stage B artifact
+  research-engineering: []
   security:
   - Google OAuth
   - Fail-closed
