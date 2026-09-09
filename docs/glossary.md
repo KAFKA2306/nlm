@@ -57,3 +57,11 @@
 | GitHub permissions | GitHub ActionsでGITHUB_TOKENなどに許可する操作範囲をworkflowまたはjob単位で制御する設定。 | [Reusing workflow configurations](https://docs.github.com/en/actions/reference/workflows-and-actions/reusing-workflow-configurations) |
 | OpenID Connect | GitHub Actions workflowが外部cloud providerなどへ短命tokenで認証するために利用できるidentity federation方式。 | [OpenID Connect reference](https://docs.github.com/en/actions/reference/security/oidc) |
 | id-token: write | GitHub ActionsのjobまたはworkflowにOIDC tokenの要求を許可するpermissions設定で、外部resourceへの書き込み権限そのものではない。 | [OpenID Connect reference](https://docs.github.com/en/actions/reference/security/oidc) |
+| JSON | 構造化データを可搬な形で表現するための、軽量・テキストベース・言語非依存のデータ交換形式。 | [RFC 8259: The JavaScript Object Notation (JSON) Data Interchange Format](https://www.rfc-editor.org/info/rfc8259) |
+| Parquet | 効率的な保存と取得を目的に設計された、オープンソースの列指向データファイル形式。 | [Apache Parquet](https://parquet.apache.org/) |
+| CSV | レコードを行、fieldをcommaで区切って表す広く使われるテキスト形式。 | [RFC 4180: Common Format and MIME Type for Comma-Separated Values (CSV) Files](https://www.rfc-editor.org/info/rfc4180) |
+| Unique constraint | 1列または複数列の値の組み合わせがtable内の全rowで一意になることを保証するdatabase constraint。 | [PostgreSQL 18: Constraints — Unique Constraints](https://www.postgresql.org/docs/current/ddl-constraints.html) |
+| Indexing | table全体を順番に走査せず、条件に合うrowをより効率よく探せるようにindexを維持・利用する仕組み。 | [PostgreSQL 18: Indexes — Introduction](https://www.postgresql.org/docs/current/indexes-intro.html) |
+| Point-in-Time Recovery | base backupとarchived Write-Ahead Logを使い、WAL replayを指定時点で止めてdatabaseをその時点の整合した状態へ戻す復旧方式。 | [PostgreSQL 18: Continuous Archiving and Point-in-Time Recovery (PITR)](https://www.postgresql.org/docs/current/continuous-archiving.html) |
+| SQLite | 別server processを必要とせずapplication process内で動作する、self-contained・serverless・zero-configuration・transactionalなSQL database engine。 | [About SQLite](https://sqlite.org/about.html) |
+| RLS policy | Row-Level Securityを有効にしたtableで、userやcommandごとにどのrowを参照・追加・更新・削除できるかをBoolean expressionで制御するpolicy。 | [PostgreSQL 18: Row Security Policies](https://www.postgresql.org/docs/current/ddl-rowsecurity.html) |
