@@ -65,3 +65,8 @@
 | Point-in-Time Recovery | base backupとarchived Write-Ahead Logを使い、WAL replayを指定時点で止めてdatabaseをその時点の整合した状態へ戻す復旧方式。 | [PostgreSQL 18: Continuous Archiving and Point-in-Time Recovery (PITR)](https://www.postgresql.org/docs/current/continuous-archiving.html) |
 | SQLite | 別server processを必要とせずapplication process内で動作する、self-contained・serverless・zero-configuration・transactionalなSQL database engine。 | [About SQLite](https://sqlite.org/about.html) |
 | RLS policy | Row-Level Securityを有効にしたtableで、userやcommandごとにどのrowを参照・追加・更新・削除できるかをBoolean expressionで制御するpolicy。 | [PostgreSQL 18: Row Security Policies](https://www.postgresql.org/docs/current/ddl-rowsecurity.html) |
+| Document Object Model | HTMLやXMLなどのdocumentをnode treeとして表し、documentの構造へアクセス・操作するためのWeb platformのmodelとAPI。 | [DOM Standard](https://dom.spec.whatwg.org/) |
+| CSS align-content | alignment containerの中でcontentをblock/cross axis方向に配置・分配するCSS property。 | [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/) |
+| CSS align-items | containerの子boxに対するdefault align-selfを設定し、block/cross axis方向のself-alignmentを決めるCSS property。 | [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/) |
+| Vercel | source codeやframework projectからWeb applicationやserviceをbuild・deployし、global deliveryやserver-side computeなどを提供するdeployment platform。 | [Vercel](https://vercel.com/) |
+| FastAPI | Pythonの標準type hintを中心にAPIを定義し、OpenAPI schemaやinteractive API documentationを生成できるPython Web API framework。 | [FastAPI Features](https://fastapi.tiangolo.com/features/) |
