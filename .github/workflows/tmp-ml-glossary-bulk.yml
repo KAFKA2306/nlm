@@ -1,0 +1,167 @@
+name: Temporary ML glossary bulk patch
+
+on:
+  push:
+    branches:
+      - research/ml-glossary-bulk-20260910
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/ml-glossary-bulk-20260910
+          fetch-depth: 0
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - name: Apply primary-source verified machine-learning batch
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          terms_path = Path('data/glossary/terms.yaml')
+          inventory_path = Path('data/glossary/recent-term-inventory.yaml')
+
+          terms = terms_path.read_text()
+          if '  - id: "deep-q-network"' in terms:
+              raise SystemExit('machine-learning glossary batch already present')
+          terms = terms.replace('verified_at: "2026-09-09"', 'verified_at: "2026-09-10"', 1)
+          addition = r'''
+
+  - id: "deep-q-network"
+    term: "Deep Q-Network"
+    aliases: ["DQN"]
+    domain: "machine-learning"
+    definition_ja: "Q学習などの強化学習と深層ニューラルネットワークを組み合わせ、高次元の感覚入力から行動価値を近似して方策を学習する手法。"
+    why_it_matters: "画像など高次元入力から直接行動を選ぶ強化学習を理解する基礎概念であり、DQNという略称だけでは手法の構成が分かりにくい。"
+    example: "Atariの画面ピクセルとゲームスコアを入力にして、各行動の価値をニューラルネットワークで近似する。"
+    related_terms: []
+    sources:
+      - title: "Human-level control through deep reinforcement learning"
+        url: "https://www.nature.com/articles/nature14236"
+        source_type: "original_paper"
+    verified_at: "2026-09-10"
+    status: "verified"
+
+  - id: "long-short-term-memory"
+    term: "Long Short-Term Memory"
+    aliases: ["LSTM"]
+    domain: "machine-learning"
+    definition_ja: "長い時間間隔をまたぐ依存関係を学習しやすくするため、一定の誤差信号の流れとゲート機構を導入した再帰型ニューラルネットワークの方式。"
+    why_it_matters: "系列データで長期依存を扱う代表的な仕組みで、単なる一般的なRNNと区別して理解する必要がある。"
+    example: "長い系列の前半に現れた情報を、後半の予測に利用する。"
+    related_terms: []
+    sources:
+      - title: "Long Short-Term Memory"
+        url: "https://direct.mit.edu/neco/article/9/8/1735/6109/Long-Short-Term-Memory"
+        source_type: "original_paper"
+    verified_at: "2026-09-10"
+    status: "verified"
+
+  - id: "walk-forward-evaluation"
+    term: "Walk-forward evaluation"
+    aliases: ["walk-forward validation", "time-series split evaluation"]
+    domain: "machine-learning"
+    definition_ja: "時系列の順序を保ち、過去側のデータを学習に使って、その後の未来側区間を評価しながら評価時点を前へ進める方法。"
+    why_it_matters: "時系列で未来の観測を学習側へ混ぜず、実運用に近い順序で汎化性能を確認するために重要。"
+    example: "1月から6月で学習して7月を評価し、次は1月から7月で学習して8月を評価する。"
+    related_terms: ["data-split"]
+    sources:
+      - title: "TimeSeriesSplit — scikit-learn 1.9.0 documentation"
+        url: "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html"
+        source_type: "official_docs"
+    verified_at: "2026-09-10"
+    status: "verified"
+
+  - id: "data-split"
+    term: "Data split"
+    aliases: ["train/test split", "train-test split"]
+    domain: "machine-learning"
+    definition_ja: "モデルの学習用データと評価用データなど、異なる役割を持つ部分集合へデータを分割すること。"
+    why_it_matters: "学習に使ったデータだけで性能を測ることを避け、未学習データで評価するための基本的な境界になる。"
+    example: "データをtraining setとtest setへ分け、training setだけでモデルを学習する。"
+    related_terms: ["walk-forward-evaluation"]
+    sources:
+      - title: "train_test_split — scikit-learn 1.9.0 documentation"
+        url: "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html"
+        source_type: "official_docs"
+    verified_at: "2026-09-10"
+    status: "verified"
+
+  - id: "exploratory-data-analysis"
+    term: "Exploratory Data Analysis"
+    aliases: ["EDA"]
+    domain: "machine-learning"
+    definition_ja: "データの構造、外れ値、仮定、重要な変数などへの洞察を得るため、主に可視化を含む多様な技法でデータを探索する分析アプローチ。"
+    why_it_matters: "モデルを決め打ちする前に、データ自身が示す構造や異常を確認するための基本的な分析段階になる。"
+    example: "分布図や散布図を確認し、外れ値や変数間の構造を調べる。"
+    related_terms: ["data-split", "feature-engineering"]
+    sources:
+      - title: "NIST/SEMATECH e-Handbook of Statistical Methods; Chapter 1: Exploratory Data Analysis"
+        url: "https://www.nist.gov/publications/nistsematech-e-handbook-statistical-methods-chapter-1-exploratory-data-analysis"
+        source_type: "official_docs"
+    verified_at: "2026-09-10"
+    status: "verified"
+
+  - id: "feature-engineering"
+    term: "Feature engineering"
+    aliases: ["特徴量エンジニアリング", "featurization"]
+    domain: "machine-learning"
+    definition_ja: "モデル学習に有用な特徴を選び、元のデータを学習しやすい特徴表現へ変換するプロセス。"
+    why_it_matters: "同じ元データでも特徴表現によってモデルが利用できる情報や学習効率が変わるため、モデル構築の主要工程になる。"
+    example: "連続値の温度を目的に応じて区間化し、学習用特徴として使う。"
+    related_terms: ["exploratory-data-analysis", "data-split"]
+    sources:
+      - title: "Machine Learning Glossary — Google for Developers"
+        url: "https://developers.google.com/machine-learning/glossary"
+        source_type: "official_docs"
+    verified_at: "2026-09-10"
+    status: "verified"
+'''
+          terms_path.write_text(terms.rstrip() + addition + '\n')
+
+          inv = inventory_path.read_text()
+          inv = inv.replace('  verified: 68\n  needs_review: 215\n', '  verified: 74\n  needs_review: 209\n', 1)
+          anchor = 'excluded_from_canonical_review:\n'
+          verified_add = ''.join(f'- {term}\n' for term in [
+              'Deep Q-Network (DQN)',
+              'Long Short-Term Memory (LSTM)',
+              'Walk-forward evaluation',
+              'Data split',
+              'Exploratory Data Analysis (EDA)',
+              'Feature engineering',
+          ])
+          if anchor not in inv:
+              raise SystemExit('inventory anchor missing')
+          inv = inv.replace(anchor, verified_add + anchor, 1)
+          for term in [
+              'Deep Q-Network (DQN)',
+              'Long Short-Term Memory (LSTM)',
+              'Walk-forward evaluation',
+              'Data split',
+              'Exploratory Data Analysis (EDA)',
+              'Feature engineering',
+          ]:
+              needle = f'  - {term}\n'
+              if needle not in inv:
+                  raise SystemExit(f'missing needs_review term: {term}')
+              inv = inv.replace(needle, '', 1)
+          inventory_path.write_text(inv)
+          PY
+          go run ./cmd/nlm glossary check
+          go run ./cmd/nlm glossary generate
+          go test ./...
+          go build ./cmd/nlm
+          rm .github/workflows/tmp-ml-glossary-bulk.yml
+          git diff --check
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add data/glossary/terms.yaml data/glossary/recent-term-inventory.yaml docs/glossary.md .github/workflows/tmp-ml-glossary-bulk.yml
+          git commit -m "docs(glossary): bulk-verify machine-learning terms"
+          git push origin HEAD:research/ml-glossary-bulk-20260910
