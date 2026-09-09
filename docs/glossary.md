@@ -75,3 +75,9 @@
 | Thread | IoT向けに設計された、IPv6-based・low-power・self-healing meshのwireless networking protocol。 | [Thread Group — What is Thread?](https://threadgroup.org/) |
 | Home APIs | Android/iOS applicationからGoogle Homeのdevice、structure、Matter infrastructure、commissioning、automation機能へaccessするためのGoogle Home developer API群。 | [Home APIs](https://developers.home.google.com/apis) |
 | Voice Match | Google Homeのshared device上でvoice assistantが話者の声を認識し、そのGoogle Accountに基づくpersonalized responseやservice selectionへ使う機能。 | [Set up and manage Voice Match for your home or devices](https://support.google.com/googlehome/answer/7320960) |
+| Deep Q-Network | Q学習などの強化学習と深層ニューラルネットワークを組み合わせ、高次元の感覚入力から行動価値を近似して方策を学習する手法。 | [Human-level control through deep reinforcement learning](https://www.nature.com/articles/nature14236) |
+| Long Short-Term Memory | 長い時間間隔をまたぐ依存関係を学習しやすくするため、一定の誤差信号の流れとゲート機構を導入した再帰型ニューラルネットワークの方式。 | [Long Short-Term Memory](https://direct.mit.edu/neco/article/9/8/1735/6109/Long-Short-Term-Memory) |
+| Walk-forward evaluation | 時系列の順序を保ち、過去側のデータを学習に使って、その後の未来側区間を評価しながら評価時点を前へ進める方法。 | [TimeSeriesSplit — scikit-learn 1.9.0 documentation](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html) |
+| Data split | モデルの学習用データと評価用データなど、異なる役割を持つ部分集合へデータを分割すること。 | [train_test_split — scikit-learn 1.9.0 documentation](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html) |
+| Exploratory Data Analysis | データの構造、外れ値、仮定、重要な変数などへの洞察を得るため、主に可視化を含む多様な技法でデータを探索する分析アプローチ。 | [NIST/SEMATECH e-Handbook of Statistical Methods; Chapter 1: Exploratory Data Analysis](https://www.nist.gov/publications/nistsematech-e-handbook-statistical-methods-chapter-1-exploratory-data-analysis) |
+| Feature engineering | モデル学習に有用な特徴を選び、元のデータを学習しやすい特徴表現へ変換するプロセス。 | [Machine Learning Glossary — Google for Developers](https://developers.google.com/machine-learning/glossary) |
