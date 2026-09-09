@@ -43,3 +43,17 @@
 | DINKs | 結婚するが子どもは持たず、仕事を一生続けるライフコースを指す語。 | [平成25年版 男女共同参画白書 第1部 第1節](https://www.gender.go.jp/about_danjo/whitepaper/h25/zentai/html/honpen/b1_s00_03.html) |
 | ひとり親世帯 | 父または母の一方と、20歳未満の未婚の子どもから構成される世帯を扱う公的調査上の概念。 | [令和3年度 全国ひとり親世帯等調査の結果](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000188147_00013.html) |
 | 共働き世帯 | 夫妻の双方が就業または有業である世帯を扱う統計上の概念。 | [統計局FAQ 16A-Q12 共働き世帯に関する統計](https://www.stat.go.jp/library/faq/faq16/faq16a12.html) |
+| Private repository | アクセスできるユーザーが所有者、明示的に共有されたユーザー、または組織内で許可されたメンバーに制限されるGitHub repository。 | [About repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories) |
+| Self-hosted runner | 利用者側が管理する環境でGitHub Actionsのjobを実行するrunner。 | [Self-hosted runners reference](https://docs.github.com/en/actions/reference/runners/self-hosted-runners) |
+| GitHub Issue | GitHub上でアイデア、フィードバック、タスク、bugなどを計画・議論・追跡する作業項目。 | [GitHub Issues documentation](https://docs.github.com/en/issues) |
+| Repository topic | repositoryの目的、分野、言語などを分類し、関連repositoryの発見や検索に使うGitHubのmetadata。 | [Classifying your repository with topics](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics) |
+| Workflow run | GitHub Actions workflowがtriggerされて作成される1回の実行で、状態、結果、job、stepのlogを持つ実行単位。 | [Using workflow run logs](https://docs.github.com/en/actions/how-tos/monitor-workflows/use-workflow-run-logs) |
+| GitHub Actions job | GitHub Actions workflow run内で1つ以上のstepをrunner上で実行する実行単位。 | [Using workflow run logs](https://docs.github.com/en/actions/how-tos/monitor-workflows/use-workflow-run-logs) |
+| Reusable workflow | 別のworkflowから呼び出して共通処理を再利用できるGitHub Actions workflow。 | [Reusing workflow configurations](https://docs.github.com/en/actions/reference/workflows-and-actions/reusing-workflow-configurations) |
+| workflow_call | GitHub Actions workflowを他のworkflowから呼び出せるreusable workflowとして定義するためにonで指定するtrigger。 | [Reusing workflow configurations](https://docs.github.com/en/actions/reference/workflows-and-actions/reusing-workflow-configurations) |
+| Caller workflow | reusable workflowをjobのusesで呼び出す側のGitHub Actions workflow。 | [Reusing workflow configurations](https://docs.github.com/en/actions/reference/workflows-and-actions/reusing-workflow-configurations) |
+| Called workflow | caller workflowから呼び出され、定義済みの処理を提供するreusable workflow。 | [Reusing workflow configurations](https://docs.github.com/en/actions/reference/workflows-and-actions/reusing-workflow-configurations) |
+| GITHUB_TOKEN | workflow job開始時にGitHubが自動生成し、そのrepositoryに対する認証に使えるGitHub App installation access token。 | [GITHUB_TOKEN](https://docs.github.com/en/actions/concepts/security/github_token) |
+| GitHub permissions | GitHub ActionsでGITHUB_TOKENなどに許可する操作範囲をworkflowまたはjob単位で制御する設定。 | [Reusing workflow configurations](https://docs.github.com/en/actions/reference/workflows-and-actions/reusing-workflow-configurations) |
+| OpenID Connect | GitHub Actions workflowが外部cloud providerなどへ短命tokenで認証するために利用できるidentity federation方式。 | [OpenID Connect reference](https://docs.github.com/en/actions/reference/security/oidc) |
+| id-token: write | GitHub ActionsのjobまたはworkflowにOIDC tokenの要求を許可するpermissions設定で、外部resourceへの書き込み権限そのものではない。 | [OpenID Connect reference](https://docs.github.com/en/actions/reference/security/oidc) |
