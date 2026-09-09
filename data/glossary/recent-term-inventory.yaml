@@ -16,8 +16,8 @@ policy:
 counts:
   total: 294
   verified: 80
-  needs_review: 195
-  excluded_from_canonical_review: 19
+  needs_review: 190
+  excluded_from_canonical_review: 24
 verified_terms:
 - GitHub Actions
 - Workflow
@@ -109,6 +109,7 @@ excluded_from_canonical_review:
   - evaluation_executed
   - observed_metrics
   - agent-zone-* topic
+  - Primary category
   internal_workflow_or_stage_label:
   - Exact-data gate
   - Stage B artifact
@@ -121,6 +122,10 @@ excluded_from_canonical_review:
   - Entity gate
   - Read-only transport smoke test
   - Documentation Quality Check
+  - Revision stage
+  - Revision stage continuity
+  - Deduplicated canonical view
+  - Deterministic distribution layer
 needs_review_by_domain:
   ai:
   - Context compaction
@@ -328,14 +333,9 @@ needs_review_by_domain:
   - Speaker Reference Design
   research-data:
   - Point-in-time vintage
-  - Revision stage
   - Revision history
-  - Revision stage continuity
   - Stable key
-  - Deduplicated canonical view
   - Facet
-  - Primary category
-  - Deterministic distribution layer
   - Atom API
   - OAI-PMH
   speech:
