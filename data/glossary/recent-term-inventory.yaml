@@ -16,8 +16,8 @@ policy:
 counts:
   total: 294
   verified: 74
-  needs_review: 209
-  excluded_from_canonical_review: 11
+  needs_review: 205
+  excluded_from_canonical_review: 15
 verified_terms:
 - GitHub Actions
 - Workflow
@@ -107,6 +107,10 @@ excluded_from_canonical_review:
   - Exact-data gate
   - Stage B artifact
   - Host-side safety rejection
+  - App Server handshake
+  - Transport smoke test
+  - Controller comment
+  - Terminal worker state
 needs_review_by_domain:
   ai:
   - Context compaction
@@ -172,10 +176,6 @@ needs_review_by_domain:
   database-security: []
   distributed-systems:
   - Remote Procedure Call (RPC)
-  - App Server handshake
-  - Transport smoke test
-  - Controller comment
-  - Terminal worker state
   financial-data:
   - EDGAR
   git:
