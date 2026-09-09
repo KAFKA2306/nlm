@@ -16,8 +16,8 @@ policy:
 counts:
   total: 294
   verified: 74
-  needs_review: 205
-  excluded_from_canonical_review: 15
+  needs_review: 201
+  excluded_from_canonical_review: 19
 verified_terms:
 - GitHub Actions
 - Workflow
@@ -111,6 +111,10 @@ excluded_from_canonical_review:
   - Transport smoke test
   - Controller comment
   - Terminal worker state
+  - Evidence gate
+  - Entity gate
+  - Read-only transport smoke test
+  - Documentation Quality Check
 needs_review_by_domain:
   ai:
   - Context compaction
@@ -298,11 +302,7 @@ needs_review_by_domain:
   software-testing:
   - Regression test
   - Mobile regression test
-  - Evidence gate
-  - Entity gate
   - Smoke test
-  - Read-only transport smoke test
-  - Documentation Quality Check
   standard:
   - ISO 3166-1
   statistics:
