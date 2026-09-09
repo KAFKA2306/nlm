@@ -20,39 +20,31 @@ jobs:
         shell: bash
         run: |
           python - <<'PY'
+          import re
           from pathlib import Path
           p = Path('README.md')
           s = p.read_text()
-          old = '''### Current snapshot — 2026-08-14
-
-- 抽出監査: **294語**
-- `verified`: **29語**
-- `needs_review`: **265語**
-- schema: [`data/glossary/schema.json`](data/glossary/schema.json)
-- 正準データ: [`data/glossary/terms.yaml`](data/glossary/terms.yaml)
-- 抽出監査inventory: [`data/glossary/recent-term-inventory.yaml`](data/glossary/recent-term-inventory.yaml)
-- 人間向けビュー: [`docs/glossary.md`](docs/glossary.md)
-- 追跡Issue: [#4 学習用の正準用語集を追加し、継続更新できる仕組みにする](https://github.com/KAFKA2306/nlm/issues/4)
-
-現在の294語は、この作業で取得できた直近ChatGPT会話コンテキストとrecent-work retrievalから抽出した監査集合です。**ChatGPT全履歴の完全exportとは扱いません。**
-'''
-          new = '''### Current inventory
-
-件数とreview状態はREADMEへ複製せず、[`data/glossary/recent-term-inventory.yaml`](data/glossary/recent-term-inventory.yaml) を現在の抽出監査authorityとして参照します。検証済み定義の正本は [`data/glossary/terms.yaml`](data/glossary/terms.yaml)、人間向け生成ビューは [`docs/glossary.md`](docs/glossary.md) です。schemaは [`data/glossary/schema.json`](data/glossary/schema.json) にあります。
-
-inventoryは、この作業で取得できた直近ChatGPT会話コンテキストとrecent-work retrievalから抽出した監査集合です。**ChatGPT全履歴の完全exportとは扱いません。**
-'''
-          if old not in s:
-              raise SystemExit('current snapshot block not found')
-          s = s.replace(old, new, 1)
-          old2 = '''`needs_review` の語には、定義を推測して埋めません。現在は `RAG`, `Graphiti`, `PITR`, `fail-closed`, `walk-forward`, `Shader`, `Single Pass Instanced`, `SRP Batcher`, `UdonSharp`, `OIDC`, `ReAct`, `Whisper`, `Matter`, `Thread` などが検証待ちに含まれます。
-'''
-          new2 = '''`needs_review` の語には、定義を推測して埋めません。現在のreview queueはREADMEへ複製せず、[`data/glossary/recent-term-inventory.yaml`](data/glossary/recent-term-inventory.yaml) を参照します。
-'''
-          if old2 not in s:
-              raise SystemExit('stale needs_review example block not found')
-          s = s.replace(old2, new2, 1)
-          p.write_text(s)
+          replacement = (
+              "### Current inventory\n\n"
+              "件数とreview状態はREADMEへ複製せず、[`data/glossary/recent-term-inventory.yaml`](data/glossary/recent-term-inventory.yaml) を現在の抽出監査authorityとして参照します。"
+              "検証済み定義の正本は [`data/glossary/terms.yaml`](data/glossary/terms.yaml)、人間向け生成ビューは [`docs/glossary.md`](docs/glossary.md) です。"
+              "schemaは [`data/glossary/schema.json`](data/glossary/schema.json) にあります。\n\n"
+              "inventoryは、この作業で取得できた直近ChatGPT会話コンテキストとrecent-work retrievalから抽出した監査集合です。"
+              "**ChatGPT全履歴の完全exportとは扱いません。**\n\n"
+              "### Promotion rule"
+          )
+          s2, n = re.subn(r"### Current snapshot[^\n]*\n.*?### Promotion rule", replacement, s, count=1, flags=re.S)
+          if n != 1:
+              raise SystemExit(f'current snapshot block replacements={n}')
+          s3, n = re.subn(
+              r"`needs_review` の語には、定義を推測して埋めません。現在は .*?検証待ちに含まれます。",
+              "`needs_review` の語には、定義を推測して埋めません。現在のreview queueはREADMEへ複製せず、[`data/glossary/recent-term-inventory.yaml`](data/glossary/recent-term-inventory.yaml) を参照します。",
+              s2,
+              count=1,
+          )
+          if n != 1:
+              raise SystemExit(f'needs_review example replacements={n}')
+          p.write_text(s3)
           PY
           ! grep -q 'verified.*29語' README.md
           ! grep -q 'needs_review.*265語' README.md
