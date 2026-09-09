@@ -1,14 +1,15 @@
 name: Temporary research-data glossary bulk patch
 
 on:
-  push:
-    branches: [agent/research-data-bulk-20260910]
+  pull_request:
+    branches: [main]
 
 permissions:
   contents: write
 
 jobs:
   patch:
+    if: github.head_ref == 'agent/research-data-bulk-20260910'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
