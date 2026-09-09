@@ -1,0 +1,123 @@
+name: Temporary software testing glossary review
+
+on:
+  push:
+    branches:
+      - research/software-testing-review-20260910
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/software-testing-review-20260910
+          fetch-depth: 0
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+
+      - name: Apply reviewed software-testing batch
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          inventory_path = Path('data/glossary/recent-term-inventory.yaml')
+          terms_path = Path('data/glossary/terms.yaml')
+          inventory = inventory_path.read_text()
+          terms = terms_path.read_text()
+
+          expected_counts = '''counts:\n  total: 294\n  verified: 74\n  needs_review: 205\n  excluded_from_canonical_review: 15'''
+          replacement_counts = '''counts:\n  total: 294\n  verified: 76\n  needs_review: 199\n  excluded_from_canonical_review: 19'''
+          if expected_counts not in inventory:
+              raise SystemExit('unexpected inventory counts')
+          inventory = inventory.replace(expected_counts, replacement_counts, 1)
+
+          verified_anchor = '  - Feature engineering\n'
+          if verified_anchor not in inventory:
+              raise SystemExit('verified anchor missing')
+          inventory = inventory.replace(
+              verified_anchor,
+              verified_anchor + '  - Regression test\n  - Smoke test\n',
+              1,
+          )
+
+          exclusion_anchor = '  - Terminal worker state\n'
+          if exclusion_anchor not in inventory:
+              raise SystemExit('exclusion anchor missing')
+          inventory = inventory.replace(
+              exclusion_anchor,
+              exclusion_anchor
+              + '  - Evidence gate\n'
+              + '  - Entity gate\n'
+              + '  - Read-only transport smoke test\n'
+              + '  - Documentation Quality Check\n',
+              1,
+          )
+
+          old_queue = '''  software-testing:\n  - Regression test\n  - Mobile regression test\n  - Evidence gate\n  - Entity gate\n  - Smoke test\n  - Read-only transport smoke test\n  - Documentation Quality Check\n'''
+          new_queue = '''  software-testing:\n  - Mobile regression test\n'''
+          if old_queue not in inventory:
+              raise SystemExit('unexpected software-testing queue')
+          inventory = inventory.replace(old_queue, new_queue, 1)
+          inventory_path.write_text(inventory)
+
+          if '  - id: "regression-test"\n' in terms or '  - id: "smoke-test"\n' in terms:
+              raise SystemExit('terms already present')
+
+          addition = r'''
+
+  - id: "regression-test"
+    term: "Regression test"
+    aliases: ["regression testing", "回帰テスト"]
+    domain: "software-testing"
+    definition_ja: "ソフトウェア変更後に、既存機能が壊れたり劣化したりしていないことを確認するための再テスト。"
+    why_it_matters: "変更が既存挙動へ意図しない不具合を持ち込んでいないかを確認する基本的な検証として使う。"
+    example: "バグ修正後に既存の主要テストを再実行し、以前動いていた機能が壊れていないことを確認する。"
+    related_terms: ["continuous-integration", "end-to-end-testing"]
+    sources:
+      - title: "What is software testing?"
+        url: "https://www.ibm.com/think/topics/software-testing"
+        source_type: "official_docs"
+    verified_at: "2026-09-10"
+    status: "verified"
+
+  - id: "smoke-test"
+    term: "Smoke test"
+    aliases: ["smoke testing", "スモークテスト"]
+    domain: "software-testing"
+    definition_ja: "buildやdeploymentの主要な基本機能が利用可能で期待どおり動くかを早期に確認し、より深いテストへ進める状態かを判定する軽量なテスト。"
+    why_it_matters: "明らかに壊れたbuildや環境へ重い検証を続ける前に、基本動作を短時間で確認できる。"
+    example: "deployment後にアプリケーションと主要コンポーネントが起動し、基本リクエストへ応答することを確認する。"
+    related_terms: ["continuous-integration", "end-to-end-testing"]
+    sources:
+      - title: "Deployment and testing for mission-critical workloads on Azure"
+        url: "https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/mission-critical-deployment-testing"
+        source_type: "official_docs"
+    verified_at: "2026-09-10"
+    status: "verified"
+'''
+          terms_path.write_text(terms.rstrip() + addition + '\n')
+          PY
+
+      - name: Generate and validate glossary
+        run: |
+          go run ./cmd/nlm glossary generate
+          go run ./cmd/nlm glossary check
+          go test ./...
+          go build ./cmd/nlm
+          git diff --check
+
+      - name: Remove temporary workflow and push reviewed change
+        run: |
+          git rm .github/workflows/tmp-software-testing-review.yml
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add data/glossary/recent-term-inventory.yaml data/glossary/terms.yaml docs/glossary.md
+          git commit -m "docs: resolve software testing glossary review"
+          git push origin HEAD:research/software-testing-review-20260910
