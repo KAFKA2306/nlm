@@ -1,0 +1,59 @@
+name: Temporary home automation glossary patch
+
+on:
+  push:
+    branches:
+      - research/home-automation-glossary-20260910
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/home-automation-glossary-20260910
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - name: Apply verified home automation glossary batch
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          terms = Path('data/glossary/terms.yaml')
+          t = terms.read_text()
+          if '  - id: "home-assistant"\n' not in t:
+              t += '''\n\n  - id: "home-assistant"\n    term: "Home Assistant"\n    aliases: []\n    domain: "home-automation"\n    definition_ja: "local controlとprivacyを重視する、freeかつopen-sourceのhome automation platform。多数のdevice/service integration、automation、dashboardを一つのsystemで扱える。"\n    why_it_matters: "smart-home機器をvendorごとに別管理せず、local-firstな統合・automation基盤として扱うときの中心概念になる。"\n    example: "照明、sensor、thermostatなどをHome Assistantへintegrateし、状態変化を条件にautomationを実行する。"\n    related_terms: ["matter", "thread"]\n    sources:\n      - title: "Home Assistant"\n        url: "https://www.home-assistant.io/"\n        source_type: "official_docs"\n    verified_at: "2026-09-10"\n    status: "verified"\n\n  - id: "matter"\n    term: "Matter"\n    aliases: ["Matter protocol"]\n    domain: "home-automation"\n    definition_ja: "Connectivity Standards Allianceが策定する、異なるbrandやecosystemのIoT device間のinteroperabilityを目的としたIP-based connectivity standard。"\n    why_it_matters: "smart-home deviceが特定vendor ecosystemに閉じず、複数platformで相互運用できるか判断する基礎になる。"\n    example: "Matter-certified deviceをThreadやWi-Fi上でcommissionし、複数のcompatible smart-home ecosystemから利用する。"\n    related_terms: ["thread", "home-assistant"]\n    sources:\n      - title: "Build With Matter"\n        url: "https://csa-iot.org/all-solutions/matter/"\n        source_type: "official_standard_body"\n    verified_at: "2026-09-10"\n    status: "verified"\n\n  - id: "thread"\n    term: "Thread"\n    aliases: ["Thread protocol"]\n    domain: "home-automation"\n    definition_ja: "IoT向けに設計された、IPv6-based・low-power・self-healing meshのwireless networking protocol。"\n    why_it_matters: "Matterなどのapplication layerとは別に、battery-powered smart-home deviceをIP networkへ接続するnetwork layerを理解するために使う。"\n    example: "Thread Border Routerを介してThread mesh上のIoT deviceをhome IP networkへ接続する。"\n    related_terms: ["matter", "home-assistant"]\n    sources:\n      - title: "Thread Group — What is Thread?"\n        url: "https://threadgroup.org/"\n        source_type: "official_standard_body"\n    verified_at: "2026-09-10"\n    status: "verified"\n\n  - id: "google-home-apis"\n    term: "Home APIs"\n    aliases: ["Google Home APIs"]\n    domain: "home-automation"\n    definition_ja: "Android/iOS applicationからGoogle Homeのdevice、structure、Matter infrastructure、commissioning、automation機能へaccessするためのGoogle Home developer API群。"\n    why_it_matters: "Google Home ecosystemのdevice制御やcommissioning、automationを独自appへ組み込むときの正式なintegration surfaceになる。"\n    example: "iOS appからDevice APIでdeviceを制御し、Commissioning APIでMatter deviceを追加し、Automation APIでautomationを作成する。"\n    related_terms: ["matter", "voice-match"]\n    sources:\n      - title: "Home APIs"\n        url: "https://developers.home.google.com/apis"\n        source_type: "official_docs"\n    verified_at: "2026-09-10"\n    status: "verified"\n\n  - id: "voice-match"\n    term: "Voice Match"\n    aliases: []\n    domain: "home-automation"\n    definition_ja: "Google Homeのshared device上でvoice assistantが話者の声を認識し、そのGoogle Accountに基づくpersonalized responseやservice selectionへ使う機能。"\n    why_it_matters: "共有speaker/displayで、誰が話しているかによってcalendarやmediaなどのpersonalized experienceを分ける仕組みを理解するために使う。"\n    example: "shared speakerでVoice Matchが話者を認識し、そのuserに紐づくpersonal resultsやmedia preferenceを利用する。"\n    related_terms: ["google-home-apis"]\n    sources:\n      - title: "Set up and manage Voice Match for your home or devices"\n        url: "https://support.google.com/googlehome/answer/7320960"\n        source_type: "official_docs"\n    verified_at: "2026-09-10"\n    status: "verified"\n'''
+              terms.write_text(t)
+
+          inv = Path('data/glossary/recent-term-inventory.yaml')
+          s = inv.read_text()
+          replacements = {
+              '  verified: 63\n  needs_review: 231\n': '  verified: 68\n  needs_review: 226\n',
+              '- FastAPI\nneeds_review_by_domain:': '- FastAPI\n- Home Assistant\n- Matter\n- Thread\n- Home APIs\n- Voice Match\nneeds_review_by_domain:',
+              '  home-automation:\n  - Home Assistant\n  - Matter\n  - Thread\n  - Home APIs\n  - Automation Engine\n  - Voice Match\n  - Speaker Reference Design\n': '  home-automation:\n  - Automation Engine\n  - Speaker Reference Design\n',
+          }
+          for old, new in replacements.items():
+              if old not in s:
+                  raise SystemExit(f'expected inventory block missing: {old!r}')
+              s = s.replace(old, new, 1)
+          inv.write_text(s)
+          PY
+          go run ./cmd/nlm glossary generate
+          go run ./cmd/nlm glossary check
+          go test ./...
+          go build ./cmd/nlm
+      - name: Commit generated canonical change
+        shell: bash
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add data/glossary/terms.yaml data/glossary/recent-term-inventory.yaml docs/glossary.md
+          git diff --cached --check
+          git commit -m "Verify home automation glossary terms from primary sources"
+          git push origin HEAD:research/home-automation-glossary-20260910
