@@ -91,18 +91,11 @@ nlm glossary search RLS
 
 会話・開発・研究で**実際に使った技術用語**を拾い、学習用の正準データとして継続的に育てます。LLMがもっともらしい定義を生成して終わりにせず、一次情報・標準仕様・原論文で確認できた語だけを `verified` に昇格させます。
 
-### Current snapshot — 2026-08-14
+### Current inventory
 
-- 抽出監査: **294語**
-- `verified`: **29語**
-- `needs_review`: **265語**
-- schema: [`data/glossary/schema.json`](data/glossary/schema.json)
-- 正準データ: [`data/glossary/terms.yaml`](data/glossary/terms.yaml)
-- 抽出監査inventory: [`data/glossary/recent-term-inventory.yaml`](data/glossary/recent-term-inventory.yaml)
-- 人間向けビュー: [`docs/glossary.md`](docs/glossary.md)
-- 追跡Issue: [#4 学習用の正準用語集を追加し、継続更新できる仕組みにする](https://github.com/KAFKA2306/nlm/issues/4)
+件数とreview状態はREADMEへ複製せず、[`data/glossary/recent-term-inventory.yaml`](data/glossary/recent-term-inventory.yaml) を現在の抽出監査authorityとして参照します。検証済み定義の正本は [`data/glossary/terms.yaml`](data/glossary/terms.yaml)、人間向け生成ビューは [`docs/glossary.md`](docs/glossary.md) です。schemaは [`data/glossary/schema.json`](data/glossary/schema.json) にあります。
 
-現在の294語は、この作業で取得できた直近ChatGPT会話コンテキストとrecent-work retrievalから抽出した監査集合です。**ChatGPT全履歴の完全exportとは扱いません。**
+inventoryは、この作業で取得できた直近ChatGPT会話コンテキストとrecent-work retrievalから抽出した監査集合です。**ChatGPT全履歴の完全exportとは扱いません。**
 
 ### Promotion rule
 
@@ -133,7 +126,7 @@ verified_at: "2026-08-14"
 status: verified
 ```
 
-`needs_review` の語には、定義を推測して埋めません。現在は `RAG`, `Graphiti`, `PITR`, `fail-closed`, `walk-forward`, `Shader`, `Single Pass Instanced`, `SRP Batcher`, `UdonSharp`, `OIDC`, `ReAct`, `Whisper`, `Matter`, `Thread` などが検証待ちに含まれます。
+`needs_review` の語には、定義を推測して埋めません。現在のreview queueはREADMEへ複製せず、[`data/glossary/recent-term-inventory.yaml`](data/glossary/recent-term-inventory.yaml) を参照します。
 
 ### Glossary CLI
 
