@@ -16,8 +16,8 @@ policy:
 counts:
   total: 294
   verified: 80
-  needs_review: 180
-  excluded_from_canonical_review: 34
+  needs_review: 175
+  excluded_from_canonical_review: 39
 verified_terms:
 - GitHub Actions
 - Workflow
@@ -136,6 +136,11 @@ excluded_from_canonical_review:
   - Hugging Face publish
   - Pages/API generation
   - Cross-repository review
+  - Duplicate precheck
+  - Branch-ref cleanup
+  - Self-delete Actions
+  - Self-cleaning CI
+  - Mutable main hotlink
 needs_review_by_domain:
   ai:
   - Context compaction
@@ -187,7 +192,6 @@ needs_review_by_domain:
   data-platform:
   - Snowflake
   data-quality:
-  - Duplicate precheck
   - Count consistency
   - Data quality gate
   data-validation:
@@ -203,13 +207,10 @@ needs_review_by_domain:
   - Mutable ref
   - Git blob
   - Expected head SHA
-  - Branch-ref cleanup
   github:
-  - Self-delete Actions
   - Repository setting
   - GitHub annotation
   - Mergeability
-  - Self-cleaning CI
   graph-database:
   - Neo4j
   - FalkorDB
@@ -319,7 +320,6 @@ needs_review_by_domain:
   - Out-of-sample (OOS)
   web:
   - Hotlink
-  - Mutable main hotlink
   web-protocol:
   - batchexecute
   ai-platform:
