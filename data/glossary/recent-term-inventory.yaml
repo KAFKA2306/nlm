@@ -16,8 +16,8 @@ policy:
 counts:
   total: 294
   verified: 80
-  needs_review: 185
-  excluded_from_canonical_review: 29
+  needs_review: 180
+  excluded_from_canonical_review: 34
 verified_terms:
 - GitHub Actions
 - Workflow
@@ -131,6 +131,11 @@ excluded_from_canonical_review:
   - Validated workflow generation
   - Self-built agent
   - LLM domain inference
+  - CI & Deploy to Hugging Face Spaces
+  - Deploy MkDocs Simple
+  - Hugging Face publish
+  - Pages/API generation
+  - Cross-repository review
 needs_review_by_domain:
   ai:
   - Context compaction
@@ -358,9 +363,4 @@ needs_review_by_domain:
   - Avatar deformation
   - blendshapedeformer
   - bpyutils
-  web-deployment:
-  - CI & Deploy to Hugging Face Spaces
-  - Deploy MkDocs Simple
-  - Hugging Face publish
-  - Pages/API generation
-  - Cross-repository review
+  web-deployment: []
