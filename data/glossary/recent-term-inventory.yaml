@@ -16,8 +16,8 @@ policy:
 counts:
   total: 294
   verified: 80
-  needs_review: 190
-  excluded_from_canonical_review: 24
+  needs_review: 185
+  excluded_from_canonical_review: 29
 verified_terms:
 - GitHub Actions
 - Workflow
@@ -126,19 +126,19 @@ excluded_from_canonical_review:
   - Revision stage continuity
   - Deduplicated canonical view
   - Deterministic distribution layer
+  - CodeGraph traversal
+  - Skill Synthesis
+  - Validated workflow generation
+  - Self-built agent
+  - LLM domain inference
 needs_review_by_domain:
   ai:
   - Context compaction
-  - CodeGraph traversal
   - Self-improving skills
-  - Skill Synthesis
-  - Validated workflow generation
   - ReAct
   - Multi-agent
   - Output validation
   - Agent orchestration
-  - Self-built agent
-  - LLM domain inference
   - Read-only MCP
   cloud-computing:
   - Serverless
