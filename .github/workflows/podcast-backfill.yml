@@ -1,0 +1,90 @@
+name: Publish NotebookLM podcast backfill
+
+on:
+  workflow_dispatch:
+    inputs:
+      since:
+        description: Include NotebookLM work on or after this JST date
+        required: true
+        default: "2026-06-15"
+  push:
+    branches:
+      - main
+    paths:
+      - "cmd/podcast-backfill/**"
+      - ".github/workflows/podcast-backfill.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: notebooklm-podcast-backfill
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      SINCE: ${{ github.event_name == 'workflow_dispatch' && inputs.since || '2026-06-15' }}
+      NLM_AUTH_TOKEN: ${{ secrets.NLM_AUTH_TOKEN }}
+      NLM_COOKIES: ${{ secrets.NLM_COOKIES }}
+      IA_ACCESS_KEY: ${{ secrets.IA_ACCESS_KEY }}
+      IA_SECRET_KEY: ${{ secrets.IA_SECRET_KEY }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.24.x"
+          cache: true
+
+      - name: Verify required credentials are configured
+        shell: bash
+        run: |
+          set -euo pipefail
+          missing=0
+          for name in NLM_AUTH_TOKEN NLM_COOKIES IA_ACCESS_KEY IA_SECRET_KEY; do
+            if [ -z "${!name:-}" ]; then
+              echo "::error::Missing repository secret: ${name}"
+              missing=1
+            fi
+          done
+          test "$missing" -eq 0
+
+      - name: Verify backfill command
+        run: go test ./cmd/podcast-backfill
+
+      - name: Publish missing NotebookLM audio overviews
+        run: |
+          go run ./cmd/podcast-backfill \
+            --apply \
+            --since "$SINCE" \
+            --feed podcast/feed.xml \
+            --pages-feed docs/feed.xml \
+            --archive-id kafka-podcast-vault-v2
+
+      - name: Verify canonical feeds are identical
+        run: |
+          cmp podcast/feed.xml docs/feed.xml
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          ET.parse('podcast/feed.xml')
+          PY
+
+      - name: Commit published episodes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add podcast/feed.xml docs/feed.xml
+          if git diff --cached --quiet; then
+            echo "No new episodes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "feat(podcast): publish NotebookLM three-month backfill"
+          git push origin HEAD:main
