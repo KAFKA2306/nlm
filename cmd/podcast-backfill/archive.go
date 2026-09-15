@@ -50,7 +50,7 @@ func (a *archiveClient) upload(ctx context.Context, filename string, data []byte
 	req.Header.Set("Authorization", "LOW "+a.accessKey+":"+a.secretKey)
 	req.Header.Set("Content-Type", "audio/mp4")
 	req.ContentLength = int64(len(data))
-	req.Header.Set("x-archive-auto-make-bucket", "1")
+	req.Header.Set("x-amz-auto-make-bucket", "1")
 	resp, err := a.http.Do(req)
 	if err != nil {
 		return err
