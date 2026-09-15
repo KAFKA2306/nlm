@@ -59,13 +59,20 @@ jobs:
         run: go test ./cmd/podcast-backfill
 
       - name: Publish missing NotebookLM audio overviews
+        shell: bash
         run: |
-          go run ./cmd/podcast-backfill \
+          set -euo pipefail
+          log="$RUNNER_TEMP/podcast-backfill.log"
+          if ! go run ./cmd/podcast-backfill \
             --apply \
             --since "$SINCE" \
             --feed podcast/feed.xml \
             --pages-feed docs/feed.xml \
-            --archive-id kafka-podcast-vault-v2
+            --archive-id kafka-podcast-vault-v2 >"$log" 2>&1; then
+            echo "::error::Podcast backfill failed. Detailed output is suppressed because it may contain private NotebookLM titles."
+            exit 1
+          fi
+          echo "Podcast backfill completed. Detailed NotebookLM output was intentionally not published to the Actions log."
 
       - name: Verify canonical feeds are identical
         run: |
