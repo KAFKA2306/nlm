@@ -16,6 +16,7 @@ nlmは、NotebookLMの操作をCLIから再現可能に扱うGoクライアン�
 - NotebookLM との通信はこのリポジトリ内の RPC / batchexecute 実装に依存するため、上流の挙動変更で壊れる可能性があります
 - `cmd/nlm/mcp.go` には stdio MCP server 実装がありますが、現行 CLI の command dispatcher には `mcp` が登録されていません。したがって **`nlm mcp` は現時点の supported command ではありません**
 - `nlm glossary ...` はNotebookLM認証を使わないローカルcommand familyです。標準ではrepository内の `data/glossary/terms.yaml` を探索し、別パスを使う場合は `NLM_GLOSSARY_PATH` を指定します
+- 学習用語集はデータと閲覧用Markdownまで実装済みですが、`nlm glossary ...` CLIはまだ未実装です
 
 ## Install
 
@@ -96,6 +97,17 @@ nlm glossary search RLS
 件数とreview状態はREADMEへ複製せず、[`data/glossary/recent-term-inventory.yaml`](data/glossary/recent-term-inventory.yaml) を現在の抽出監査authorityとして参照します。検証済み定義の正本は [`data/glossary/terms.yaml`](data/glossary/terms.yaml)、人間向け生成ビューは [`docs/glossary.md`](docs/glossary.md) です。schemaは [`data/glossary/schema.json`](data/glossary/schema.json) にあります。
 
 inventoryは、この作業で取得できた直近ChatGPT会話コンテキストとrecent-work retrievalから抽出した監査集合です。**ChatGPT全履歴の完全exportとは扱いません。**
+### Current snapshot — 2026-08-14
+
+- 抽出監査: **294語**
+- `verified`: **29語**
+- `needs_review`: **265語**
+- 正準データ: [`data/glossary/terms.yaml`](data/glossary/terms.yaml)
+- 抽出監査inventory: [`data/glossary/recent-term-inventory.yaml`](data/glossary/recent-term-inventory.yaml)
+- 人間向けビュー: [`docs/glossary.md`](docs/glossary.md)
+- 追跡Issue: [#4 学習用の正準用語集を追加し、継続更新できる仕組みにする](https://github.com/KAFKA2306/nlm/issues/4)
+
+現在の294語は、この作業で取得できた直近ChatGPT会話コンテキストとrecent-work retrievalから抽出した監査集合です。**ChatGPT全履歴の完全exportとは扱いません。**
 
 ### Promotion rule
 
@@ -153,6 +165,22 @@ NLM_GLOSSARY_PATH=/path/to/terms.yaml nlm glossary check
 ```
 
 **`docs/glossary.md` は生成物です。直接編集せず、必ず `nlm glossary generate` で再生成してください。** 正準データは `data/glossary/terms.yaml` です。
+`needs_review` の語には、定義を推測して埋めません。現在は `RAG`, `Graphiti`, `PITR`, `fail-closed`, `walk-forward`, `Shader`, `Single Pass Instanced`, `SRP Batcher`, `UdonSharp`, `OIDC`, `ReAct`, `Whisper`, `Matter`, `Thread` などが検証待ちに含まれます。
+
+### Planned glossary CLI
+
+Issue #4では次を実装予定です。
+
+```text
+nlm glossary list
+nlm glossary search <query>
+nlm glossary show <term>
+nlm glossary check
+```
+
+`check` は少なくともschema不正、重複ID、重複term、必須source URL、日付形式、`related_terms` の参照切れを検出し、異常時は非0終了にします。さらに `docs/glossary.md` を正準YAMLから再生成可能にします。
+
+**現時点ではこれらの`glossary` commandはまだsupported commandではありません。** 実装されるまで、CLI tableには載せません。
 
 ## Debug
 
