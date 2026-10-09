@@ -193,6 +193,13 @@ NLM_GLOSSARY_PATH=/path/to/terms.yaml nlm glossary check
 ```
 
 **`docs/glossary.md` は生成物です。直接編集せず、必ず `nlm glossary generate` で再生成してください。** 正準データは `data/glossary/terms.yaml` です。
+直近の会話で実際に使われた技術用語を、一次情報で確認したうえで学習用に蓄積します。
+
+- 正準データ: [`data/glossary/terms.yaml`](data/glossary/terms.yaml)
+- 人間向けビュー: [`docs/glossary.md`](docs/glossary.md)
+- `verified` は一次情報または標準仕様で確認できたentryだけに付与します
+
+現時点ではglossary用CLIは未実装です。Issue #4で `list/search/show/check` とMarkdown自動生成を実装予定であり、README上でsupported commandとしては扱いません。
 
 ## Debug
 
