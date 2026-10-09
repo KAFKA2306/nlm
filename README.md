@@ -16,7 +16,7 @@ nlmは、NotebookLMの操作をCLIから再現可能に扱うGoクライアン�
 - NotebookLM との通信はこのリポジトリ内の RPC / batchexecute 実装に依存するため、上流の挙動変更で壊れる可能性があります
 - `cmd/nlm/mcp.go` には stdio MCP server 実装がありますが、現行 CLI の command dispatcher には `mcp` が登録されていません。したがって **`nlm mcp` は現時点の supported command ではありません**
 - `nlm glossary ...` はNotebookLM認証を使わないローカルcommand familyです。標準ではrepository内の `data/glossary/terms.yaml` を探索し、別パスを使う場合は `NLM_GLOSSARY_PATH` を指定します
-- 学習用語集はデータと閲覧用Markdownまで実装済みですが、`nlm glossary ...` CLIはまだ未実装です
+- 学習用語集はデータ、閲覧用Markdown、`nlm glossary ...` CLIまで実装済みです
 
 ## Install
 
@@ -160,39 +160,6 @@ NLM_GLOSSARY_PATH=/path/to/terms.yaml nlm glossary check
 
 **`docs/glossary.md` は生成物です。直接編集せず、必ず `nlm glossary generate` で再生成してください。** 正準データは `data/glossary/terms.yaml` です。
 `needs_review` の語には、定義を推測して埋めません。現在は `RAG`, `Graphiti`, `PITR`, `fail-closed`, `walk-forward`, `Shader`, `Single Pass Instanced`, `SRP Batcher`, `UdonSharp`, `OIDC`, `ReAct`, `Whisper`, `Matter`, `Thread` などが検証待ちに含まれます。
-
-### Glossary CLI
-
-用語集commandはNotebookLMのcookie/tokenを必要としません。
-
-```bash
-nlm glossary list
-nlm glossary search <query>
-nlm glossary show <term|id|alias>
-nlm glossary check
-nlm glossary generate [output-path]
-```
-
-- `list`: 正準用語をterm/domain/status/idで一覧表示
-- `search`: term、id、alias、domain、説明、例から部分一致検索
-- `show`: term、id、aliasの完全一致で学習用詳細を表示
-- `check`: strict YAML schema、必須項目、ID/term重複、status、一次情報URL、日付形式、`related_terms`参照切れを検査し、異常時は非0終了
-- `generate`: `terms.yaml` から決定論的にMarkdownを生成。output-pathを省略した場合は `docs/glossary.md` を更新
-
-標準パス以外の正準YAMLを検査する場合:
-
-```bash
-NLM_GLOSSARY_PATH=/path/to/terms.yaml nlm glossary check
-```
-
-**`docs/glossary.md` は生成物です。直接編集せず、必ず `nlm glossary generate` で再生成してください。** 正準データは `data/glossary/terms.yaml` です。
-直近の会話で実際に使われた技術用語を、一次情報で確認したうえで学習用に蓄積します。
-
-- 正準データ: [`data/glossary/terms.yaml`](data/glossary/terms.yaml)
-- 人間向けビュー: [`docs/glossary.md`](docs/glossary.md)
-- `verified` は一次情報または標準仕様で確認できたentryだけに付与します
-
-現時点ではglossary用CLIは未実装です。Issue #4で `list/search/show/check` とMarkdown自動生成を実装予定であり、README上でsupported commandとしては扱いません。
 
 ## Debug
 

@@ -1,8 +1,5 @@
 version: 1
 verified_at: "2026-09-10"
-verified_at: "2026-08-14"
-verified_at: "2026-09-09"
-verified_at: "2026-09-07"
 source_scope: "Recent ChatGPT conversations around KAFKA2306 development, research, deployment, and data workflows"
 terms:
   - id: "github-actions"
