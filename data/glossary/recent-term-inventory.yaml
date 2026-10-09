@@ -16,8 +16,8 @@ policy:
 counts:
   total: 294
   verified: 80
-  needs_review: 175
-  excluded_from_canonical_review: 39
+  needs_review: 190
+  excluded_from_canonical_review: 24
 verified_terms:
 - GitHub Actions
 - Workflow
@@ -126,21 +126,6 @@ excluded_from_canonical_review:
   - Revision stage continuity
   - Deduplicated canonical view
   - Deterministic distribution layer
-  - CodeGraph traversal
-  - Skill Synthesis
-  - Validated workflow generation
-  - Self-built agent
-  - LLM domain inference
-  - CI & Deploy to Hugging Face Spaces
-  - Deploy MkDocs Simple
-  - Hugging Face publish
-  - Pages/API generation
-  - Cross-repository review
-  - Duplicate precheck
-  - Branch-ref cleanup
-  - Self-delete Actions
-  - Self-cleaning CI
-  - Mutable main hotlink
 needs_review_by_domain:
   ai:
   - Context compaction
