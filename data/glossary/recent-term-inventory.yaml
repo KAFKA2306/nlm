@@ -7,14 +7,13 @@ policy:
   canonical_verified_store: data/glossary/terms.yaml
   promotion_rule: Promote a needs_review term only after its definition is supported by a primary source, standard, or original
     paper.
-  review_rotation_rule: If a term cannot be unambiguously verified, keep it needs_review and move it to the tail of its domain queue.
   exclusions: Personal identifiers, secrets, credentials, account details, and ordinary non-technical words.
   coverage_note: Inventory records terms found in the recent context available to this task. It must not be described as a
     complete export of all ChatGPT history.
 counts:
   total: 294
-  verified: 34
-  needs_review: 260
+  verified: 29
+  needs_review: 265
 verified_terms:
 - GitHub Actions
 - Workflow
@@ -45,33 +44,27 @@ verified_terms:
 - Provenance
 - Ontology
 - End-to-end testing (E2E)
-- MCP server
-- NotebookLM source
-- NotebookLM note
-- Large Language Model (LLM)
-- Retrieval-Augmented Generation (RAG)
 needs_review_by_domain:
   ai:
+  - LLM domain inference
+  - MCP server
+  - NotebookLM source
+  - NotebookLM note
+  - Large Language Model (LLM)
+  - Retrieval-Augmented Generation (RAG)
   - Read-only MCP
   - Remote MCP
   - tools/list
   - Context compaction
   - CodeGraph traversal
+  - Self-improving skills
   - Skill Synthesis
   - Validated workflow generation
-  - Self-built agent
-  - LLM domain inference
-needs_review_by_domain:
-  ai:
-  - Context compaction
-  - Self-improving skills
   - ReAct
   - Multi-agent
   - Output validation
   - Agent orchestration
   - Self-built agent
-  - LLM domain inference
-  - Read-only MCP
   cloud-computing:
   - Serverless
   cloud-operations:
@@ -84,6 +77,7 @@ needs_review_by_domain:
   - Collector
   - Materialization
   - Dataset
+  - data_requirements
   - Raw data
   - Derived data
   - Data lake
@@ -97,7 +91,10 @@ needs_review_by_domain:
   - Raw-vintage data
   - Derived-revision data
   data-format:
+  - JSON
   - JSONL
+  - Parquet
+  - CSV
   data-governance:
   - Stable asset ID
   - Registry
@@ -109,19 +106,31 @@ needs_review_by_domain:
   - Knowledge Runtime
   - Source commit
   - Parity
+  - null_reason
   data-modeling:
   - Work / Edition / Holding model
   data-platform:
   - Snowflake
   data-quality:
+  - Duplicate precheck
   - Count consistency
   - Data quality gate
   data-validation:
   - Check digit
-  database: []
-  database-security: []
+  database:
+  - Unique constraint
+  - Indexing
+  - Point-in-Time Recovery (PITR)
+  - SQLite
+  - unique(user_id, game_id)
+  database-security:
+  - RLS policy
   distributed-systems:
   - Remote Procedure Call (RPC)
+  - App Server handshake
+  - Transport smoke test
+  - Controller comment
+  - Terminal worker state
   financial-data:
   - EDGAR
   git:
@@ -129,10 +138,26 @@ needs_review_by_domain:
   - Mutable ref
   - Git blob
   - Expected head SHA
+  - Branch-ref cleanup
   github:
+  - Private repository
+  - Self-hosted runner
+  - Self-delete Actions
+  - GitHub Issue
+  - Repository topic
   - Repository setting
+  - Workflow run
+  - GitHub Actions job
+  - Reusable workflow
+  - workflow_call
+  - Caller workflow
+  - Callee workflow
+  - GITHUB_TOKEN
+  - GitHub permissions
   - GitHub annotation
   - Mergeability
+  - Host-side safety rejection
+  - Self-cleaning CI
   graph-database:
   - Neo4j
   - FalkorDB
@@ -169,6 +194,7 @@ needs_review_by_domain:
   knowledge-organization:
   - Semantic zone
   - Classification debt
+  - agent-zone-* topic
   - unclassified
   - Classification
   knowledge-representation:
@@ -184,9 +210,19 @@ needs_review_by_domain:
   - FAQ
   - Flashcard
   machine-learning:
+  - Deep Q-Network (DQN)
+  - Long Short-Term Memory (LSTM)
+  - Walk-forward evaluation
   - Future leakage
+  - Data split
   - Embedder
+  - Exploratory Data Analysis (EDA)
+  - Feature engineering
   ml-operations:
+  - training_attempted
+  - training_executed
+  - evaluation_executed
+  - observed_metrics
   - Deployment monitoring
   - Runtime telemetry
   - Persistent execution
@@ -215,9 +251,17 @@ needs_review_by_domain:
   - Falsification condition
   - Reproducibility
   - Paper-vintage data
-  research-engineering: []
+  research-engineering:
+  - Exact-data gate
+  - Stage B artifact
   security:
+  - Google OAuth
+  - Fail-closed
+  - Authorization
+  - SSL/TLS
   - Network restriction
+  - Supabase Google OAuth
+  - HF_TOKEN
   software-engineering:
   - Language fallback
   - Manifest
@@ -235,13 +279,23 @@ needs_review_by_domain:
   software-testing:
   - Regression test
   - Mobile regression test
+  - Evidence gate
+  - Entity gate
   - Smoke test
+  - Read-only transport smoke test
+  - Documentation Quality Check
   standard:
   - ISO 3166-1
   statistics:
   - Out-of-sample (OOS)
   web:
+  - Document Object Model (DOM)
+  - CSS align-content
+  - CSS align-items
   - Hotlink
+  - Vercel
+  - FastAPI
+  - Mutable main hotlink
   web-protocol:
   - batchexecute
   ai-platform:
@@ -254,15 +308,27 @@ needs_review_by_domain:
   - Snakemake
   - MkDocs
   github-security:
+  - OpenID Connect (OIDC)
+  - 'id-token: write'
   - Trusted Publishers
   home-automation:
+  - Home Assistant
+  - Matter
+  - Thread
+  - Home APIs
   - Automation Engine
+  - Voice Match
   - Speaker Reference Design
   research-data:
   - Point-in-time vintage
+  - Revision stage
   - Revision history
+  - Revision stage continuity
   - Stable key
+  - Deduplicated canonical view
   - Facet
+  - Primary category
+  - Deterministic distribution layer
   - Atom API
   - OAI-PMH
   speech:
