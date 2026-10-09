@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"net/url"
 	"os"
+	"path"
 	"path/filepath"
 	"sort"
 	"strconv"
@@ -94,6 +95,7 @@ func main() {
 	dates, hosts, formats := map[string]bool{}, map[string]bool{}, map[string]bool{}
 	fact := [][]string{{"guid", "channel", "date", "host", "format", "duration_sec", "bytes"}}
 	ledger := [][]string{{"guid", "date", "title", "url", "bytes", "duration"}}
+	audio := [][]string{{"guid", "filename", "url"}}
 	triples := [][]string{{"subject", "predicate", "object"}}
 	progress := [][]string{{"guid", "stage", "stage_order", "status", "at"}}
 	p := cfg.Predicates
@@ -109,6 +111,7 @@ func main() {
 		sec, size := strconv.Itoa(seconds(it.Duration)), strconv.FormatInt(it.Enc.Length, 10)
 		fact = append(fact, []string{it.GUID, feed.Title, date, u.Host, it.Enc.Type, sec, size})
 		ledger = append(ledger, []string{it.GUID, date, it.Title, it.Enc.URL, size, it.Duration})
+		audio = append(audio, []string{it.GUID, path.Base(u.Path), it.Enc.URL})
 		for _, st := range cfg.Done {
 			progress = append(progress, []string{it.GUID, st, strconv.Itoa(order(cfg.Stages, st)), "done", date})
 			triples = append(triples, []string{it.GUID, p["progress"], st})
@@ -134,6 +137,7 @@ func main() {
 	write(cfg.OutDir, "dim_stage.csv", stageDim)
 	write(cfg.OutDir, "fact_progress.csv", progress)
 	write(cfg.OutDir, "fact_episode.csv", fact)
+	write(cfg.OutDir, "dim_audio_file.csv", audio)
 	write(cfg.OutDir, "triples.csv", triples)
 	write(cfg.OutDir, "ledger.csv", ledger)
 	write(cfg.OutDir, "status.csv", [][]string{
