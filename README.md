@@ -102,6 +102,7 @@ inventoryは、この作業で取得できた直近ChatGPT会話コンテキス�
 - 抽出監査: **294語**
 - `verified`: **29語**
 - `needs_review`: **265語**
+- schema: [`data/glossary/schema.json`](data/glossary/schema.json)
 - 正準データ: [`data/glossary/terms.yaml`](data/glossary/terms.yaml)
 - 抽出監査inventory: [`data/glossary/recent-term-inventory.yaml`](data/glossary/recent-term-inventory.yaml)
 - 人間向けビュー: [`docs/glossary.md`](docs/glossary.md)
@@ -167,20 +168,31 @@ NLM_GLOSSARY_PATH=/path/to/terms.yaml nlm glossary check
 **`docs/glossary.md` は生成物です。直接編集せず、必ず `nlm glossary generate` で再生成してください。** 正準データは `data/glossary/terms.yaml` です。
 `needs_review` の語には、定義を推測して埋めません。現在は `RAG`, `Graphiti`, `PITR`, `fail-closed`, `walk-forward`, `Shader`, `Single Pass Instanced`, `SRP Batcher`, `UdonSharp`, `OIDC`, `ReAct`, `Whisper`, `Matter`, `Thread` などが検証待ちに含まれます。
 
-### Planned glossary CLI
+### Glossary CLI
 
-Issue #4では次を実装予定です。
+用語集commandはNotebookLMのcookie/tokenを必要としません。
 
-```text
+```bash
 nlm glossary list
 nlm glossary search <query>
-nlm glossary show <term>
+nlm glossary show <term|id|alias>
 nlm glossary check
+nlm glossary generate [output-path]
 ```
 
-`check` は少なくともschema不正、重複ID、重複term、必須source URL、日付形式、`related_terms` の参照切れを検出し、異常時は非0終了にします。さらに `docs/glossary.md` を正準YAMLから再生成可能にします。
+- `list`: 正準用語をterm/domain/status/idで一覧表示
+- `search`: term、id、alias、domain、説明、例から部分一致検索
+- `show`: term、id、aliasの完全一致で学習用詳細を表示
+- `check`: strict YAML schema、必須項目、ID/term重複、status、一次情報URL、日付形式、`related_terms`参照切れを検査し、異常時は非0終了
+- `generate`: `terms.yaml` から決定論的にMarkdownを生成。output-pathを省略した場合は `docs/glossary.md` を更新
 
-**現時点ではこれらの`glossary` commandはまだsupported commandではありません。** 実装されるまで、CLI tableには載せません。
+標準パス以外の正準YAMLを検査する場合:
+
+```bash
+NLM_GLOSSARY_PATH=/path/to/terms.yaml nlm glossary check
+```
+
+**`docs/glossary.md` は生成物です。直接編集せず、必ず `nlm glossary generate` で再生成してください。** 正準データは `data/glossary/terms.yaml` です。
 
 ## Debug
 
