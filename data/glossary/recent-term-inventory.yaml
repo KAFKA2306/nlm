@@ -12,8 +12,9 @@ policy:
     complete export of all ChatGPT history.
 counts:
   total: 294
-  verified: 29
-  needs_review: 265
+  verified: 74
+  needs_review: 205
+  excluded_from_canonical_review: 15
 verified_terms:
 - GitHub Actions
 - Workflow
@@ -44,6 +45,69 @@ verified_terms:
 - Provenance
 - Ontology
 - End-to-end testing (E2E)
+- MCP server
+- NotebookLM source
+- NotebookLM note
+- Large Language Model (LLM)
+- Retrieval-Augmented Generation (RAG)
+- Remote MCP
+- tools/list
+- Private repository
+- Self-hosted runner
+- GitHub Issue
+- Repository topic
+- Workflow run
+- GitHub Actions job
+- Reusable workflow
+- workflow_call
+- Caller workflow
+- Callee workflow / called workflow
+- GITHUB_TOKEN
+- GitHub permissions
+- OpenID Connect (OIDC)
+- 'id-token: write'
+- JSON
+- Parquet
+- CSV
+- Unique constraint
+- Indexing
+- Point-in-Time Recovery (PITR)
+- SQLite
+- RLS policy
+- Document Object Model (DOM)
+- CSS align-content
+- CSS align-items
+- Vercel
+- FastAPI
+- Home Assistant
+- Matter
+- Thread
+- Home APIs
+- Voice Match
+- Deep Q-Network (DQN)
+- Long Short-Term Memory (LSTM)
+- Walk-forward evaluation
+- Data split
+- Exploratory Data Analysis (EDA)
+- Feature engineering
+excluded_from_canonical_review:
+  project_specific_field_or_expression:
+  - data_requirements
+  - null_reason
+  - unique(user_id, game_id)
+  - training_attempted
+  - training_executed
+  - evaluation_executed
+  - observed_metrics
+  - agent-zone-* topic
+  internal_workflow_or_stage_label:
+  - Exact-data gate
+  - Stage B artifact
+  - Host-side safety rejection
+  - App Server handshake
+  - Transport smoke test
+  - Controller comment
+  - Terminal worker state
 needs_review_by_domain:
   ai:
   - LLM domain inference
@@ -127,10 +191,6 @@ needs_review_by_domain:
   - RLS policy
   distributed-systems:
   - Remote Procedure Call (RPC)
-  - App Server handshake
-  - Transport smoke test
-  - Controller comment
-  - Terminal worker state
   financial-data:
   - EDGAR
   git:
