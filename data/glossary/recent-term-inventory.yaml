@@ -15,8 +15,8 @@ policy:
     complete export of all ChatGPT history.
 counts:
   total: 294
-  verified: 58
-  needs_review: 236
+  verified: 63
+  needs_review: 231
 verified_terms:
 - GitHub Actions
 - Workflow
@@ -76,6 +76,11 @@ verified_terms:
 - Point-in-Time Recovery (PITR)
 - SQLite
 - RLS policy
+- Document Object Model (DOM)
+- CSS align-content
+- CSS align-items
+- Vercel
+- FastAPI
 needs_review_by_domain:
   ai:
   - LLM domain inference
@@ -271,12 +276,7 @@ needs_review_by_domain:
   statistics:
   - Out-of-sample (OOS)
   web:
-  - Document Object Model (DOM)
-  - CSS align-content
-  - CSS align-items
   - Hotlink
-  - Vercel
-  - FastAPI
   - Mutable main hotlink
   web-protocol:
   - batchexecute
