@@ -16,8 +16,8 @@ policy:
 counts:
   total: 294
   verified: 80
-  needs_review: 175
-  excluded_from_canonical_review: 39
+  needs_review: 180
+  excluded_from_canonical_review: 34
 verified_terms:
 - GitHub Actions
 - Workflow
@@ -136,11 +136,6 @@ excluded_from_canonical_review:
   - Hugging Face publish
   - Pages/API generation
   - Cross-repository review
-  - Duplicate precheck
-  - Branch-ref cleanup
-  - Self-delete Actions
-  - Self-cleaning CI
-  - Mutable main hotlink
 needs_review_by_domain:
   ai:
   - LLM domain inference
@@ -381,9 +376,4 @@ needs_review_by_domain:
   - Avatar deformation
   - blendshapedeformer
   - bpyutils
-  web-deployment:
-  - CI & Deploy to Hugging Face Spaces
-  - Deploy MkDocs Simple
-  - Hugging Face publish
-  - Pages/API generation
-  - Cross-repository review
+  web-deployment: []
