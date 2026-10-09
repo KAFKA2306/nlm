@@ -15,8 +15,9 @@ policy:
     complete export of all ChatGPT history.
 counts:
   total: 294
-  verified: 68
-  needs_review: 226
+  verified: 74
+  needs_review: 209
+  excluded_from_canonical_review: 11
 verified_terms:
 - GitHub Actions
 - Workflow
@@ -86,6 +87,26 @@ verified_terms:
 - Thread
 - Home APIs
 - Voice Match
+- Deep Q-Network (DQN)
+- Long Short-Term Memory (LSTM)
+- Walk-forward evaluation
+- Data split
+- Exploratory Data Analysis (EDA)
+- Feature engineering
+excluded_from_canonical_review:
+  project_specific_field_or_expression:
+  - data_requirements
+  - null_reason
+  - unique(user_id, game_id)
+  - training_attempted
+  - training_executed
+  - evaluation_executed
+  - observed_metrics
+  - agent-zone-* topic
+  internal_workflow_or_stage_label:
+  - Exact-data gate
+  - Stage B artifact
+  - Host-side safety rejection
 needs_review_by_domain:
   ai:
   - LLM domain inference
@@ -226,14 +247,8 @@ needs_review_by_domain:
   - FAQ
   - Flashcard
   machine-learning:
-  - Deep Q-Network (DQN)
-  - Long Short-Term Memory (LSTM)
-  - Walk-forward evaluation
   - Future leakage
-  - Data split
   - Embedder
-  - Exploratory Data Analysis (EDA)
-  - Feature engineering
   ml-operations:
   - Deployment monitoring
   - Runtime telemetry
