@@ -15,8 +15,9 @@ policy:
     complete export of all ChatGPT history.
 counts:
   total: 294
-  verified: 63
-  needs_review: 231
+  verified: 80
+  needs_review: 175
+  excluded_from_canonical_review: 39
 verified_terms:
 - GitHub Actions
 - Workflow
@@ -81,6 +82,65 @@ verified_terms:
 - CSS align-items
 - Vercel
 - FastAPI
+- Home Assistant
+- Matter
+- Thread
+- Home APIs
+- Voice Match
+- Deep Q-Network (DQN)
+- Long Short-Term Memory (LSTM)
+- Walk-forward evaluation
+- Data split
+- Exploratory Data Analysis (EDA)
+- Feature engineering
+- Google OAuth
+- Fail-closed
+- Authorization
+- SSL/TLS
+- Supabase Google OAuth
+- HF_TOKEN
+excluded_from_canonical_review:
+  project_specific_field_or_expression:
+  - data_requirements
+  - null_reason
+  - unique(user_id, game_id)
+  - training_attempted
+  - training_executed
+  - evaluation_executed
+  - observed_metrics
+  - agent-zone-* topic
+  - Primary category
+  internal_workflow_or_stage_label:
+  - Exact-data gate
+  - Stage B artifact
+  - Host-side safety rejection
+  - App Server handshake
+  - Transport smoke test
+  - Controller comment
+  - Terminal worker state
+  - Evidence gate
+  - Entity gate
+  - Read-only transport smoke test
+  - Documentation Quality Check
+  - Revision stage
+  - Revision stage continuity
+  - Deduplicated canonical view
+  - Deterministic distribution layer
+  - CodeGraph traversal
+  - Skill Synthesis
+  - Validated workflow generation
+  - Self-built agent
+  - LLM domain inference
+  - CI & Deploy to Hugging Face Spaces
+  - Deploy MkDocs Simple
+  - Hugging Face publish
+  - Pages/API generation
+  - Cross-repository review
+  - Duplicate precheck
+  - Branch-ref cleanup
+  - Self-delete Actions
+  - Self-cleaning CI
+  - Mutable main hotlink
 needs_review_by_domain:
   ai:
   - LLM domain inference
@@ -144,7 +204,6 @@ needs_review_by_domain:
   data-platform:
   - Snowflake
   data-quality:
-  - Duplicate precheck
   - Count consistency
   - Data quality gate
   data-validation:
@@ -161,13 +220,10 @@ needs_review_by_domain:
   - Mutable ref
   - Git blob
   - Expected head SHA
-  - Branch-ref cleanup
   github:
-  - Self-delete Actions
   - Repository setting
   - GitHub annotation
   - Mergeability
-  - Self-cleaning CI
   graph-database:
   - Neo4j
   - FalkorDB
@@ -277,7 +333,6 @@ needs_review_by_domain:
   - Out-of-sample (OOS)
   web:
   - Hotlink
-  - Mutable main hotlink
   web-protocol:
   - batchexecute
   ai-platform:
