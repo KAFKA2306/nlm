@@ -15,8 +15,8 @@ policy:
     complete export of all ChatGPT history.
 counts:
   total: 294
-  verified: 80
-  needs_review: 195
+  verified: 74
+  needs_review: 201
   excluded_from_canonical_review: 19
 verified_terms:
 - GitHub Actions
@@ -113,6 +113,14 @@ excluded_from_canonical_review:
   - Exact-data gate
   - Stage B artifact
   - Host-side safety rejection
+  - App Server handshake
+  - Transport smoke test
+  - Controller comment
+  - Terminal worker state
+  - Evidence gate
+  - Entity gate
+  - Read-only transport smoke test
+  - Documentation Quality Check
 needs_review_by_domain:
   ai:
   - LLM domain inference
@@ -304,11 +312,7 @@ needs_review_by_domain:
   software-testing:
   - Regression test
   - Mobile regression test
-  - Evidence gate
-  - Entity gate
   - Smoke test
-  - Read-only transport smoke test
-  - Documentation Quality Check
   standard:
   - ISO 3166-1
   statistics:
