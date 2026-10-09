@@ -8,15 +8,13 @@ policy:
   promotion_rule: Promote a needs_review term only after its definition is supported by a primary source, standard, or original
     paper.
   review_rotation_rule: If a term cannot be unambiguously verified, keep it needs_review and move it to the tail of its domain queue.
-  canonical_exclusion_rule: Repository-specific field names, concrete schema expressions, wildcard labels, and internal workflow-stage labels
-    that are not intended as general technical concepts are excluded from canonical review and recorded under excluded_from_canonical_review.
   exclusions: Personal identifiers, secrets, credentials, account details, and ordinary non-technical words.
   coverage_note: Inventory records terms found in the recent context available to this task. It must not be described as a
     complete export of all ChatGPT history.
 counts:
   total: 294
-  verified: 33
-  needs_review: 261
+  verified: 30
+  needs_review: 264
 verified_terms:
 - GitHub Actions
 - Workflow
@@ -48,11 +46,11 @@ verified_terms:
 - Ontology
 - End-to-end testing (E2E)
 - MCP server
-- NotebookLM source
-- NotebookLM note
-- Large Language Model (LLM)
 needs_review_by_domain:
   ai:
+  - NotebookLM source
+  - NotebookLM note
+  - Large Language Model (LLM)
   - Retrieval-Augmented Generation (RAG)
   - Read-only MCP
   - Remote MCP
@@ -71,7 +69,8 @@ needs_review_by_domain:
   - Multi-agent
   - Output validation
   - Agent orchestration
-  - Read-only MCP
+  - Self-built agent
+  - LLM domain inference
   cloud-computing:
   - Serverless
   cloud-operations:
