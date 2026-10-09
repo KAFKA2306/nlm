@@ -13,8 +13,8 @@ policy:
     complete export of all ChatGPT history.
 counts:
   total: 294
-  verified: 31
-  needs_review: 263
+  verified: 35
+  needs_review: 259
 verified_terms:
 - GitHub Actions
 - Workflow
@@ -47,13 +47,12 @@ verified_terms:
 - End-to-end testing (E2E)
 - MCP server
 - NotebookLM source
+- NotebookLM note
+- Large Language Model (LLM)
+- Retrieval-Augmented Generation (RAG)
+- Remote MCP
 needs_review_by_domain:
   ai:
-  - NotebookLM note
-  - Large Language Model (LLM)
-  - Retrieval-Augmented Generation (RAG)
-  - Read-only MCP
-  - Remote MCP
   - tools/list
   - Context compaction
   - CodeGraph traversal
@@ -71,6 +70,7 @@ needs_review_by_domain:
   - Agent orchestration
   - Self-built agent
   - LLM domain inference
+  - Read-only MCP
   cloud-computing:
   - Serverless
   cloud-operations:
