@@ -1,0 +1,13 @@
+feed: https://kafka2306.github.io/nlm/feed.xml
+out_dir: podcast/ontology
+predicates:
+  channel: partOf
+  date: publishedOn
+  host: storedOn
+  format: hasFormat
+  duration: hasDurationSec
+  bytes: hasBytes
+  progress: reachedStage
+  title: hasTitle
+stages: [created, downloaded, uploaded, listed]
+done_stages: [uploaded, listed]

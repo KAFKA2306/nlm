@@ -126,14 +126,14 @@ func New(authToken, cookies string, options ...batchexecute.Option) *Client {
 	}
 
 	config := batchexecute.Config{
-		Host:      "notebooklm.google.com",
+		Host:      "notebook.google.com",
 		App:       "LabsTailwindUi",
 		AuthToken: authToken,
 		Cookies:   cookies,
 		Headers: map[string]string{
 			"content-type":    "application/x-www-form-urlencoded;charset=UTF-8",
-			"origin":          "https://notebooklm.google.com",
-			"referer":         "https://notebooklm.google.com/",
+			"origin":          "https://notebook.google.com",
+			"referer":         "https://notebook.google.com/",
 			"x-same-domain":   "1",
 			"accept":          "*/*",
 			"accept-language": "en-US,en;q=0.9",

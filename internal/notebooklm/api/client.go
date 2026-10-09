@@ -439,7 +439,7 @@ func (c *Client) startResumableUpload(projectID, filename, sourceID string, cont
 	}
 	metadataB64 := base64.StdEncoding.EncodeToString(metadataJSON)
 
-	uploadInitURL := "https://notebooklm.google.com/upload/_/?authuser=0"
+	uploadInitURL := "https://notebook.google.com/upload/_/?authuser=0"
 	req, err := http.NewRequest("POST", uploadInitURL, strings.NewReader(metadataB64))
 	if err != nil {
 		return "", fmt.Errorf("create request: %w", err)
@@ -457,7 +457,7 @@ func (c *Client) startResumableUpload(projectID, filename, sourceID string, cont
 	if cookies := c.rpc.Config.Cookies; cookies != "" {
 		req.Header.Set("Cookie", cookies)
 	}
-	req.Header.Set("Referer", "https://notebooklm.google.com/")
+	req.Header.Set("Referer", "https://notebook.google.com/")
 	req.Header.Set("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36")
 
 	if c.config.Debug {
@@ -520,7 +520,7 @@ func (c *Client) uploadFileBytes(uploadURL string, content []byte) error {
 	if cookies := c.rpc.Config.Cookies; cookies != "" {
 		req.Header.Set("Cookie", cookies)
 	}
-	req.Header.Set("Referer", "https://notebooklm.google.com/")
+	req.Header.Set("Referer", "https://notebook.google.com/")
 	req.Header.Set("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36")
 
 	client := &http.Client{Timeout: 5 * time.Minute}
@@ -595,12 +595,12 @@ func (c *Client) setAuthHeaders(req *http.Request) {
 
 	// Add SAPISIDHASH authorization
 	if sapisid := extractSAPISID(cookies); sapisid != "" {
-		origin := "https://notebooklm.google.com"
+		origin := "https://notebook.google.com"
 		req.Header.Set("Authorization", generateSAPISIDHASH(sapisid, origin))
 	}
 
-	req.Header.Set("Origin", "https://notebooklm.google.com")
-	req.Header.Set("Referer", "https://notebooklm.google.com/")
+	req.Header.Set("Origin", "https://notebook.google.com")
+	req.Header.Set("Referer", "https://notebook.google.com/")
 	req.Header.Set("X-Same-Domain", "1")
 	req.Header.Set("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36")
 }
@@ -1341,7 +1341,7 @@ func (c *Client) downloadAudioFromURL(audioURL string) ([]byte, error) {
 	// Add browser-like headers and authentication cookies
 	req.Header.Set("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36")
 	req.Header.Set("Accept", "*/*")
-	req.Header.Set("Referer", "https://notebooklm.google.com/")
+	req.Header.Set("Referer", "https://notebook.google.com/")
 
 	// Add authentication cookies from RPC client
 	if cookies := c.rpc.Config.Cookies; cookies != "" {
@@ -1682,7 +1682,7 @@ func (c *Client) tryGetVideoDownloadURL(result *VideoOverviewResult) error {
 	}
 
 	// Method 3: Provide instructions for manual download
-	return fmt.Errorf("automatic video download not available - please visit https://notebooklm.google.com/notebook/%s to download manually", result.ProjectID)
+	return fmt.Errorf("automatic video download not available - please visit https://notebook.google.com/notebook/%s to download manually", result.ProjectID)
 }
 
 // getVideoURLFromAPI attempts to get video URL from various API endpoints
@@ -1840,7 +1840,7 @@ func (r *VideoOverviewResult) downloadVideoFromURL(url, filename string) error {
 	req.Header.Set("Accept", "*/*")
 	req.Header.Set("Accept-Language", "en-US,en;q=0.6")
 	req.Header.Set("Range", "bytes=0-")
-	req.Header.Set("Referer", "https://notebooklm.google.com/")
+	req.Header.Set("Referer", "https://notebook.google.com/")
 	req.Header.Set("Sec-Fetch-Dest", "video")
 	req.Header.Set("Sec-Fetch-Mode", "no-cors")
 	req.Header.Set("Sec-Fetch-Site", "cross-site")
@@ -1905,7 +1905,7 @@ func (c *Client) DownloadVideoWithAuth(videoURL, filename string) error {
 	req.Header.Set("Accept", "*/*")
 	req.Header.Set("Accept-Language", "en-US,en;q=0.6")
 	req.Header.Set("Range", "bytes=0-")
-	req.Header.Set("Referer", "https://notebooklm.google.com/")
+	req.Header.Set("Referer", "https://notebook.google.com/")
 	req.Header.Set("Sec-Fetch-Dest", "video")
 	req.Header.Set("Sec-Fetch-Mode", "no-cors")
 	req.Header.Set("Sec-Fetch-Site", "cross-site")

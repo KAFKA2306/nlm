@@ -572,56 +572,14 @@ func run() error {
 		}
 	}
 
-	for i := 0; i < 3; i++ {
-		if i > 0 {
-			if i == 1 {
-				fmt.Fprintln(os.Stderr, "nlm: authentication expired, refreshing credentials...")
-			} else {
-				fmt.Fprintln(os.Stderr, "nlm: retrying authentication...")
-			}
-			debug = true
-		}
-
-		client := api.New(authToken, cookies, opts...)
-		if debug {
-			client.SetDebug(true)
-		}
-		// Set direct RPC flag if specified
-		if useDirectRPC {
-			client.SetUseDirectRPC(true)
-			if debug {
-				fmt.Fprintf(os.Stderr, "nlm: using direct RPC for audio/video operations\n")
-			}
-		}
-		cmdErr := runCmd(client, cmd, args...)
-		if cmdErr == nil {
-			if i > 0 {
-				fmt.Fprintln(os.Stderr, "nlm: authentication refreshed successfully")
-			}
-			return nil
-		} else if !isAuthenticationError(cmdErr) {
-			return cmdErr
-		}
-
-		// Authentication error detected, try to refresh
-		if debug {
-			fmt.Fprintf(os.Stderr, "nlm: detected authentication error: %v\n", cmdErr)
-		}
-
-		var authErr error
-		if authToken, cookies, authErr = handleAuth(nil, debug); authErr != nil {
-			fmt.Fprintf(os.Stderr, "nlm: authentication refresh failed: %v\n", authErr)
-			if i == 2 { // Last attempt
-				return fmt.Errorf("authentication failed after 3 attempts: %w", authErr)
-			}
-		} else {
-			// Save the refreshed credentials
-			if saveErr := saveCredentials(authToken, cookies); saveErr != nil && debug {
-				fmt.Fprintf(os.Stderr, "nlm: warning: failed to save credentials: %v\n", saveErr)
-			}
-		}
+	client := api.New(authToken, cookies, opts...)
+	if debug {
+		client.SetDebug(true)
 	}
-	return fmt.Errorf("nlm: authentication failed after 3 attempts")
+	if useDirectRPC {
+		client.SetUseDirectRPC(true)
+	}
+	return runCmd(client, cmd, args...)
 }
 
 // isAuthenticationError checks if an error is related to authentication

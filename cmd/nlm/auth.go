@@ -47,7 +47,7 @@ func parseAuthFlags(args []string) (*AuthOptions, []string, error) {
 	// Define auth-specific flags
 	opts := &AuthOptions{
 		ProfileName: chromeProfile,
-		TargetURL:   "https://notebooklm.google.com",
+		TargetURL:   "https://notebook.google.com",
 	}
 
 	authFlags.BoolVar(&opts.TryAllProfiles, "all", false, "Try all available browser profiles")

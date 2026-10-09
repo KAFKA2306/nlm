@@ -124,7 +124,7 @@ func DebugDirectRequest(t *testing.T) {
 	}
 
 	// Create request
-	url := "https://notebooklm.google.com/_/NotebookLmUi/data/batchexecute"
+	url := "https://notebook.google.com/_/NotebookLmUi/data/batchexecute"
 	payload := `f.req=[["wXbhsf","[]",null,"generic"]]`
 
 	req, err := http.NewRequest("POST", url, bytes.NewBufferString(payload))

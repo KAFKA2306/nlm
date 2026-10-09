@@ -91,8 +91,8 @@ func (r *RefreshClient) RefreshCredentials(gsessionID string) error {
 	req.Header.Set("Authorization", fmt.Sprintf("SAPISIDHASH %d_%s", timestamp, authHash))
 	req.Header.Set("Content-Type", "application/json+protobuf")
 	req.Header.Set("Cookie", r.cookies)
-	req.Header.Set("Origin", "https://notebooklm.google.com")
-	req.Header.Set("Referer", "https://notebooklm.google.com/")
+	req.Header.Set("Origin", "https://notebook.google.com")
+	req.Header.Set("Referer", "https://notebook.google.com/")
 	req.Header.Set("X-Goog-AuthUser", "0")
 	req.Header.Set("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36")
 
@@ -138,7 +138,7 @@ func (r *RefreshClient) RefreshCredentials(gsessionID string) error {
 // generateSAPISIDHASH generates the authorization hash
 // Format: SHA1(timestamp + " " + SAPISID + " " + origin)
 func (r *RefreshClient) generateSAPISIDHASH(timestamp int64) string {
-	origin := "https://notebooklm.google.com"
+	origin := "https://notebook.google.com"
 	data := fmt.Sprintf("%d %s %s", timestamp, r.sapisid, origin)
 
 	hash := sha1.New()
@@ -180,7 +180,7 @@ func ExtractGSessionID(cookies string) (string, error) {
 	}
 
 	// Create request to NotebookLM
-	req, err := http.NewRequest("GET", "https://notebooklm.google.com/", nil)
+	req, err := http.NewRequest("GET", "https://notebook.google.com/", nil)
 	if err != nil {
 		return "", fmt.Errorf("create request: %w", err)
 	}

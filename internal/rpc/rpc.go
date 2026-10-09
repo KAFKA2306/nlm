@@ -10,7 +10,7 @@ import (
 
 // ServiceConfig defines configuration for a specific BatchExecute service
 type ServiceConfig struct {
-	Host      string            // e.g., "notebooklm.google.com" or "jules.google.com"
+	Host      string            // e.g., "notebook.google.com" or "jules.google.com"
 	App       string            // e.g., "LabsTailwindUi" or "Swebot"
 	URLParams map[string]string // Optional service-specific URL parameters
 }
@@ -32,7 +32,7 @@ type Client struct {
 // Deprecated: Use NewWithConfig for new services
 func New(authToken, cookies string, options ...batchexecute.Option) *Client {
 	config := ServiceConfig{
-		Host: "notebooklm.google.com",
+		Host: "notebook.google.com",
 		App:  "LabsTailwindUi",
 	}
 	return NewWithConfig(authToken, cookies, config, options...)

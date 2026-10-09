@@ -35,7 +35,7 @@ type Request struct {
 
 // Execute sends a gRPC-style request to NotebookLM
 func (c *Client) Execute(req Request) ([]byte, error) {
-	baseURL := "https://notebooklm.google.com/_/LabsTailwindUi/data"
+	baseURL := "https://notebook.google.com/_/LabsTailwindUi/data"
 
 	// Build the full URL with the endpoint
 	fullURL := baseURL + req.Endpoint
@@ -70,8 +70,8 @@ func (c *Client) Execute(req Request) ([]byte, error) {
 	// Set headers
 	httpReq.Header.Set("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8")
 	httpReq.Header.Set("Cookie", c.cookies)
-	httpReq.Header.Set("Origin", "https://notebooklm.google.com")
-	httpReq.Header.Set("Referer", "https://notebooklm.google.com/")
+	httpReq.Header.Set("Origin", "https://notebook.google.com")
+	httpReq.Header.Set("Referer", "https://notebook.google.com/")
 	httpReq.Header.Set("X-Same-Domain", "1")
 	httpReq.Header.Set("Accept", "*/*")
 	httpReq.Header.Set("Accept-Language", "en-US,en;q=0.9")
@@ -110,7 +110,7 @@ func (c *Client) Execute(req Request) ([]byte, error) {
 
 // StreamResponse handles streaming responses from gRPC endpoints
 func (c *Client) Stream(req Request, handler func(chunk []byte) error) error {
-	baseURL := "https://notebooklm.google.com/_/LabsTailwindUi/data"
+	baseURL := "https://notebook.google.com/_/LabsTailwindUi/data"
 	fullURL := baseURL + req.Endpoint
 
 	// Add query parameters
@@ -143,8 +143,8 @@ func (c *Client) Stream(req Request, handler func(chunk []byte) error) error {
 	// Set headers
 	httpReq.Header.Set("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8")
 	httpReq.Header.Set("Cookie", c.cookies)
-	httpReq.Header.Set("Origin", "https://notebooklm.google.com")
-	httpReq.Header.Set("Referer", "https://notebooklm.google.com/")
+	httpReq.Header.Set("Origin", "https://notebook.google.com")
+	httpReq.Header.Set("Referer", "https://notebook.google.com/")
 	httpReq.Header.Set("X-Same-Domain", "1")
 
 	// Send the request

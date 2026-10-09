@@ -430,7 +430,7 @@ func countNotebooks(token, cookies string) (int, error) {
 	}
 
 	// Create a new request to the notebooks API
-	req, err := http.NewRequest("GET", "https://notebooklm.google.com/gen_notebook/notebook", nil)
+	req, err := http.NewRequest("GET", "https://notebook.google.com/gen_notebook/notebook", nil)
 	if err != nil {
 		return 0, fmt.Errorf("create request: %w", err)
 	}
@@ -475,7 +475,7 @@ func (ba *BrowserAuth) GetAuth(opts ...Option) (token, cookies string, err error
 		ProfileName:       "Default",
 		TryAllProfiles:    false,
 		ScanBeforeAuth:    true, // Default to showing profile information
-		TargetURL:         "https://notebooklm.google.com",
+		TargetURL:         "https://notebook.google.com",
 		PreferredBrowsers: []string{},
 		CheckNotebooks:    false,
 		KeepOpenSeconds:   0,
@@ -1058,7 +1058,7 @@ func (ba *BrowserAuth) gracefulShutdown(ctx context.Context) error {
 }
 
 func (ba *BrowserAuth) extractAuthData(ctx context.Context) (token, cookies string, err error) {
-	targetURL := "https://notebooklm.google.com"
+	targetURL := "https://notebook.google.com"
 	return ba.extractAuthDataForURL(ctx, targetURL)
 }
 
@@ -1277,7 +1277,7 @@ func (ba *BrowserAuth) tryExtractAuth(ctx context.Context) (token, cookies strin
 		// Use current URL for cookies
 	} else {
 		// Fallback to NotebookLM
-		cookieURL = "https://notebooklm.google.com"
+		cookieURL = "https://notebook.google.com"
 	}
 
 	err = chromedp.Run(ctx,
