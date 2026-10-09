@@ -15,9 +15,8 @@ policy:
     complete export of all ChatGPT history.
 counts:
   total: 294
-  verified: 80
-  needs_review: 185
-  excluded_from_canonical_review: 29
+  verified: 33
+  needs_review: 261
 verified_terms:
 - GitHub Actions
 - Workflow
@@ -52,80 +51,13 @@ verified_terms:
 - NotebookLM source
 - NotebookLM note
 - Large Language Model (LLM)
-- Retrieval-Augmented Generation (RAG)
-- Remote MCP
-- tools/list
-- Private repository
-- Self-hosted runner
-- GitHub Issue
-- Repository topic
-- Workflow run
-- GitHub Actions job
-- Reusable workflow
-- workflow_call
-- Caller workflow
-- Callee workflow / called workflow
-- GITHUB_TOKEN
-- GitHub permissions
-- OpenID Connect (OIDC)
-- 'id-token: write'
-- JSON
-- Parquet
-- CSV
-- Unique constraint
-- Indexing
-- Point-in-Time Recovery (PITR)
-- SQLite
-- RLS policy
-- Document Object Model (DOM)
-- CSS align-content
-- CSS align-items
-- Vercel
-- FastAPI
-- Home Assistant
-- Matter
-- Thread
-- Home APIs
-- Voice Match
-- Deep Q-Network (DQN)
-- Long Short-Term Memory (LSTM)
-- Walk-forward evaluation
-- Data split
-- Exploratory Data Analysis (EDA)
-- Feature engineering
-- Google OAuth
-- Fail-closed
-- Authorization
-- SSL/TLS
-- Supabase Google OAuth
-- HF_TOKEN
-excluded_from_canonical_review:
-  project_specific_field_or_expression:
-  - data_requirements
-  - null_reason
-  - unique(user_id, game_id)
-  - training_attempted
-  - training_executed
-  - evaluation_executed
-  - observed_metrics
-  - agent-zone-* topic
-  - Primary category
-  internal_workflow_or_stage_label:
-  - Exact-data gate
-  - Stage B artifact
-  - Host-side safety rejection
-  - App Server handshake
-  - Transport smoke test
-  - Controller comment
-  - Terminal worker state
-  - Evidence gate
-  - Entity gate
-  - Read-only transport smoke test
-  - Documentation Quality Check
-  - Revision stage
-  - Revision stage continuity
-  - Deduplicated canonical view
-  - Deterministic distribution layer
+needs_review_by_domain:
+  ai:
+  - Retrieval-Augmented Generation (RAG)
+  - Read-only MCP
+  - Remote MCP
+  - tools/list
+  - Context compaction
   - CodeGraph traversal
   - Skill Synthesis
   - Validated workflow generation
