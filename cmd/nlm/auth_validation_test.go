@@ -69,7 +69,7 @@ func TestPersistAuthRejectsIncompleteWithoutOverwriting(t *testing.T) {
 func TestDetectAuthInfoRequiresCompleteCookies(t *testing.T) {
 	home := t.TempDir()
 	t.Setenv("HOME", home)
-	bad := "curl 'https://notebook.google.com/?at=testtoken' -H 'cookie: SID=sid; HSID=hsid'"
+	bad := "curl 'https://notebook.google.com/?at=testtoken&foo=1' -H 'cookie: SID=sid; HSID=hsid'"
 	if _, _, err := detectAuthInfo(bad); err == nil {
 		t.Fatal("incomplete stdin cookies accepted")
 	}
@@ -77,7 +77,7 @@ func TestDetectAuthInfoRequiresCompleteCookies(t *testing.T) {
 		t.Fatalf("incomplete cookies created credentials file: %v", err)
 	}
 
-	good := "curl 'https://notebook.google.com/?at=testtoken' -H 'cookie: " + testCompleteAuthCookies() + "'"
+	good := "curl 'https://notebook.google.com/?at=testtoken&foo=1' -H 'cookie: " + testCompleteAuthCookies() + "'"
 	token, cookies, err := detectAuthInfo(good)
 	if err != nil || token != "testtoken" || cookies != testCompleteAuthCookies() {
 		t.Fatalf("complete stdin credentials rejected: %v", err)
