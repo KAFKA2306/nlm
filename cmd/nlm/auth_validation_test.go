@@ -96,3 +96,26 @@ func TestRefreshRejectsIncompleteCookiesBeforeNetwork(t *testing.T) {
 		t.Fatalf("refresh should request reauthentication: %v", err)
 	}
 }
+
+func TestLoadStoredEnvRejectsIncompleteCookies(t *testing.T) {
+	home := t.TempDir()
+	t.Setenv("HOME", home)
+	t.Setenv("NLM_COOKIES", "")
+	if err := os.Unsetenv("NLM_COOKIES"); err != nil {
+		t.Fatal(err)
+	}
+	if err := os.MkdirAll(filepath.Join(home, ".nlm"), 0700); err != nil {
+		t.Fatal(err)
+	}
+	envPath := filepath.Join(home, ".nlm", "env")
+	if err := os.WriteFile(envPath, []byte("NLM_COOKIES=\"SID=sid\"\n"), 0600); err != nil {
+		t.Fatal(err)
+	}
+	loadStoredEnv()
+	if _, ok := os.LookupEnv("NLM_COOKIES"); ok {
+		t.Fatal("invalid stored cookies were loaded")
+	}
+	if storedCookieValidationError == nil || !strings.Contains(storedCookieValidationError.Error(), "nlm auth login") {
+		t.Fatalf("missing reauthentication guidance: %v", storedCookieValidationError)
+	}
+}
