@@ -165,6 +165,23 @@ func run() error {
 	var newEpisodes []episode
 	for _, notebook := range candidates {
 		fmt.Printf("Inspecting %s (%s)\n", notebook.Title, notebook.When.Format(time.RFC3339))
+		metadata, err := client.GetAudioArtifactMetadata(notebook.ID)
+		if err != nil {
+			if isSkippableAudioError(err) {
+				rep.Skipped = append(rep.Skipped, skipped{NotebookTitle: notebook.Title, Reason: compactReason(err)})
+				continue
+			}
+			return fmt.Errorf("inspect audio for notebook %q: %w", notebook.Title, err)
+		}
+		if metadata == nil || strings.TrimSpace(metadata.AudioID) == "" {
+			rep.Skipped = append(rep.Skipped, skipped{NotebookTitle: notebook.Title, Reason: "audio overview has no stable audio ID"})
+			continue
+		}
+		if _, exists := existingKeys[strings.TrimSpace(metadata.AudioID)]; exists {
+			rep.Skipped = append(rep.Skipped, skipped{NotebookTitle: notebook.Title, Reason: "already present in RSS"})
+			fmt.Println("  skip: already present in RSS (no audio download)")
+			continue
+		}
 		audio, err := client.DownloadAudioOverview(notebook.ID)
 		if err != nil {
 			if isSkippableAudioError(err) {
