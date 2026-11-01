@@ -33,15 +33,15 @@ jobs:
           git diff --exit-code -- go.mod go.sum
 
       - name: Build
-        run: go build ./cmd/nlm
+        run: go build ./...
 
       - name: Test
         run: go test ./...
 
       - name: Check glossary
-        run: go run ./cmd/nlm glossary check
+        run: go run ./cmd/glossary check
 
       - name: Verify generated glossary
         run: |
-          go run ./cmd/nlm glossary generate /tmp/glossary.md
+          go run ./cmd/glossary generate /tmp/glossary.md
           diff -u docs/glossary.md /tmp/glossary.md
