@@ -523,14 +523,11 @@ func run() error {
 
 	// Check if this command needs authentication
 	if isAuthCommand(cmd) && (authToken == "" || cookies == "") {
+		if storedCookieValidationError != nil {
+			return storedCookieValidationError
+		}
 		fmt.Fprintf(os.Stderr, "Authentication required for '%s'. Run 'nlm auth' first.\n", cmd)
 		return fmt.Errorf("authentication required")
-	}
-
-	if isAuthCommand(cmd) {
-		if err := validateAuthCookies(cookies); err != nil {
-			return err
-		}
 	}
 
 	// Handle help commands without creating API client
