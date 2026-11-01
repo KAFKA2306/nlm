@@ -25,6 +25,7 @@ const (
 
 type options struct {
 	Since       time.Time
+	Until       time.Time
 	Months      int
 	Apply       bool
 	FeedPath    string
@@ -54,6 +55,7 @@ type skipped struct {
 type report struct {
 	StartedAt   time.Time `json:"started_at"`
 	Since       time.Time `json:"since"`
+	Until       string    `json:"until,omitempty"`
 	Apply       bool      `json:"apply"`
 	Candidates  int       `json:"candidates"`
 	Published   []episode `json:"published"`
@@ -108,6 +110,9 @@ func run() error {
 
 	started := time.Now().UTC()
 	rep := report{StartedAt: started, Since: opts.Since.UTC(), Apply: opts.Apply}
+	if !opts.Until.IsZero() {
+		rep.Until = opts.Until.UTC().Format(time.RFC3339Nano)
+	}
 
 	client := api.New(nlmToken, nlmCookies)
 	notebooks, err := client.ListRecentlyViewedProjects()
@@ -123,7 +128,7 @@ func run() error {
 	var candidates []candidate
 	for _, notebook := range notebooks {
 		when, ok := notebookActivityTime(notebook.GetMetadata())
-		if !ok || when.Before(opts.Since) {
+		if !ok || !inWindow(when, opts.Since, opts.Until) {
 			continue
 		}
 		candidates = append(candidates, candidate{
@@ -135,7 +140,11 @@ func run() error {
 		candidates = candidates[:opts.Limit]
 	}
 	rep.Candidates = len(candidates)
-	fmt.Printf("NotebookLM backfill window: %s .. now\n", opts.Since.Format(time.RFC3339))
+	windowEnd := "now"
+	if !opts.Until.IsZero() {
+		windowEnd = opts.Until.Format(time.RFC3339Nano) + " (exclusive)"
+	}
+	fmt.Printf("NotebookLM backfill window: %s .. %s\n", opts.Since.Format(time.RFC3339), windowEnd)
 	fmt.Printf("Candidates: %d\n", len(candidates))
 
 	var archive *archiveClient
@@ -252,12 +261,13 @@ func run() error {
 }
 
 func parseOptions() (options, error) {
-	var sinceText string
+	var sinceText, untilText string
 	var months int
 	var apply bool
 	var feedPath, pagesFeed, archiveID, reportPath string
 	var limit int
 	flag.StringVar(&sinceText, "since", "", "include NotebookLM work on/after YYYY-MM-DD or RFC3339")
+	flag.StringVar(&untilText, "until", "", "optional inclusive JST end date (YYYY-MM-DD) or RFC3339 timestamp")
 	flag.IntVar(&months, "months", 3, "lookback in calendar months when --since is omitted")
 	flag.BoolVar(&apply, "apply", false, "upload missing audio and update RSS feeds")
 	flag.StringVar(&feedPath, "feed", defaultFeedPath, "canonical podcast RSS path")
@@ -284,8 +294,18 @@ func parseOptions() (options, error) {
 		now := time.Now().In(jst)
 		since = now.AddDate(0, -months, 0)
 	}
+	var until time.Time
+	if strings.TrimSpace(untilText) != "" {
+		until, err = parseUntil(untilText)
+		if err != nil {
+			return options{}, err
+		}
+		if !until.After(since) {
+			return options{}, errors.New("--until must be after --since")
+		}
+	}
 	return options{
-		Since: since, Months: months, Apply: apply, FeedPath: feedPath, PagesFeed: pagesFeed,
+		Since: since, Until: until, Months: months, Apply: apply, FeedPath: feedPath, PagesFeed: pagesFeed,
 		ArchiveID: archiveID, ReportPath: reportPath, Limit: limit, HTTPTimeout: 5 * time.Minute,
 	}, nil
 }
