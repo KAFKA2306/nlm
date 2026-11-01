@@ -326,7 +326,10 @@ func persistAuthToDisk(cookies, authToken, profileName, sessionID, blParam strin
 	return authToken, cookies, nil
 }
 
+var storedCookieValidationError error
+
 func loadStoredEnv() {
+	storedCookieValidationError = nil
 	home, err := os.UserHomeDir()
 	if err != nil {
 		return
@@ -359,6 +362,12 @@ func loadStoredEnv() {
 		value = strings.TrimSpace(value)
 		if unquoted, err := strconv.Unquote(value); err == nil {
 			value = unquoted
+		}
+		if key == "NLM_COOKIES" {
+			if err := validateAuthCookies(value); err != nil {
+				storedCookieValidationError = err
+				continue
+			}
 		}
 		os.Setenv(key, value)
 	}
