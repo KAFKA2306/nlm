@@ -523,6 +523,9 @@ func run() error {
 
 	// Check if this command needs authentication
 	if isAuthCommand(cmd) && (authToken == "" || cookies == "") {
+		if storedCookieValidationError != nil {
+			return storedCookieValidationError
+		}
 		fmt.Fprintf(os.Stderr, "Authentication required for '%s'. Run 'nlm auth' first.\n", cmd)
 		return fmt.Errorf("authentication required")
 	}
@@ -623,6 +626,9 @@ func isAuthenticationError(err error) bool {
 
 // saveCredentials saves authentication credentials to environment file
 func saveCredentials(authToken, cookies string) error {
+	if err := validateAuthCookies(cookies); err != nil {
+		return err
+	}
 	// Get home directory
 	home, err := os.UserHomeDir()
 	if err != nil {
@@ -631,7 +637,7 @@ func saveCredentials(authToken, cookies string) error {
 
 	// Create .nlm directory if it doesn't exist
 	nlmDir := filepath.Join(home, ".nlm")
-	if err := os.MkdirAll(nlmDir, 0755); err != nil {
+	if err := os.MkdirAll(nlmDir, 0700); err != nil {
 		return fmt.Errorf("create nlm directory: %w", err)
 	}
 

@@ -266,11 +266,37 @@ func detectAuthInfo(cmd string) (string, string, error) {
 		return "", "", fmt.Errorf("no auth token found")
 	}
 	authToken := atMatch[1]
-	persistAuthToDisk(cookies, authToken, "", "", "")
-	return authToken, cookies, nil
+	return persistAuthToDisk(cookies, authToken, "", "", "")
+}
+
+// validateAuthCookies checks exact cookie names without logging secret values.
+// An incomplete set must never replace previously working credentials.
+func validateAuthCookies(cookies string) error {
+	present := make(map[string]bool)
+	for _, part := range strings.Split(cookies, ";") {
+		name, value, ok := strings.Cut(strings.TrimSpace(part), "=")
+		if ok && strings.TrimSpace(value) != "" {
+			present[strings.TrimSpace(name)] = true
+		}
+	}
+
+	var missing []string
+	for _, name := range []string{"SAPISID", "SID", "HSID", "SSID", "APISID"} {
+		if !present[name] {
+			missing = append(missing, name)
+		}
+	}
+	if len(missing) > 0 {
+		return fmt.Errorf("incomplete authentication cookies: missing %s; run 'nlm auth login' to reauthenticate", strings.Join(missing, ", "))
+	}
+	return nil
 }
 
 func persistAuthToDisk(cookies, authToken, profileName, sessionID, blParam string) (string, string, error) {
+	if err := validateAuthCookies(cookies); err != nil {
+		return "", "", err
+	}
+
 	homeDir, err := os.UserHomeDir()
 	if err != nil {
 		return "", "", fmt.Errorf("get home dir: %w", err)
@@ -300,7 +326,10 @@ func persistAuthToDisk(cookies, authToken, profileName, sessionID, blParam strin
 	return authToken, cookies, nil
 }
 
+var storedCookieValidationError error
+
 func loadStoredEnv() {
+	storedCookieValidationError = nil
 	home, err := os.UserHomeDir()
 	if err != nil {
 		return
@@ -334,6 +363,12 @@ func loadStoredEnv() {
 		if unquoted, err := strconv.Unquote(value); err == nil {
 			value = unquoted
 		}
+		if key == "NLM_COOKIES" {
+			if err := validateAuthCookies(value); err != nil {
+				storedCookieValidationError = err
+				continue
+			}
+		}
 		os.Setenv(key, value)
 	}
 }
@@ -355,6 +390,10 @@ func refreshCredentials(debugFlag bool) error {
 	cookies := os.Getenv("NLM_COOKIES")
 	if cookies == "" {
 		return fmt.Errorf("no stored credentials found. Run 'nlm auth' first")
+	}
+
+	if err := validateAuthCookies(cookies); err != nil {
+		return err
 	}
 
 	// Create refresh client
