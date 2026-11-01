@@ -48,7 +48,10 @@ type glossaryTerm struct {
 type glossarySource struct {
 	Title      string `yaml:"title"`
 	URL        string `yaml:"url"`
-	SourceType string `yaml:"source_type"`// RunCLI handles local glossary operations without NotebookLM authentication.
+	SourceType string `yaml:"source_type"`
+}
+
+// RunCLI handles local glossary operations without NotebookLM authentication.
 func RunCLI(args []string, out io.Writer) error {
 	return runGlossaryCLI(args, out)
 }
