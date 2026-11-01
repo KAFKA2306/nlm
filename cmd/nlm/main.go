@@ -527,6 +527,12 @@ func run() error {
 		return fmt.Errorf("authentication required")
 	}
 
+	if isAuthCommand(cmd) {
+		if err := validateAuthCookies(cookies); err != nil {
+			return err
+		}
+	}
+
 	// Handle help commands without creating API client
 	if cmd == "help" || cmd == "-h" || cmd == "--help" {
 		flag.Usage()
@@ -623,6 +629,9 @@ func isAuthenticationError(err error) bool {
 
 // saveCredentials saves authentication credentials to environment file
 func saveCredentials(authToken, cookies string) error {
+	if err := validateAuthCookies(cookies); err != nil {
+		return err
+	}
 	// Get home directory
 	home, err := os.UserHomeDir()
 	if err != nil {
@@ -631,7 +640,7 @@ func saveCredentials(authToken, cookies string) error {
 
 	// Create .nlm directory if it doesn't exist
 	nlmDir := filepath.Join(home, ".nlm")
-	if err := os.MkdirAll(nlmDir, 0755); err != nil {
+	if err := os.MkdirAll(nlmDir, 0700); err != nil {
 		return fmt.Errorf("create nlm directory: %w", err)
 	}
 
