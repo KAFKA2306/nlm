@@ -18,6 +18,15 @@
     </itunes:owner>
     <itunes:category text="Technology"/>
     <item>
+      <title>最新テック＆AIニュース（2026-11-25）：LLM agents work for their・Versine (YC F26) – MCP to</title>
+      <description>2026-11-25の最新外部ニュース・技術論文・OSSリリース特集（全10本）。分野: 開発基盤・OSS議論 / 国内テックトレンド / 主要OSSリリース / AI・論文 / 半導体・先端技術。主な出典: Hacker News Top、はてなブックマーク IT、Zenn AI、Claude Code Releases、OpenAI Codex Releases、Simon Willison Weblog。注目トピック: LLM agents work for their、Versine (YC F26) – MCP to。</description>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">20261125_ffa35793</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/545bf56a-5e26-4140-af80-ad7f110b6af1.m4a" type="audio/mp4" length="16754984"/>
+      <itunes:duration>00:22:54</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>最新テック＆AIニュース（2026-11-24）：NariQ: BF16-level Qwen3.8-27B・Type-C – variants, options</title>
       <description>2026-11-24の最新外部ニュース・技術論文・OSSリリース特集（全14本）。分野: 開発基盤・OSS / AI・論文 / 半導体・先端技術 / 国内テック。主な出典: Hacker News Top、arXiv cs.AI、NVIDIA Newsroom、Zenn AI、Show HN、arXiv cs.SE。注目トピック: NariQ: BF16-level Qwen3.8-27B、Type-C – variants, options。</description>
       <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
