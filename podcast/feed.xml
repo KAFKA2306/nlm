@@ -18,6 +18,15 @@
     </itunes:owner>
     <itunes:category text="Technology"/>
     <item>
+      <title>最新テック＆AIニュース（2026-11-26）：llama.cpp b12734・Three LLM inflection points</title>
+      <description>2026-11-26の最新外部ニュース・技術論文・OSSリリース特集（全10本）。分野: 主要OSSリリース / AI・論文 / 開発基盤・OSS議論 / 国内テックトレンド / 半導体・先端技術。主な出典: llama.cpp Releases、Simon Willison Weblog、Hacker News Top、Qiita Popular、arXiv cs.AI、Claude Code Releases。注目トピック: llama.cpp b12734、Three LLM inflection points。</description>
+      <pubDate>Thu, 26 Nov 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">20261126_770673eb</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/4d22a8fd-6652-4524-9a1d-bb3d4f3d305c.m4a" type="audio/mp4" length="12556751"/>
+      <itunes:duration>00:17:09</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>最新テック＆AIニュース（2026-11-25）：LLM agents work for their・Versine (YC F26) – MCP to</title>
       <description>2026-11-25の最新外部ニュース・技術論文・OSSリリース特集（全10本）。分野: 開発基盤・OSS議論 / 国内テックトレンド / 主要OSSリリース / AI・論文 / 半導体・先端技術。主な出典: Hacker News Top、はてなブックマーク IT、Zenn AI、Claude Code Releases、OpenAI Codex Releases、Simon Willison Weblog。注目トピック: LLM agents work for their、Versine (YC F26) – MCP to。</description>
       <pubDate>Wed, 25 Nov 2026 00:00:00 +0000</pubDate>
