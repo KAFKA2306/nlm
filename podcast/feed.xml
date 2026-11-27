@@ -4,8 +4,8 @@
     <title>KAFKA探究室</title>
     <link>https://kafka2306.github.io/nlm/</link>
     <atom:link href="https://kafka2306.github.io/nlm/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>The provided text outlines a framework for redefining Loop Engineering within the official technical vocabularies of OpenAI and Anthropic. It categorizes agentic structures into three distinct levels: the execution layer for basic task handling, the validation layer for iterative refinement through feedback, and the improvement flywheel for long-term system optimization. Major industry players prefer specific terms like agent loop, closed-loop workflow, and harness design to describe the orchestration of tools, handoffs, and safety guardrails. Ultimately, the sources suggest that while "Loop Engineering" serves as a useful umbrella term, technical precision requires distinguishing between runtime operations and evaluative improvement cycles. This shift emphasizes that modern AI design focuses on the entire operational environment and feedback mechanisms rather than just prompt construction.</description>
-    <itunes:summary>The provided text outlines a framework for redefining Loop Engineering within the official technical vocabularies of OpenAI and Anthropic. It categorizes agentic structures into three distinct levels: the execution layer for basic task handling, the validation layer for iterative refinement through feedback, and the improvement flywheel for long-term system optimization. Major industry players prefer specific terms like agent loop, closed-loop workflow, and harness design to describe the orchestration of tools, handoffs, and safety guardrails. Ultimately, the sources suggest that while "Loop Engineering" serves as a useful umbrella term, technical precision requires distinguishing between runtime operations and evaluative improvement cycles. This shift emphasizes that modern AI design focuses on the entire operational environment and feedback mechanisms rather than just prompt construction.</itunes:summary>
+    <description>The provided text outlines a framework for redefining Loop Engineering within the official technical vocabularies of OpenAI and Anthropic. It categorizes agentic structures into three distinct levels: the execution layer for basic task handling, the validation layer for iterative refinement through feedback, and the improvement flywheel for long-term system optimization. Major industry players prefer specific terms like agent loop, closed-loop workflow, and harness design to describe the orchestration of tools, handoffs, and safety guardrails. Ultimately, the sources suggest that while &quot;Loop Engineering&quot; serves as a useful umbrella term, technical precision requires distinguishing between runtime operations and evaluative improvement cycles. This shift emphasizes that modern AI design focuses on the entire operational environment and feedback mechanisms rather than just prompt construction.</description>
+    <itunes:summary>The provided text outlines a framework for redefining Loop Engineering within the official technical vocabularies of OpenAI and Anthropic. It categorizes agentic structures into three distinct levels: the execution layer for basic task handling, the validation layer for iterative refinement through feedback, and the improvement flywheel for long-term system optimization. Major industry players prefer specific terms like agent loop, closed-loop workflow, and harness design to describe the orchestration of tools, handoffs, and safety guardrails. Ultimately, the sources suggest that while &quot;Loop Engineering&quot; serves as a useful umbrella term, technical precision requires distinguishing between runtime operations and evaluative improvement cycles. This shift emphasizes that modern AI design focuses on the entire operational environment and feedback mechanisms rather than just prompt construction.</itunes:summary>
     <language>ja</language>
     <itunes:author>KAFKA</itunes:author>
     <itunes:type>serial</itunes:type>
@@ -17,6 +17,15 @@
       <itunes:email>ag1i5rer@gmail.com</itunes:email>
     </itunes:owner>
     <itunes:category text="Technology"/>
+    <item>
+      <title>最新テック＆AIニュース（2026-11-27）：Google Will Make AI Agents・llama.cpp b12791</title>
+      <description>2026-11-27の最新外部ニュース・技術論文・OSSリリース特集（全10本）。分野: 開発基盤・OSS議論 / 主要OSSリリース / AI・論文 / 国内テックトレンド / 半導体・先端技術。主な出典: Hacker News Top、llama.cpp Releases、Simon Willison Weblog、arXiv cs.AI、Qiita Popular、はてなブックマーク IT。注目トピック: Google Will Make AI Agents、llama.cpp b12791。</description>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">20261127_e72f7400</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/dc299f32-9198-4918-aac7-7e012e339b1e.m4a" type="audio/mp4" length="13150599"/>
+      <itunes:duration>00:17:58</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
     <item>
       <title>最新テック＆AIニュース（2026-11-26）：llama.cpp b12734・Three LLM inflection points</title>
       <description>2026-11-26の最新外部ニュース・技術論文・OSSリリース特集（全10本）。分野: 主要OSSリリース / AI・論文 / 開発基盤・OSS議論 / 国内テックトレンド / 半導体・先端技術。主な出典: llama.cpp Releases、Simon Willison Weblog、Hacker News Top、Qiita Popular、arXiv cs.AI、Claude Code Releases。注目トピック: llama.cpp b12734、Three LLM inflection points。</description>
