@@ -18,6 +18,15 @@
     </itunes:owner>
     <itunes:category text="Technology"/>
     <item>
+      <title>最新テック＆AIニュース（2026-11-28）：llama.cpp b12816・Open-Sourced Code Mode to Cut</title>
+      <description>2026-11-28の最新外部ニュース・技術論文・OSSリリース特集（全10本）。分野: 主要OSSリリース / 開発基盤・OSS議論 / AI・論文 / 国内テックトレンド / 半導体・先端技術。主な出典: llama.cpp Releases、Show HN、arXiv cs.AI、Zenn AI、Hacker News Top、OpenAI Codex Releases。注目トピック: llama.cpp b12816、Open-Sourced Code Mode to Cut。</description>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">20261128_636162b4</guid>
+      <enclosure url="https://archive.org/download/kafka-podcast-vault-v2/6ce78af9-762f-4995-a57f-c66346063237.m4a" type="audio/mp4" length="14209795"/>
+      <itunes:duration>00:19:25</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>最新テック＆AIニュース（2026-11-27）：Google Will Make AI Agents・llama.cpp b12791</title>
       <description>2026-11-27の最新外部ニュース・技術論文・OSSリリース特集（全10本）。分野: 開発基盤・OSS議論 / 主要OSSリリース / AI・論文 / 国内テックトレンド / 半導体・先端技術。主な出典: Hacker News Top、llama.cpp Releases、Simon Willison Weblog、arXiv cs.AI、Qiita Popular、はてなブックマーク IT。注目トピック: Google Will Make AI Agents、llama.cpp b12791。</description>
       <pubDate>Fri, 27 Nov 2026 00:00:00 +0000</pubDate>
